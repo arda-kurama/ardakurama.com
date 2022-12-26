@@ -1,35 +1,70 @@
-@font-face {
-  font-family: Poppins;
-  src: url(Poppins-Regular.ttf);
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Poppins;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
-body {
-  background-image: linear-gradient(rgb(204, 77, 255), rgb(0, 224, 231));
-  min-height: 100vh;
+.landing {
+  background-image: url("");
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: hsla(0deg, 0%, 0%, 0.5);
+  background-blend-mode: soft-light;
+  min-height: 80vh;
+}
+.landing .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(0deg, 0%, 0%, 0.8);
+  gap: 8vw;
+  padding: 2rem;
+}
+.landing .navbar .links {
+  text-decoration: none;
+  position: relative;
+  color: white;
+  font-weight: 300;
+  font-size: 22px;
+}
+.landing .navbar .links::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  transition: width 200ms ease-in;
+  background-color: white;
+  position: absolute;
+  top: 29px;
+  left: 0;
+}
+.landing .navbar .links:hover::after {
+  width: 100%;
+}
+.landing .hero {
+  font-weight: 700;
+  color: white;
+  text-align: center;
+}
+.landing .hero .title {
+  margin-top: 25vh;
+  font-size: clamp(3rem, 10vw, 7.5rem);
+}
+.landing .hero .typed-title {
+  margin-top: 1vh;
+  font-weight: 400;
+  font-size: 24px;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 1vw;
-  background-color: hsla(0deg, 0%, 0%, 0.9);
-  font-size: 20px;
+.main {
+  padding: 2vw;
+  background-color: white;
+  text-align: center;
 }
-.navbar .left .links {
-  text-decoration: none;
-  color: white;
-}
-.navbar .right {
-  display: flex;
-  gap: 2vw;
-}
-.navbar .right .links {
-  text-decoration: none;
-  color: white;
+.main .title {
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: 700;
+  color: rgb(60, 72, 88);
 }/*# sourceMappingURL=index.css.map */

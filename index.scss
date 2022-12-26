@@ -1,41 +1,79 @@
-@font-face {
-  font-family: Poppins;
-  src: url(Poppins-Regular.ttf);
-}
+@import "variables";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Poppins;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   // border: 1px solid red;
 }
 
-body {
-  background-image: linear-gradient(rgb(204, 77, 255), rgb(0, 224, 231));
-  min-height: 100vh;
-}
+.landing {
+  background-image: url("");
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  background-blend-mode: soft-light;
+  min-height: 80vh;
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 1vw;
-  background-color: hsla(0, 0%, 0%, 0.9);
-  font-size: 20px;
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0, 0%, 0%, 0.8);
+    gap: 8vw;
+    padding: 2rem;
 
-  .left {
     .links {
       text-decoration: none;
-      color: white;
+      position: relative;
+      color: $primary;
+      font-weight: 300;
+      font-size: 22px;
+
+      &::after {
+        content: "";
+        width: 0%;
+        height: 1px;
+        transition: width 200ms ease-in;
+        background-color: $primary;
+        position: absolute;
+        top: 29px;
+        left: 0;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
     }
   }
 
-  .right {
-    display: flex;
-    gap: 2vw;
-    .links {
-      text-decoration: none;
-      color: white;
+  .hero {
+    font-weight: 700;
+    color: $primary;
+    text-align: center;
+
+    .title {
+      margin-top: 25vh;
+      font-size: $cover;
     }
+
+    .typed-title {
+      margin-top: 1vh;
+      font-weight: 400;
+      font-size: $subheader;
+    }
+  }
+}
+
+.main {
+  padding: 2vw;
+  background-color: $primary;
+  text-align: center;
+
+  .title {
+    font-size: $title;
+    font-weight: 700;
+    color: $secondary;
   }
 }
