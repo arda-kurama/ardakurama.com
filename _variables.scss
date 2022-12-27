@@ -1,12 +1,10 @@
-$white: #e6f1ff;
-$navy: #2b2d2f;
-$darkslate: #495670;
-$slate: #8892b0;
-$decoration: #64ffda;
+$primary: rgb(230, 241, 255);
+$background: rgb(43, 45, 47);
+$secondary: rgb(136, 146, 175);
+$decoration: rgb(100, 255, 218);
 
-$cover: clamp(3rem, 10vw, 7rem);
+$cover: clamp(3rem, 10vw, 6rem);
 $title: clamp(2.5rem, 8vw, 4rem);
-$subtitle: clamp(16px, 3vw, 18px);
-$header: clamp(24px, 3vw, 40px);
+$header: clamp(24px, 3vw, 36px);
 $subheader: 24px;
-$body: 16px;
+$body: 18px;

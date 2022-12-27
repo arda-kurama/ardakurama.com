@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #2b2d2f;
+  background-color: rgb(43, 45, 47);
 }
 
 .navbar {
@@ -25,7 +25,7 @@ body {
 }
 .navbar .icons {
   display: flex;
-  gap: 3vw;
+  gap: 1.5vw;
 }
 .navbar .shortcuts {
   display: flex;
@@ -35,17 +35,17 @@ body {
   font-size: 44px;
   margin: 0;
   padding: 0;
-  color: #e6f1ff;
+  color: rgb(230, 241, 255);
   transition: transform 100ms ease-in, color 100ms ease-in;
 }
 .navbar i:hover {
   transform: translateY(-2px) scale(1.05);
-  color: #64ffda;
+  color: rgb(100, 255, 218);
 }
 .navbar .links {
   text-decoration: none;
   position: relative;
-  color: #e6f1ff;
+  color: rgb(230, 241, 255);
   font-weight: 300;
   font-size: 22px;
 }
@@ -54,7 +54,7 @@ body {
   width: 0%;
   height: 2px;
   transition: width 200ms ease-in;
-  background-color: #e6f1ff;
+  background-color: rgb(230, 241, 255);
   position: absolute;
   top: 27px;
   left: 1px;
@@ -64,21 +64,22 @@ body {
 }
 
 .landing {
-  background-image: url("");
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
   min-height: 80vh;
 }
 .landing .hero {
   font-weight: 700;
-  color: #e6f1ff;
+  color: rgb(230, 241, 255);
   text-align: left;
   margin-left: 20vw;
 }
+.landing .hero .name {
+  color: rgb(100, 255, 218);
+  font-size: 7rem;
+  text-shadow: 0.25rem 0.25rem 0.25rem rgba(75, 150, 150, 0.8);
+}
 .landing .hero .title {
   padding-top: 32vh;
-  font-size: clamp(3rem, 10vw, 7rem);
+  font-size: clamp(3rem, 10vw, 6rem);
 }
 .landing .hero .typed-title {
   margin-top: 1vh;
@@ -87,53 +88,103 @@ body {
 }
 
 .about {
-  padding: 2vw;
   background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, #2b2d2f 80%);
   border-radius: 2rem;
-  margin: 3rem 20vw;
-  padding: 1rem 2rem;
+  margin: 0 20vw 4vw;
+  padding: 2vw;
   text-align: center;
   box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
 }
 .about .title {
   font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 700;
-  color: #e6f1ff;
+  color: rgb(230, 241, 255);
   margin-bottom: 2vw;
 }
 .about .content {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
 }
 .about .content i {
   font-size: 100px;
-  color: #64ffda;
+  color: rgb(100, 255, 218);
   transition: transform 200ms ease-in, color 200ms ease-in;
 }
 .about .content i:hover {
   transform: translateY(-7px) scale(1.1);
-  color: #64ffda;
+  color: rgb(100, 255, 218);
 }
-.about .content h3 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.about .content .section {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.about .content .section h3 {
   font-size: 24px;
-  color: #e6f1ff;
+  color: rgb(230, 241, 255);
 }
-.about .content p {
-  line-height: 1.5rem;
-  font-size: 16px;
-  max-width: 50ch;
-  margin: 0 auto;
+.about .content .section p {
+  list-style: none;
+  font-size: 18px;
   font-weight: 300;
-  color: #8892b0;
+  color: rgb(136, 146, 175);
 }
 
 .projects {
-  background-image: url("");
-  background-position: top;
-  background-attachment: fixed;
-  background-size: cover;
+  background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, #2b2d2f 80%);
+  border-radius: 2rem;
+  margin: 0 20vw 4vw;
+  padding: 2vw;
+  text-align: center;
+  box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
   min-height: 100vh;
+}
+.projects .title {
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: 700;
+  color: rgb(230, 241, 255);
+  margin-bottom: 2vw;
+}
+.projects .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.projects .content .images {
+  display: flex;
+  flex-direction: column;
+}
+.projects .content .images #img {
+  z-index: 1;
+  border: 5px solid rgb(100, 255, 218);
+}
+.projects .content .images #img1 {
+  border: 5px solid rgb(100, 255, 218);
+  margin: -100px 100px;
+  z-index: 1;
+}
+.projects .content .images img {
+  width: 500px;
+  height: auto;
+}
+.projects .content .text a {
+  text-decoration: none;
+}
+.projects .content .text h3 {
+  font-size: clamp(24px, 3vw, 36px);
+  color: rgb(100, 255, 218);
+  line-height: 1.5rem;
+}
+.projects .content .text h3 span {
+  font-size: 24px;
+  color: rgb(136, 146, 175);
+}
+.projects .content .text p {
+  list-style: none;
+  font-size: 24px;
+  font-weight: 300;
+  color: rgb(230, 241, 255);
+  margin: 1rem 0 -1rem 2rem;
 }/*# sourceMappingURL=index.css.map */

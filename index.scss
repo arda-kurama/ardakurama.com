@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background-color: $navy;
+  background-color: $background;
 }
 
 .navbar {
@@ -28,7 +28,7 @@ body {
 
   .icons {
     display: flex;
-    gap: 3vw;
+    gap: 1.5vw;
   }
 
   .shortcuts {
@@ -40,7 +40,7 @@ body {
     font-size: 44px;
     margin: 0;
     padding: 0;
-    color: $white;
+    color: $primary;
     transition: transform 100ms ease-in, color 100ms ease-in;
 
     &:hover {
@@ -52,7 +52,7 @@ body {
   .links {
     text-decoration: none;
     position: relative;
-    color: $white;
+    color: $primary;
     font-weight: 300;
     font-size: 22px;
 
@@ -61,7 +61,7 @@ body {
       width: 0%;
       height: 2px;
       transition: width 200ms ease-in;
-      background-color: $white;
+      background-color: $primary;
       position: absolute;
       top: 27px;
       left: 1px;
@@ -74,17 +74,19 @@ body {
 }
 
 .landing {
-  background-image: url("");
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
   min-height: 80vh;
 
   .hero {
     font-weight: 700;
-    color: $white;
+    color: $primary;
     text-align: left;
     margin-left: 20vw;
+
+    .name {
+      color: $decoration;
+      font-size: 7rem;
+      text-shadow: 0.25rem 0.25rem 0.25rem rgba(75, 150, 150, 0.8);
+    }
 
     .title {
       padding-top: 32vh;
@@ -100,29 +102,28 @@ body {
 }
 
 .about {
-  padding: 2vw;
   background: linear-gradient(
     145deg,
     rgba(115, 115, 115, 0.15) 15%,
     #2b2d2f 80%
   );
   border-radius: 2rem;
-  margin: 3rem 20vw;
-  padding: 1rem 2rem;
+  margin: 0 20vw 4vw;
+  padding: 2vw;
   text-align: center;
   box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
 
   .title {
     font-size: $title;
     font-weight: 700;
-    color: $white;
+    color: $primary;
     margin-bottom: 2vw;
   }
 
   .content {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
 
     i {
       font-size: 100px;
@@ -135,28 +136,95 @@ body {
       }
     }
 
-    h3 {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      font-size: $subheader;
-      color: $white;
-    }
+    .section {
+      display: flex;
+      flex-direction: column;
+      gap: 1vh;
 
-    p {
-      line-height: 1.5rem;
-      font-size: $body;
-      max-width: 50ch;
-      margin: 0 auto;
-      font-weight: 300;
-      color: $slate;
+      h3 {
+        font-size: $subheader;
+        color: $primary;
+      }
+
+      p {
+        list-style: none;
+        font-size: $body;
+        font-weight: 300;
+        color: $secondary;
+      }
     }
   }
 }
 
 .projects {
-  background-image: url("");
-  background-position: top;
-  background-attachment: fixed;
-  background-size: cover;
+  background: linear-gradient(
+    145deg,
+    rgba(115, 115, 115, 0.15) 15%,
+    #2b2d2f 80%
+  );
+  border-radius: 2rem;
+  margin: 0 20vw 4vw;
+  padding: 2vw;
+  text-align: center;
+  box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
   min-height: 100vh;
+
+  .title {
+    font-size: $title;
+    font-weight: 700;
+    color: $primary;
+    margin-bottom: 2vw;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+    .images {
+      display: flex;
+      flex-direction: column;
+
+      #img {
+        z-index: 1;
+        border: 5px solid $decoration;
+      }
+
+      #img1 {
+        border: 5px solid $decoration;
+        margin: -100px 100px;
+        z-index: 1;
+      }
+
+      img {
+        width: 500px;
+        height: auto;
+      }
+    }
+
+    .text {
+      a {
+        text-decoration: none;
+      }
+      h3 {
+        font-size: $header;
+        color: $decoration;
+        line-height: 1.5rem;
+
+        span {
+          font-size: $subheader;
+          color: $secondary;
+        }
+      }
+
+      p {
+        list-style: none;
+        font-size: $subheader;
+        font-weight: 300;
+        color: $primary;
+        margin: 1rem 0 -1rem 2rem;
+      }
+    }
+  }
 }
