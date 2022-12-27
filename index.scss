@@ -101,7 +101,7 @@ body {
   }
 }
 
-.about {
+.hor-cell {
   background: linear-gradient(
     145deg,
     rgba(115, 115, 115, 0.15) 15%,
@@ -117,6 +117,11 @@ body {
     font-size: $title;
     font-weight: 700;
     color: $primary;
+  }
+
+  .subtitle {
+    font-size: $subheader;
+    color: $secondary;
     margin-bottom: 2vw;
   }
 
@@ -132,7 +137,7 @@ body {
 
       &:hover {
         transform: translateY(-7px) scale(1.1);
-        color: $decoration;
+        color: rgb(150, 255, 250);
       }
     }
 
@@ -156,7 +161,7 @@ body {
   }
 }
 
-.projects {
+.vert-cell {
   background: linear-gradient(
     145deg,
     rgba(115, 115, 115, 0.15) 15%,
@@ -187,14 +192,12 @@ body {
       flex-direction: column;
 
       #img {
-        z-index: 1;
         border: 5px solid $decoration;
       }
 
       #img1 {
         border: 5px solid $decoration;
         margin: -100px 100px;
-        z-index: 1;
       }
 
       img {

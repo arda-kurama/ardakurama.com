@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: rgb(43, 45, 47);
+  background-color: rgb(45, 45, 50);
 }
 
 .navbar {
@@ -35,17 +35,17 @@ body {
   font-size: 44px;
   margin: 0;
   padding: 0;
-  color: rgb(230, 241, 255);
+  color: rgb(230, 240, 255);
   transition: transform 100ms ease-in, color 100ms ease-in;
 }
 .navbar i:hover {
   transform: translateY(-2px) scale(1.05);
-  color: rgb(100, 255, 218);
+  color: rgb(100, 255, 215);
 }
 .navbar .links {
   text-decoration: none;
   position: relative;
-  color: rgb(230, 241, 255);
+  color: rgb(230, 240, 255);
   font-weight: 300;
   font-size: 22px;
 }
@@ -54,7 +54,7 @@ body {
   width: 0%;
   height: 2px;
   transition: width 200ms ease-in;
-  background-color: rgb(230, 241, 255);
+  background-color: rgb(230, 240, 255);
   position: absolute;
   top: 27px;
   left: 1px;
@@ -68,12 +68,12 @@ body {
 }
 .landing .hero {
   font-weight: 700;
-  color: rgb(230, 241, 255);
+  color: rgb(230, 240, 255);
   text-align: left;
   margin-left: 20vw;
 }
 .landing .hero .name {
-  color: rgb(100, 255, 218);
+  color: rgb(100, 255, 215);
   font-size: 7rem;
   text-shadow: 0.25rem 0.25rem 0.25rem rgba(75, 150, 150, 0.8);
 }
@@ -87,7 +87,7 @@ body {
   font-size: 24px;
 }
 
-.about {
+.hor-cell {
   background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, #2b2d2f 80%);
   border-radius: 2rem;
   margin: 0 20vw 4vw;
@@ -95,43 +95,47 @@ body {
   text-align: center;
   box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
 }
-.about .title {
+.hor-cell .title {
   font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 700;
-  color: rgb(230, 241, 255);
+  color: rgb(230, 240, 255);
+}
+.hor-cell .subtitle {
+  font-size: 24px;
+  color: rgb(135, 150, 175);
   margin-bottom: 2vw;
 }
-.about .content {
+.hor-cell .content {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
 }
-.about .content i {
+.hor-cell .content i {
   font-size: 100px;
-  color: rgb(100, 255, 218);
+  color: rgb(100, 255, 215);
   transition: transform 200ms ease-in, color 200ms ease-in;
 }
-.about .content i:hover {
+.hor-cell .content i:hover {
   transform: translateY(-7px) scale(1.1);
-  color: rgb(100, 255, 218);
+  color: rgb(150, 255, 250);
 }
-.about .content .section {
+.hor-cell .content .section {
   display: flex;
   flex-direction: column;
   gap: 1vh;
 }
-.about .content .section h3 {
+.hor-cell .content .section h3 {
   font-size: 24px;
-  color: rgb(230, 241, 255);
+  color: rgb(230, 240, 255);
 }
-.about .content .section p {
+.hor-cell .content .section p {
   list-style: none;
   font-size: 18px;
   font-weight: 300;
-  color: rgb(136, 146, 175);
+  color: rgb(135, 150, 175);
 }
 
-.projects {
+.vert-cell {
   background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, #2b2d2f 80%);
   border-radius: 2rem;
   margin: 0 20vw 4vw;
@@ -140,66 +144,64 @@ body {
   box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
   min-height: 90vh;
 }
-.projects .title {
+.vert-cell .title {
   font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 700;
-  color: rgb(230, 241, 255);
+  color: rgb(230, 240, 255);
   margin-bottom: 2vw;
 }
-.projects .content {
+.vert-cell .content {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: left;
 }
-.projects .content .images {
+.vert-cell .content .images {
   display: flex;
   flex-direction: column;
 }
-.projects .content .images #img {
-  z-index: 1;
-  border: 5px solid rgb(100, 255, 218);
+.vert-cell .content .images #img {
+  border: 5px solid rgb(100, 255, 215);
 }
-.projects .content .images #img1 {
-  border: 5px solid rgb(100, 255, 218);
+.vert-cell .content .images #img1 {
+  border: 5px solid rgb(100, 255, 215);
   margin: -100px 100px;
-  z-index: 1;
 }
-.projects .content .images img {
+.vert-cell .content .images img {
   width: 500px;
   height: auto;
 }
-.projects .content .text a {
+.vert-cell .content .text a {
   text-decoration: none;
 }
-.projects .content .text h2 {
+.vert-cell .content .text h2 {
   font-size: clamp(24px, 3vw, 36px);
-  color: rgb(100, 255, 218);
+  color: rgb(100, 255, 215);
   line-height: 1.5rem;
 }
-.projects .content .text h2 span {
+.vert-cell .content .text h2 span {
   font-size: 24px;
-  color: rgb(136, 146, 175);
+  color: rgb(135, 150, 175);
 }
-.projects .content .text h3 {
+.vert-cell .content .text h3 {
   margin: 2rem 0 -0.5rem;
   font-size: 24px;
-  color: rgb(136, 146, 175);
+  color: rgb(135, 150, 175);
 }
-.projects .content .text h4 {
+.vert-cell .content .text h4 {
   font-size: 24px;
   font-weight: 300;
-  color: rgb(230, 241, 255);
+  color: rgb(230, 240, 255);
   margin: 0 0 1rem 5rem;
 }
-.projects .content .text p {
+.vert-cell .content .text p {
   list-style: none;
   font-size: 24px;
   font-weight: 300;
-  color: rgb(230, 241, 255);
+  color: rgb(230, 240, 255);
   margin: 1rem 0 -1rem 2rem;
 }
-.projects .content .button {
+.vert-cell .content .button {
   position: fixed;
   bottom: 0;
   right: 0;
