@@ -11,31 +11,25 @@ html {
   scroll-behavior: smooth;
 }
 
-.landing {
-  background-image: url("");
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: hsla(0deg, 0%, 0%, 0.5);
-  background-blend-mode: soft-light;
-  min-height: 80vh;
-}
-.landing .navbar {
+.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
   display: flex;
   justify-content: right;
-  align-items: center;
-  background-color: hsla(0deg, 0%, 0%, 0.8);
+  background-color: hsla(0deg, 0%, 0%, 0.5);
   gap: 3vw;
   padding: 2rem 8rem;
 }
-.landing .navbar .links {
+.navbar .links {
   text-decoration: none;
   position: relative;
   color: white;
   font-weight: 300;
   font-size: 22px;
 }
-.landing .navbar .links::after {
+.navbar .links::after {
   content: "";
   width: 0%;
   height: 1px;
@@ -45,8 +39,20 @@ html {
   top: 29px;
   left: 0;
 }
-.landing .navbar .links:hover::after {
+.navbar .links:hover::after {
   width: 100%;
+}
+
+.landing {
+  background-image: url("");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  top: -6rem;
+  background-color: rgb(160, 160, 160);
+  min-height: 80vh;
 }
 .landing .hero {
   font-weight: 700;
@@ -55,7 +61,7 @@ html {
   margin-left: 20vw;
 }
 .landing .hero .title {
-  margin-top: 25vh;
+  padding-top: 32vh;
   font-size: clamp(3rem, 10vw, 7rem);
 }
 .landing .hero .typed-title {
@@ -106,9 +112,9 @@ html {
 
 .projects {
   background-image: url("");
-  background-position: center;
+  background-position: top;
   background-attachment: fixed;
-  background-color: hsla(0deg, 0%, 0%, 0.5);
-  background-blend-mode: soft-light;
-  height: 60vh;
+  background-size: cover;
+  background-color: rgb(160, 160, 160);
+  min-height: 100vh;
 }/*# sourceMappingURL=index.css.map */

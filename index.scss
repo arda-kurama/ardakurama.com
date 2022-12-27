@@ -12,46 +12,50 @@ html {
   scroll-behavior: smooth;
 }
 
+.navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  display: flex;
+  justify-content: right;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  gap: 3vw;
+  padding: 2rem 8rem;
+
+  .links {
+    text-decoration: none;
+    position: relative;
+    color: $primary;
+    font-weight: 300;
+    font-size: 22px;
+
+    &::after {
+      content: "";
+      width: 0%;
+      height: 1px;
+      transition: width 200ms ease-in;
+      background-color: $primary;
+      position: absolute;
+      top: 29px;
+      left: 0;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
 .landing {
   background-image: url("");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  background-color: hsla(0, 0%, 0%, 0.5);
-  background-blend-mode: soft-light;
+  position: relative;
+  width: 100%;
+  top: -6rem;
+  background-color: rgb(160, 160, 160);
   min-height: 80vh;
-
-  .navbar {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    background-color: hsla(0, 0%, 0%, 0.8);
-    gap: 3vw;
-    padding: 2rem 8rem;
-
-    .links {
-      text-decoration: none;
-      position: relative;
-      color: $primary;
-      font-weight: 300;
-      font-size: 22px;
-
-      &::after {
-        content: "";
-        width: 0%;
-        height: 1px;
-        transition: width 200ms ease-in;
-        background-color: $primary;
-        position: absolute;
-        top: 29px;
-        left: 0;
-      }
-
-      &:hover::after {
-        width: 100%;
-      }
-    }
-  }
 
   .hero {
     font-weight: 700;
@@ -60,7 +64,7 @@ html {
     margin-left: 20vw;
 
     .title {
-      margin-top: 25vh;
+      padding-top: 32vh;
       font-size: $cover;
     }
 
@@ -120,9 +124,9 @@ html {
 
 .projects {
   background-image: url("");
-  background-position: center;
+  background-position: top;
   background-attachment: fixed;
-  background-color: hsla(0, 0%, 0%, 0.5);
-  background-blend-mode: soft-light;
-  height: 60vh;
+  background-size: cover;
+  background-color: rgb(160, 160, 160);
+  min-height: 100vh;
 }
