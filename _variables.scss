@@ -1,10 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-$primary: white;
-$secondary: rgb(60, 72, 88);
-$tertiary: rgb(150, 150, 150);
-$decoration: hsl(45, 100%, 50%);
+$white: #e6f1ff;
+$navy: #2b2d2f;
+$darkslate: #495670;
+$slate: #8892b0;
+$decoration: #64ffda;
 
 $cover: clamp(3rem, 10vw, 7rem);
 $title: clamp(2.5rem, 8vw, 4rem);

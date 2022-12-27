@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   // border: 1px solid red;
 }
 
@@ -12,32 +12,59 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: $navy;
+}
+
 .navbar {
-  position: sticky;
-  top: 0px;
+  position: fixed;
+  width: 100%;
   z-index: 1;
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
+  align-items: center;
   background-color: hsla(0, 0%, 0%, 0.5);
-  gap: 3vw;
-  padding: 2rem 8rem;
+  padding: 1rem 8rem;
+
+  .icons {
+    display: flex;
+    gap: 3vw;
+  }
+
+  .shortcuts {
+    display: flex;
+    gap: 3vw;
+  }
+
+  i {
+    font-size: 44px;
+    margin: 0;
+    padding: 0;
+    color: $white;
+    transition: transform 100ms ease-in, color 100ms ease-in;
+
+    &:hover {
+      transform: translateY(-2px) scale(1.05);
+      color: $decoration;
+    }
+  }
 
   .links {
     text-decoration: none;
     position: relative;
-    color: $primary;
+    color: $white;
     font-weight: 300;
     font-size: 22px;
 
     &::after {
       content: "";
       width: 0%;
-      height: 1px;
+      height: 2px;
       transition: width 200ms ease-in;
-      background-color: $primary;
+      background-color: $white;
       position: absolute;
-      top: 29px;
-      left: 0;
+      top: 27px;
+      left: 1px;
     }
 
     &:hover::after {
@@ -51,15 +78,11 @@ html {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  position: relative;
-  width: 100%;
-  top: -6rem;
-  background-color: rgb(160, 160, 160);
   min-height: 80vh;
 
   .hero {
     font-weight: 700;
-    color: $primary;
+    color: $white;
     text-align: left;
     margin-left: 20vw;
 
@@ -78,13 +101,21 @@ html {
 
 .about {
   padding: 2vw;
-  background-color: $primary;
+  background: linear-gradient(
+    145deg,
+    rgba(115, 115, 115, 0.15) 15%,
+    #2b2d2f 80%
+  );
+  border-radius: 2rem;
+  margin: 3rem 20vw;
+  padding: 1rem 2rem;
   text-align: center;
+  box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
 
   .title {
     font-size: $title;
     font-weight: 700;
-    color: $secondary;
+    color: $white;
     margin-bottom: 2vw;
   }
 
@@ -100,7 +131,7 @@ html {
 
       &:hover {
         transform: translateY(-7px) scale(1.1);
-        color: hsl(43, 100%, 75%);
+        color: $decoration;
       }
     }
 
@@ -108,7 +139,7 @@ html {
       margin-top: 1rem;
       margin-bottom: 1rem;
       font-size: $subheader;
-      color: $secondary;
+      color: $white;
     }
 
     p {
@@ -117,7 +148,7 @@ html {
       max-width: 50ch;
       margin: 0 auto;
       font-weight: 300;
-      color: $tertiary;
+      color: $slate;
     }
   }
 }
@@ -127,6 +158,5 @@ html {
   background-position: top;
   background-attachment: fixed;
   background-size: cover;
-  background-color: rgb(160, 160, 160);
   min-height: 100vh;
 }

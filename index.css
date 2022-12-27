@@ -1,43 +1,63 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #2b2d2f;
+}
+
 .navbar {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
+  position: fixed;
+  width: 100%;
   z-index: 1;
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
+  align-items: center;
   background-color: hsla(0deg, 0%, 0%, 0.5);
+  padding: 1rem 8rem;
+}
+.navbar .icons {
+  display: flex;
   gap: 3vw;
-  padding: 2rem 8rem;
+}
+.navbar .shortcuts {
+  display: flex;
+  gap: 3vw;
+}
+.navbar i {
+  font-size: 44px;
+  margin: 0;
+  padding: 0;
+  color: #e6f1ff;
+  transition: transform 100ms ease-in, color 100ms ease-in;
+}
+.navbar i:hover {
+  transform: translateY(-2px) scale(1.05);
+  color: #64ffda;
 }
 .navbar .links {
   text-decoration: none;
   position: relative;
-  color: white;
+  color: #e6f1ff;
   font-weight: 300;
   font-size: 22px;
 }
 .navbar .links::after {
   content: "";
   width: 0%;
-  height: 1px;
+  height: 2px;
   transition: width 200ms ease-in;
-  background-color: white;
+  background-color: #e6f1ff;
   position: absolute;
-  top: 29px;
-  left: 0;
+  top: 27px;
+  left: 1px;
 }
 .navbar .links:hover::after {
   width: 100%;
@@ -48,15 +68,11 @@ html {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  position: relative;
-  width: 100%;
-  top: -6rem;
-  background-color: rgb(160, 160, 160);
   min-height: 80vh;
 }
 .landing .hero {
   font-weight: 700;
-  color: white;
+  color: #e6f1ff;
   text-align: left;
   margin-left: 20vw;
 }
@@ -72,13 +88,17 @@ html {
 
 .about {
   padding: 2vw;
-  background-color: white;
+  background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, #2b2d2f 80%);
+  border-radius: 2rem;
+  margin: 3rem 20vw;
+  padding: 1rem 2rem;
   text-align: center;
+  box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
 }
 .about .title {
   font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 700;
-  color: rgb(60, 72, 88);
+  color: #e6f1ff;
   margin-bottom: 2vw;
 }
 .about .content {
@@ -88,18 +108,18 @@ html {
 }
 .about .content i {
   font-size: 100px;
-  color: hsl(45deg, 100%, 50%);
+  color: #64ffda;
   transition: transform 200ms ease-in, color 200ms ease-in;
 }
 .about .content i:hover {
   transform: translateY(-7px) scale(1.1);
-  color: hsl(43deg, 100%, 75%);
+  color: #64ffda;
 }
 .about .content h3 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 24px;
-  color: rgb(60, 72, 88);
+  color: #e6f1ff;
 }
 .about .content p {
   line-height: 1.5rem;
@@ -107,7 +127,7 @@ html {
   max-width: 50ch;
   margin: 0 auto;
   font-weight: 300;
-  color: rgb(150, 150, 150);
+  color: #8892b0;
 }
 
 .projects {
@@ -115,6 +135,5 @@ html {
   background-position: top;
   background-attachment: fixed;
   background-size: cover;
-  background-color: rgb(160, 160, 160);
   min-height: 100vh;
 }/*# sourceMappingURL=index.css.map */
