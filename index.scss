@@ -167,7 +167,7 @@ body {
   padding: 2vw;
   text-align: center;
   box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
-  min-height: 100vh;
+  min-height: 90vh;
 
   .title {
     font-size: $title;
@@ -207,7 +207,8 @@ body {
       a {
         text-decoration: none;
       }
-      h3 {
+
+      h2 {
         font-size: $header;
         color: $decoration;
         line-height: 1.5rem;
@@ -218,6 +219,19 @@ body {
         }
       }
 
+      h3 {
+        margin: 2rem 0 -0.5rem;
+        font-size: $subheader;
+        color: $secondary;
+      }
+
+      h4 {
+        font-size: $subheader;
+        font-weight: 300;
+        color: $primary;
+        margin: 0 0 1rem 5rem;
+      }
+
       p {
         list-style: none;
         font-size: $subheader;
@@ -225,6 +239,12 @@ body {
         color: $primary;
         margin: 1rem 0 -1rem 2rem;
       }
+    }
+
+    .button {
+      position: fixed;
+      bottom: 0;
+      right: 0;
     }
   }
 }

@@ -138,7 +138,7 @@ body {
   padding: 2vw;
   text-align: center;
   box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 .projects .title {
   font-size: clamp(2.5rem, 8vw, 4rem);
@@ -172,14 +172,25 @@ body {
 .projects .content .text a {
   text-decoration: none;
 }
-.projects .content .text h3 {
+.projects .content .text h2 {
   font-size: clamp(24px, 3vw, 36px);
   color: rgb(100, 255, 218);
   line-height: 1.5rem;
 }
-.projects .content .text h3 span {
+.projects .content .text h2 span {
   font-size: 24px;
   color: rgb(136, 146, 175);
+}
+.projects .content .text h3 {
+  margin: 2rem 0 -0.5rem;
+  font-size: 24px;
+  color: rgb(136, 146, 175);
+}
+.projects .content .text h4 {
+  font-size: 24px;
+  font-weight: 300;
+  color: rgb(230, 241, 255);
+  margin: 0 0 1rem 5rem;
 }
 .projects .content .text p {
   list-style: none;
@@ -187,4 +198,9 @@ body {
   font-weight: 300;
   color: rgb(230, 241, 255);
   margin: 1rem 0 -1rem 2rem;
+}
+.projects .content .button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }/*# sourceMappingURL=index.css.map */
