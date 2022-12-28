@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid red;
 }
 
 html {
@@ -22,7 +21,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: hsla(0deg, 0%, 0%, 0.5);
-  padding: 1rem 8rem;
+  padding: 1rem 8vw;
 }
 .navbar .icons {
   display: flex;
@@ -65,141 +64,202 @@ body {
 }
 
 .landing {
-  min-height: 80vh;
+  height: 80vh;
 }
 .landing .hero {
   font-weight: 700;
   color: rgb(230, 240, 255);
+  width: 1000px;
   text-align: left;
-  margin: 0 20vw;
+  margin: 0 auto;
 }
 .landing .hero .name {
   color: rgb(100, 255, 215);
-  font-size: 7rem;
+  font-size: clamp(6rem, 12vw, 7rem);
   text-shadow: 0.25rem 0.25rem 0.25rem rgba(75, 150, 150, 0.8);
   display: inline-block;
 }
 .landing .hero .title {
   padding-top: 32vh;
-  font-size: clamp(3rem, 10vw, 6rem);
+  font-size: clamp(4.5rem, 10vw, 5.5rem);
 }
 .landing .hero .typed-title {
   margin-top: 1vh;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 36px;
 }
 
-.hor-cell {
+.row {
   background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, #2b2d2f 80%);
   border-radius: 2rem;
-  margin: 0 20vw 4vw;
+  margin: 2vw auto;
+  width: clamp(1000px, 80vw, 1400px);
   padding: 2vw;
   text-align: center;
   box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
 }
-.hor-cell .title {
-  font-size: clamp(2.5rem, 8vw, 4rem);
+.row .title {
+  font-size: 4rem;
   font-weight: 700;
   color: rgb(230, 240, 255);
 }
-.hor-cell .subtitle {
-  font-size: clamp(18px, 1.25vw, 24px);
+.row .subtitle {
+  font-size: 24px;
   color: rgb(135, 150, 175);
   margin-bottom: 2vw;
 }
-.hor-cell .content {
+.row .content {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
 }
-.hor-cell .content i {
+.row .content i {
   font-size: 100px;
   color: rgb(100, 255, 215);
   transition: transform 200ms ease-in, color 200ms ease-in;
 }
-.hor-cell .content i:hover {
+.row .content i:hover {
   transform: translateY(-7px) scale(1.1);
   color: rgb(150, 255, 250);
 }
-.hor-cell .content .section {
+.row .content .section {
   display: flex;
   flex-direction: column;
   gap: 1vh;
-  width: 250px;
+  width: 400px;
 }
-.hor-cell .content .section h3 {
-  font-size: 24px;
+.row .content .section h3 {
+  font-size: 36px;
   color: rgb(230, 240, 255);
 }
-.hor-cell .content .section p {
+.row .content .section p {
   list-style: none;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 300;
   color: rgb(135, 150, 175);
+  line-height: 1rem;
 }
 
-.vert-cell {
+.column {
   background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, #2b2d2f 80%);
   border-radius: 2rem;
-  margin: 0 20vw 4vw;
+  margin: 2vw auto;
+  width: clamp(1000px, 80vw, 1400px);
   padding: 2vw;
   text-align: center;
   box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
 }
-.vert-cell .title {
-  font-size: clamp(2.5rem, 8vw, 4rem);
+.column .title {
+  font-size: 4rem;
   font-weight: 700;
   color: rgb(230, 240, 255);
-  margin-bottom: 2vw;
+  margin-bottom: 1rem;
 }
-.vert-cell .content {
+.column .content {
   display: flex;
+  justify-content: center;
+  gap: 4vw;
   align-items: center;
   text-align: left;
-  gap: 2vw;
 }
-.vert-cell .content .images {
+.column .content .images {
   display: flex;
   flex-direction: column;
 }
-.vert-cell .content .images #img1 {
-  margin: -100px 0 0 100px;
+.column .content .images #img1 {
+  margin: -4vw 0 0 4vw;
 }
-.vert-cell .content .images img {
-  width: 24vw;
+.column .content .images img {
+  width: 450px;
   height: auto;
   border: 5px solid rgb(100, 255, 215);
 }
-.vert-cell .content .text h4 {
-  font-size: clamp(18px, 1.25vw, 24px);
+.column .content .text {
+  width: clamp(400px, 50vw, 450px);
+  margin-bottom: 24.5px;
+}
+.column .content .text .header h4 {
+  font-size: 24px;
   font-weight: 300;
   color: rgb(230, 240, 255);
-  margin: 0 0 0.5rem 6rem;
+  margin: 0 0 0.5rem 4vw;
 }
-.vert-cell .content .text a {
+.column .content .text .header a {
   text-decoration: none;
   border: 0;
 }
-.vert-cell .content .text a h2 {
-  font-size: clamp(24px, 3vw, 36px);
+.column .content .text .header a h2 {
+  font-size: 36px;
   color: rgb(100, 255, 215);
   line-height: 1.5rem;
+  transition: transform 100ms ease-in, color 100ms ease-in;
 }
-.vert-cell .content .text a h2 span {
-  font-size: clamp(18px, 1.25vw, 24px);
+.column .content .text .header a h2:hover {
+  transform: translateY(-1px) scale(1.01);
+  color: rgb(150, 255, 250);
+}
+.column .content .text .header a span {
+  font-size: 24px;
   color: rgb(135, 150, 175);
 }
-.vert-cell .content .text ul {
+.column .content .text .bullets {
+  display: flex;
+  flex-direction: column;
+}
+.column .content .text .bullets h3 {
+  margin: 2rem 0 -0.25rem;
+  font-size: 24px;
+  color: rgb(135, 150, 175);
+}
+.column .content .text .bullets ul {
   margin-top: 0.25rem;
 }
-.vert-cell .content .text ul li {
+.column .content .text .bullets ul li {
   list-style: none;
-  font-size: clamp(18px, 1.25vw, 24px);
+  font-size: 22px;
   font-weight: 300;
   color: rgb(230, 240, 255);
 }
-.vert-cell .content .text h3 {
-  margin: 2rem 0 -0.25rem;
-  font-size: clamp(18px, 1.25vw, 24px);
-  color: rgb(135, 150, 175);
+
+@media (max-width: 1280px) {
+  .landing .hero {
+    width: clamp(600px, 80vw, 710px);
+  }
+  .row {
+    width: 90vw;
+  }
+  .column {
+    width: 90vw;
+  }
+  .column .content {
+    flex-direction: column;
+    gap: 1vw;
+  }
+  .column .content .images {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .column .content .images #img1 {
+    margin: calc(350px - 20vw) 0 0 calc(-400px + 25vw);
+  }
+  .column .content .images img {
+    width: clamp(400px, 40vw, 500px);
+  }
+  .column .content .text {
+    width: clamp(600px, 60vw, 700px);
+  }
+  .column .content .text .header {
+    text-align: center;
+  }
+  .column .content .text .header a h2 span {
+    display: inline-block;
+  }
+  .column .content .text .bullets {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .column .content .text .bullets h3 {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */

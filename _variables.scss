@@ -3,9 +3,9 @@ $background: rgb(45, 45, 50);
 $secondary: rgb(135, 150, 175);
 $decoration: rgb(100, 255, 215);
 
-$cover: clamp(3rem, 10vw, 6rem);
-$title: clamp(2.5rem, 8vw, 4rem);
+$title: 4rem;
+$header: 36px;
 $subtitle: 24px;
-$header: clamp(24px, 3vw, 36px);
-$subheader: clamp(18px, 1.25vw, 24px);
-$body: 18px;
+
+$subheader: 24px;
+$body: 22px;
