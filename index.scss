@@ -323,3 +323,17 @@ body {
     }
   }
 }
+
+@media (max-width: 768px) {
+  .row {
+    .content {
+      flex-direction: column;
+      align-items: center;
+      gap: 4vh;
+    }
+
+    #immune {
+      flex-direction: row;
+    }
+  }
+}

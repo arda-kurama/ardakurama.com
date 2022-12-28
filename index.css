@@ -262,4 +262,14 @@ body {
   .column .content .text .bullets h3 {
     display: none;
   }
+}
+@media (max-width: 768px) {
+  .row .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+  }
+  .row #immune {
+    flex-direction: row;
+  }
 }/*# sourceMappingURL=index.css.map */
