@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid red;
 }
 
 html {
@@ -70,12 +71,13 @@ body {
   font-weight: 700;
   color: rgb(230, 240, 255);
   text-align: left;
-  margin-left: 20vw;
+  margin: 0 20vw;
 }
 .landing .hero .name {
   color: rgb(100, 255, 215);
   font-size: 7rem;
   text-shadow: 0.25rem 0.25rem 0.25rem rgba(75, 150, 150, 0.8);
+  display: inline-block;
 }
 .landing .hero .title {
   padding-top: 32vh;
@@ -101,7 +103,7 @@ body {
   color: rgb(230, 240, 255);
 }
 .hor-cell .subtitle {
-  font-size: 24px;
+  font-size: clamp(18px, 1.25vw, 24px);
   color: rgb(135, 150, 175);
   margin-bottom: 2vw;
 }
@@ -123,6 +125,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1vh;
+  width: 250px;
 }
 .hor-cell .content .section h3 {
   font-size: 24px;
@@ -142,7 +145,6 @@ body {
   padding: 2vw;
   text-align: center;
   box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
-  min-height: 90vh;
 }
 .vert-cell .title {
   font-size: clamp(2.5rem, 8vw, 4rem);
@@ -152,57 +154,52 @@ body {
 }
 .vert-cell .content {
   display: flex;
-  justify-content: center;
   align-items: center;
   text-align: left;
+  gap: 2vw;
 }
 .vert-cell .content .images {
   display: flex;
   flex-direction: column;
 }
-.vert-cell .content .images #img {
-  border: 5px solid rgb(100, 255, 215);
-}
 .vert-cell .content .images #img1 {
-  border: 5px solid rgb(100, 255, 215);
-  margin: -100px 100px;
+  margin: -100px 0 0 100px;
 }
 .vert-cell .content .images img {
-  width: 500px;
+  width: 24vw;
   height: auto;
+  border: 5px solid rgb(100, 255, 215);
+}
+.vert-cell .content .text h4 {
+  font-size: clamp(18px, 1.25vw, 24px);
+  font-weight: 300;
+  color: rgb(230, 240, 255);
+  margin: 0 0 0.5rem 6rem;
 }
 .vert-cell .content .text a {
   text-decoration: none;
+  border: 0;
 }
-.vert-cell .content .text h2 {
+.vert-cell .content .text a h2 {
   font-size: clamp(24px, 3vw, 36px);
   color: rgb(100, 255, 215);
   line-height: 1.5rem;
 }
-.vert-cell .content .text h2 span {
-  font-size: 24px;
+.vert-cell .content .text a h2 span {
+  font-size: clamp(18px, 1.25vw, 24px);
   color: rgb(135, 150, 175);
+}
+.vert-cell .content .text ul {
+  margin-top: 0.25rem;
+}
+.vert-cell .content .text ul li {
+  list-style: none;
+  font-size: clamp(18px, 1.25vw, 24px);
+  font-weight: 300;
+  color: rgb(230, 240, 255);
 }
 .vert-cell .content .text h3 {
-  margin: 2rem 0 -0.5rem;
-  font-size: 24px;
+  margin: 2rem 0 -0.25rem;
+  font-size: clamp(18px, 1.25vw, 24px);
   color: rgb(135, 150, 175);
-}
-.vert-cell .content .text h4 {
-  font-size: 24px;
-  font-weight: 300;
-  color: rgb(230, 240, 255);
-  margin: 0 0 1rem 5rem;
-}
-.vert-cell .content .text p {
-  list-style: none;
-  font-size: 24px;
-  font-weight: 300;
-  color: rgb(230, 240, 255);
-  margin: 1rem 0 -1rem 2rem;
-}
-.vert-cell .content .button {
-  position: fixed;
-  bottom: 0;
-  right: 0;
 }/*# sourceMappingURL=index.css.map */

@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  // border: 1px solid red;
+  border: 1px solid red;
 }
 
 html {
@@ -80,12 +80,13 @@ body {
     font-weight: 700;
     color: $primary;
     text-align: left;
-    margin-left: 20vw;
+    margin: 0 20vw;
 
     .name {
       color: $decoration;
       font-size: 7rem;
       text-shadow: 0.25rem 0.25rem 0.25rem rgba(75, 150, 150, 0.8);
+      display: inline-block;
     }
 
     .title {
@@ -96,7 +97,7 @@ body {
     .typed-title {
       margin-top: 1vh;
       font-weight: 400;
-      font-size: $subheader;
+      font-size: $subtitle;
     }
   }
 }
@@ -145,9 +146,10 @@ body {
       display: flex;
       flex-direction: column;
       gap: 1vh;
+      width: 250px;
 
       h3 {
-        font-size: $subheader;
+        font-size: $subtitle;
         color: $primary;
       }
 
@@ -172,7 +174,6 @@ body {
   padding: 2vw;
   text-align: center;
   box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
-  min-height: 90vh;
 
   .title {
     font-size: $title;
@@ -183,71 +184,67 @@ body {
 
   .content {
     display: flex;
-    justify-content: center;
     align-items: center;
     text-align: left;
+    gap: 2vw;
 
     .images {
       display: flex;
       flex-direction: column;
 
-      #img {
-        border: 5px solid $decoration;
-      }
-
       #img1 {
-        border: 5px solid $decoration;
-        margin: -100px 100px;
+        margin: -100px 0 0 100px;
       }
 
       img {
-        width: 500px;
+        width: 24vw;
         height: auto;
+        border: 5px solid $decoration;
       }
     }
 
     .text {
-      a {
-        text-decoration: none;
-      }
-
-      h2 {
-        font-size: $header;
-        color: $decoration;
-        line-height: 1.5rem;
-
-        span {
-          font-size: $subheader;
-          color: $secondary;
-        }
-      }
-
-      h3 {
-        margin: 2rem 0 -0.5rem;
-        font-size: $subheader;
-        color: $secondary;
-      }
-
       h4 {
         font-size: $subheader;
         font-weight: 300;
         color: $primary;
-        margin: 0 0 1rem 5rem;
+        margin: 0 0 0.5rem 6rem;
       }
 
-      p {
-        list-style: none;
+      a {
+        text-decoration: none;
+        border: 0;
+
+        h2 {
+          font-size: $header;
+          color: $decoration;
+          line-height: 1.5rem;
+
+          span {
+            font-size: $subheader;
+            color: $secondary;
+          }
+        }
+      }
+
+      ul {
+        margin-top: 0.25rem;
+        li {
+          list-style: none;
+          font-size: $subheader;
+          font-weight: 300;
+          color: $primary;
+        }
+      }
+
+      h3 {
+        margin: 2rem 0 -0.25rem;
         font-size: $subheader;
-        font-weight: 300;
-        color: $primary;
-        margin: 1rem 0 -1rem 2rem;
+        color: $secondary;
       }
-    }
-
-    .button {
-      position: fixed;
-      bottom: 0;
-      right: 0;
     }
   }
+}
+
+@media (max-width: 1440px) {
 }
