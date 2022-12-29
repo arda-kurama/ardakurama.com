@@ -165,6 +165,13 @@ body {
   font-weight: 700;
   color: rgb(230, 240, 255);
 }
+.column h4 {
+  font-size: 24px;
+  font-weight: 300;
+  color: rgb(230, 240, 255);
+  margin-left: 10vw;
+  text-align: left;
+}
 .column .content {
   display: flex;
   justify-content: center;
@@ -175,7 +182,7 @@ body {
 .column .content .images {
   display: flex;
   flex-direction: column;
-  margin: 1vw;
+  margin: 0.5rem;
 }
 .column .content .images #img1 {
   margin: -4vw 0 0 4vw;
@@ -268,6 +275,9 @@ body {
   }
   .column .content .text .header {
     text-align: center;
+  }
+  .column .content .text .header h4 {
+    margin-left: 30vw;
   }
   .column .content .text .header a h2 span {
     display: block;

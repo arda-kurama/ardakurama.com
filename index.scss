@@ -194,7 +194,14 @@ body {
     font-size: $title;
     font-weight: 700;
     color: $primary;
-    // margin-bottom: 1rem;
+  }
+
+  h4 {
+    font-size: $subtitle;
+    font-weight: 300;
+    color: $primary;
+    margin-left: 10vw;
+    text-align: left;
   }
 
   .content {
@@ -207,7 +214,7 @@ body {
     .images {
       display: flex;
       flex-direction: column;
-      margin: 1vw;
+      margin: 0.5rem;
 
       #img1 {
         margin: -4vw 0 0 4vw;
@@ -319,6 +326,10 @@ body {
         width: clamp(600px, 60vw, 700px);
         .header {
           text-align: center;
+
+          h4 {
+            margin-left: 30vw;
+          }
 
           a {
             h2 {
