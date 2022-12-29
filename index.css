@@ -66,7 +66,7 @@ body {
 #particles-js {
   z-index: -1;
   height: 84vh;
-  width: 99vw;
+  width: 98vw;
 }
 
 .landing {
@@ -295,12 +295,40 @@ body {
   .landing .hero .typed-title {
     font-size: 24px;
   }
+  .row {
+    padding: 2vw 0 6vw;
+  }
   .row .content {
     flex-direction: column;
     align-items: center;
     gap: 2.5vh;
   }
+  .row .content .section {
+    width: 80vw;
+  }
   .row #immune {
     flex-direction: row;
+  }
+  .column .content .images #img1 {
+    margin: calc(350px - 30vw) 0 0 calc(-400px + 35vw);
+  }
+  .column .content .images img {
+    width: clamp(300px, 50vw, 400px);
+  }
+  .column .content .text {
+    width: 80vw;
+  }
+  .column .content .text .header a h2 span {
+    line-height: 2rem;
+    display: inline;
+  }
+  .column .content .text .bullets {
+    width: 50vw;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .column .content .text .bullets h3 {
+    display: block;
+    margin-top: 2vw;
   }
 }/*# sourceMappingURL=index.css.map */

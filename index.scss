@@ -74,10 +74,9 @@ body {
 }
 
 #particles-js {
-  // position: absolute;
   z-index: -1;
   height: 84vh;
-  width: 99vw;
+  width: 98vw;
 }
 
 .landing {
@@ -363,14 +362,57 @@ body {
     }
   }
   .row {
+    padding: 2vw 0 6vw;
+
     .content {
       flex-direction: column;
       align-items: center;
       gap: 2.5vh;
+
+      .section {
+        width: 80vw;
+      }
     }
 
     #immune {
       flex-direction: row;
+    }
+  }
+
+  .column {
+    .content {
+      .images {
+        #img1 {
+          margin: calc(350px - 30vw) 0 0 calc(-400px + 35vw);
+        }
+        img {
+          width: clamp(300px, 50vw, 400px);
+        }
+      }
+      .text {
+        width: 80vw;
+
+        .header {
+          a {
+            h2 {
+              span {
+                line-height: 2rem;
+                display: inline;
+              }
+            }
+          }
+        }
+        .bullets {
+          width: 50vw;
+          margin: 0 auto;
+          flex-direction: column;
+
+          h3 {
+            display: block;
+            margin-top: 2vw;
+          }
+        }
+      }
     }
   }
 }
