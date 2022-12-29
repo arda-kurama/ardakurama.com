@@ -73,8 +73,16 @@ body {
   }
 }
 
+#particles-js {
+  // position: absolute;
+  z-index: -1;
+  height: 84vh;
+  width: 99vw;
+}
+
 .landing {
   height: 80vh;
+  margin-top: -84vh;
 
   .hero {
     font-weight: 700;
