@@ -148,7 +148,11 @@ body {
       display: flex;
       flex-direction: column;
       gap: 1vh;
-      width: 400px;
+      padding: 2.5vw;
+      justify-content: center;
+      box-shadow: inset 2px 2px 4px #000, inset -2px -2px 4px #636363;
+      background: #2b2d2f;
+      border-radius: 2rem;
 
       h3 {
         font-size: $header;
@@ -183,7 +187,7 @@ body {
     font-size: $title;
     font-weight: 700;
     color: $primary;
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
   }
 
   .content {
@@ -196,6 +200,7 @@ body {
     .images {
       display: flex;
       flex-direction: column;
+      margin: 1vw;
 
       #img1 {
         margin: -4vw 0 0 4vw;
@@ -205,19 +210,24 @@ body {
         width: 450px;
         height: auto;
         border: 5px solid $decoration;
+        border-radius: 2rem;
       }
     }
 
     .text {
       width: clamp(400px, 50vw, 450px);
       margin-bottom: 0.5px + $subtitle;
+      box-shadow: inset 2px 2px 4px #000, inset -2px -2px 4px #636363;
+      background: #2b2d2f;
+      border-radius: 2rem;
+      padding: 2vw;
 
       .header {
         h4 {
           font-size: $subtitle;
           font-weight: 300;
           color: $primary;
-          margin: 0 0 0.5rem 4vw;
+          margin: -0.5rem 0 0.5rem 5vw;
         }
 
         a {
@@ -275,6 +285,7 @@ body {
 
   .row {
     width: 90vw;
+    padding: 0 0 2vw 0;
   }
 
   .column {
@@ -305,7 +316,8 @@ body {
           a {
             h2 {
               span {
-                display: inline-block;
+                display: block;
+                line-height: 2.5rem;
               }
             }
           }
@@ -325,11 +337,28 @@ body {
 }
 
 @media (max-width: 768px) {
+  .landing {
+    .hero {
+      width: 75vw;
+      .name {
+        font-size: 6rem;
+      }
+
+      .title {
+        padding-top: 24vh;
+        font-size: 4.5rem;
+      }
+
+      .typed-title {
+        font-size: $subtitle;
+      }
+    }
+  }
   .row {
     .content {
       flex-direction: column;
       align-items: center;
-      gap: 4vh;
+      gap: 2.5vh;
     }
 
     #immune {

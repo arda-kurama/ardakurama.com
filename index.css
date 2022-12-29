@@ -126,7 +126,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1vh;
-  width: 400px;
+  padding: 2.5vw;
+  justify-content: center;
+  box-shadow: inset 2px 2px 4px #000, inset -2px -2px 4px #636363;
+  background: #2b2d2f;
+  border-radius: 2rem;
 }
 .row .content .section h3 {
   font-size: 36px;
@@ -153,7 +157,6 @@ body {
   font-size: 4rem;
   font-weight: 700;
   color: rgb(230, 240, 255);
-  margin-bottom: 1rem;
 }
 .column .content {
   display: flex;
@@ -165,6 +168,7 @@ body {
 .column .content .images {
   display: flex;
   flex-direction: column;
+  margin: 1vw;
 }
 .column .content .images #img1 {
   margin: -4vw 0 0 4vw;
@@ -173,16 +177,21 @@ body {
   width: 450px;
   height: auto;
   border: 5px solid rgb(100, 255, 215);
+  border-radius: 2rem;
 }
 .column .content .text {
   width: clamp(400px, 50vw, 450px);
   margin-bottom: 24.5px;
+  box-shadow: inset 2px 2px 4px #000, inset -2px -2px 4px #636363;
+  background: #2b2d2f;
+  border-radius: 2rem;
+  padding: 2vw;
 }
 .column .content .text .header h4 {
   font-size: 24px;
   font-weight: 300;
   color: rgb(230, 240, 255);
-  margin: 0 0 0.5rem 4vw;
+  margin: -0.5rem 0 0.5rem 5vw;
 }
 .column .content .text .header a {
   text-decoration: none;
@@ -227,6 +236,7 @@ body {
   }
   .row {
     width: 90vw;
+    padding: 0 0 2vw 0;
   }
   .column {
     width: 90vw;
@@ -253,7 +263,8 @@ body {
     text-align: center;
   }
   .column .content .text .header a h2 span {
-    display: inline-block;
+    display: block;
+    line-height: 2.5rem;
   }
   .column .content .text .bullets {
     flex-direction: row;
@@ -264,10 +275,23 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .landing .hero {
+    width: 75vw;
+  }
+  .landing .hero .name {
+    font-size: 6rem;
+  }
+  .landing .hero .title {
+    padding-top: 24vh;
+    font-size: 4.5rem;
+  }
+  .landing .hero .typed-title {
+    font-size: 24px;
+  }
   .row .content {
     flex-direction: column;
     align-items: center;
-    gap: 4vh;
+    gap: 2.5vh;
   }
   .row #immune {
     flex-direction: row;
