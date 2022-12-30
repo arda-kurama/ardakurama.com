@@ -13,6 +13,16 @@
       crossorigin="anonymous"
     ></script>
     <script src="particles.js"></script>
+    <script type="module">
+      import PhotoSwipeLightbox from "/dist/photoswipe-lightbox.esm.js";
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: "#my-gallery",
+        children: "a",
+        pswpModule: () => import("/dist/photoswipe.esm.js"),
+      });
+      lightbox.init();
+    </script>
+    <link rel="stylesheet" href="/dist/photoswipe.css" />
   </head>
   <body>
     <div class="navbar">
@@ -84,9 +94,25 @@
       <div class="title">Projects</div>
       <h4>click me! ↴</h4>
       <div class="content">
-        <div class="images">
-          <img id="img" src="/p1-media/PR-landing.png" alt="PR-landing.png" />
-          <img id="img1" src="/p1-media/135-landing.png" alt="PR-landing.png" />
+        <div class="images" id="my-gallery">
+          <a
+            href="/p1-media/PR-landing.png"
+            data-pswp-width="1000"
+            data-pswp-height="800"
+          >
+            <img id="img" src="/p1-media/PR-landing.png" alt="PR-landing.png" />
+          </a>
+          <a
+            href="/p1-media/135-landing.png"
+            data-pswp-width="1000"
+            data-pswp-height="800"
+          >
+            <img
+              id="img1"
+              src="/p1-media/135-landing.png"
+              alt="PR-landing.png"
+            />
+          </a>
         </div>
         <div class="text">
           <div class="header">
