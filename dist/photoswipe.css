@@ -418,14 +418,15 @@ div.pswp__img--placeholder,
 .pswp__custom-caption {
   background: linear-gradient(145deg, rgb(82, 82, 82) 15%, #2b2d2f 80%);
   box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
-  font-size: 36px;
-  color: rgb(230, 240, 255);
+  font-size: 24px;
+  color: rgb(255, 255, 255);
   width: 400px;
-  padding: 4px 16px;
-  border-radius: 4px;
+  padding: 2rem 1rem;
+  border-radius: 2rem;
   position: absolute;
-  left: 65%;
-  bottom: 22.5%;
+  left: 70%;
+  bottom: 20%;
+  text-align: center;
 }
 .pswp__custom-caption a {
   color: #fff;
@@ -433,4 +434,25 @@ div.pswp__img--placeholder,
 }
 .hidden-caption-content {
   display: none;
+}
+
+.pswp__bullets-indicator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.pswp__bullet {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  margin: 0 5px;
+}
+.pswp__bullet--active {
+  background: rgb(100, 255, 215);
 }
