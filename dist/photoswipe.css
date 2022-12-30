@@ -424,9 +424,10 @@ div.pswp__img--placeholder,
   padding: 2rem 1rem;
   border-radius: 2rem;
   position: absolute;
-  left: 70%;
+  left: 75%;
   bottom: 20%;
   text-align: center;
+  transform: translateX(-50%);
 }
 .pswp__custom-caption a {
   color: #fff;
@@ -455,4 +456,11 @@ div.pswp__img--placeholder,
 }
 .pswp__bullet--active {
   background: rgb(100, 255, 215);
+}
+
+@media (max-width: 1900px) {
+  .pswp__custom-caption {
+    left: 50%;
+    bottom: 8%;
+  }
 }
