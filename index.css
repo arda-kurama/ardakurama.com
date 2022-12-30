@@ -187,6 +187,9 @@ body {
 .column .content .images #img1 {
   margin: -4vw 0 0 4vw;
 }
+.column .content .images #inv {
+  display: none;
+}
 .column .content .images img {
   width: 450px;
   height: auto;
