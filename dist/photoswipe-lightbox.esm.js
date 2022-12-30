@@ -33,6 +33,7 @@ function createElement(className, tagName, appendToEl) {
  * @param {number} x
  * @param {number=} y
  * @param {number=} scale
+ */
 function toTransformString(x, y, scale) {
   let propValue = 'translate3d('
     + x + 'px,' + (y || 0) + 'px'
