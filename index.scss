@@ -304,6 +304,12 @@ body {
   .row {
     width: 90vw;
     padding: 0 0 2vw 0;
+
+    .content {
+      .section {
+        padding: 2.5vw 1.5vw;
+      }
+    }
   }
 
   .column {
@@ -386,6 +392,7 @@ body {
 
       .section {
         width: 80vw;
+        padding: 4vw;
       }
     }
 
@@ -418,7 +425,7 @@ body {
           }
         }
         .bullets {
-          width: 50vw;
+          width: 51vw;
           margin: 0 auto;
           flex-direction: column;
 

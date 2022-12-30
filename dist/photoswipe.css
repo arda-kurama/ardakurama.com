@@ -424,8 +424,8 @@ div.pswp__img--placeholder,
   padding: 2rem 1rem;
   border-radius: 2rem;
   position: absolute;
-  left: 75%;
-  bottom: 20%;
+  left: 80%;
+  bottom: 15%;
   text-align: center;
   transform: translateX(-50%);
 }
