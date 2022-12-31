@@ -309,6 +309,9 @@ body {
 }
 
 @media (max-width: 1280px) {
+  #particles-js {
+    width: 97vw;
+  }
   .landing {
     .hero {
       width: clamp(600px, 80vw, 710px);
@@ -379,7 +382,14 @@ body {
 }
 
 @media (max-width: 768px) {
+  #particles-js {
+    width: 96vw;
+  }
   .navbar {
+    .icons {
+      gap: 1rem;
+    }
+
     .nav-menu {
       position: fixed;
       right: -100%;
@@ -428,7 +438,8 @@ body {
 
   .landing {
     .hero {
-      width: 75vw;
+      text-align: center;
+      width: 76vw;
       .name {
         font-size: 6rem;
       }
@@ -439,7 +450,7 @@ body {
       }
 
       .typed-title {
-        font-size: $subtitle;
+        font-size: 32px;
       }
     }
   }
@@ -498,4 +509,7 @@ body {
       }
     }
   }
+}
+
+@media (max-width: 480px) {
 }

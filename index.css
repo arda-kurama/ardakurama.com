@@ -259,6 +259,9 @@ body {
 }
 
 @media (max-width: 1280px) {
+  #particles-js {
+    width: 97vw;
+  }
   .landing .hero {
     width: clamp(600px, 80vw, 710px);
   }
@@ -309,6 +312,12 @@ body {
   }
 }
 @media (max-width: 768px) {
+  #particles-js {
+    width: 96vw;
+  }
+  .navbar .icons {
+    gap: 1rem;
+  }
   .navbar .nav-menu {
     position: fixed;
     right: -100%;
@@ -346,7 +355,8 @@ body {
     transform: translateY(-8px) rotate(-45deg);
   }
   .landing .hero {
-    width: 75vw;
+    text-align: center;
+    width: 76vw;
   }
   .landing .hero .name {
     font-size: 6rem;
@@ -356,7 +366,7 @@ body {
     font-size: 4.5rem;
   }
   .landing .hero .typed-title {
-    font-size: 24px;
+    font-size: 32px;
   }
   .row {
     padding: 2vw 0 6vw;
