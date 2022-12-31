@@ -25,31 +25,31 @@ body {
 }
 .navbar .icons {
   display: flex;
-  gap: 1.5vw;
+  gap: 2vw;
 }
-.navbar .shortcuts {
-  display: flex;
-  gap: 3vw;
-}
-.navbar i {
+.navbar .icons i {
   font-size: 44px;
   margin: 0;
   padding: 0;
   color: rgb(230, 240, 255);
   transition: transform 100ms ease-in, color 100ms ease-in;
 }
-.navbar i:hover {
+.navbar .icons i:hover {
   transform: translateY(-2px) scale(1.05);
   color: rgb(100, 255, 215);
 }
-.navbar .links {
+.navbar .nav-menu {
+  display: flex;
+  gap: 3vw;
+}
+.navbar .nav-menu .nav-item {
   text-decoration: none;
   position: relative;
   color: rgb(230, 240, 255);
   font-weight: 300;
   font-size: 22px;
 }
-.navbar .links::after {
+.navbar .nav-menu .nav-item::after {
   content: "";
   width: 0%;
   height: 2px;
@@ -59,8 +59,19 @@ body {
   top: 27px;
   left: 1px;
 }
-.navbar .links:hover::after {
+.navbar .nav-menu .nav-item:hover::after {
   width: 100%;
+}
+.navbar .hamburger {
+  display: none;
+}
+.navbar .hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(230, 240, 255);
 }
 
 #particles-js {
@@ -298,6 +309,42 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .navbar .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 76px;
+    flex-direction: column;
+    background-color: hsla(0deg, 0%, 0%, 0.5);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .navbar .nav-menu .nav-item {
+    padding: 1rem 8vw;
+    font-size: 24px;
+  }
+  .navbar .nav-menu .nav-item::after {
+    display: none;
+  }
+  .navbar .nav-menu .nav-item:hover {
+    font-weight: 600;
+  }
+  .navbar .nav-menu.active {
+    right: 0;
+  }
+  .navbar .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .navbar .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .navbar .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .navbar .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
   .landing .hero {
     width: 75vw;
   }

@@ -28,47 +28,61 @@ body {
 
   .icons {
     display: flex;
-    gap: 1.5vw;
+    gap: 2vw;
+
+    i {
+      font-size: $body * 2;
+      margin: 0;
+      padding: 0;
+      color: $primary;
+      transition: transform 100ms ease-in, color 100ms ease-in;
+
+      &:hover {
+        transform: translateY(-2px) scale(1.05);
+        color: $decoration;
+      }
+    }
   }
 
-  .shortcuts {
+  .nav-menu {
     display: flex;
     gap: 3vw;
-  }
 
-  i {
-    font-size: $body * 2;
-    margin: 0;
-    padding: 0;
-    color: $primary;
-    transition: transform 100ms ease-in, color 100ms ease-in;
+    .nav-item {
+      text-decoration: none;
+      position: relative;
+      color: $primary;
+      font-weight: 300;
+      font-size: $body;
 
-    &:hover {
-      transform: translateY(-2px) scale(1.05);
-      color: $decoration;
+      &::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        transition: width 200ms ease-in;
+        background-color: $primary;
+        position: absolute;
+        top: 27px;
+        left: 1px;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
     }
   }
 
-  .links {
-    text-decoration: none;
-    position: relative;
-    color: $primary;
-    font-weight: 300;
-    font-size: $body;
+  .hamburger {
+    display: none;
 
-    &::after {
-      content: "";
-      width: 0%;
-      height: 2px;
-      transition: width 200ms ease-in;
+    .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
       background-color: $primary;
-      position: absolute;
-      top: 27px;
-      left: 1px;
-    }
-
-    &:hover::after {
-      width: 100%;
     }
   }
 }
@@ -365,6 +379,53 @@ body {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    .nav-menu {
+      position: fixed;
+      right: -100%;
+      top: 76px;
+      flex-direction: column;
+      background-color: hsla(0, 0%, 0%, 0.5);
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+
+      .nav-item {
+        padding: 1rem 8vw;
+        font-size: $subtitle;
+
+        &::after {
+          display: none;
+        }
+
+        &:hover {
+          font-weight: 600;
+        }
+      }
+    }
+
+    .nav-menu.active {
+      right: 0;
+    }
+
+    .hamburger {
+      display: block;
+      cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+
   .landing {
     .hero {
       width: 75vw;
