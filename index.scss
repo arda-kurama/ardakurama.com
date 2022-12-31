@@ -483,9 +483,9 @@ body {
           width: clamp(300px, 50vw, 400px);
         }
       }
+
       .text {
         width: 80vw;
-
         .header {
           a {
             h2 {
@@ -496,6 +496,7 @@ body {
             }
           }
         }
+
         .bullets {
           width: 51vw;
           margin: 0 auto;
@@ -512,4 +513,80 @@ body {
 }
 
 @media (max-width: 480px) {
+  #particles-js {
+    width: 95vw;
+  }
+  .landing {
+    .hero {
+      .name {
+        font-size: 4.5rem;
+      }
+
+      .title {
+        font-size: 4rem;
+      }
+
+      .typed-title {
+        font-size: $subtitle;
+      }
+    }
+  }
+
+  .row {
+    .content {
+      gap: 1vh;
+
+      i {
+        font-size: 80px;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      .section {
+        p {
+          font-size: $mobile;
+        }
+      }
+    }
+  }
+
+  .column {
+    .content {
+      .images {
+        #img1 {
+          margin: 175px 0 0 -250px;
+        }
+        img {
+          width: clamp(250px, 65vw, 300px);
+        }
+      }
+      .text {
+        .header {
+          h4 {
+            margin: 0 0 0 25vw;
+          }
+
+          a {
+            h2 {
+              font-size: 30px;
+              span {
+                display: none;
+              }
+            }
+          }
+        }
+
+        .bullets {
+          width: 250px;
+          ul {
+            li {
+              font-size: $mobile;
+            }
+          }
+        }
+      }
+    }
+  }
 }

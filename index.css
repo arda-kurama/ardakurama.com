@@ -405,4 +405,51 @@ body {
     display: block;
     margin-top: 2vw;
   }
+}
+@media (max-width: 480px) {
+  #particles-js {
+    width: 95vw;
+  }
+  .landing .hero .name {
+    font-size: 4.5rem;
+  }
+  .landing .hero .title {
+    font-size: 4rem;
+  }
+  .landing .hero .typed-title {
+    font-size: 24px;
+  }
+  .row .content {
+    gap: 1vh;
+  }
+  .row .content i {
+    font-size: 80px;
+  }
+  .row .content i:hover {
+    transform: scale(1.1);
+  }
+  .row .content .section p {
+    font-size: 20px;
+  }
+  .column .content .images #img1 {
+    margin: 175px 0 0 -250px;
+  }
+  .column .content .images img {
+    width: clamp(250px, 65vw, 300px);
+  }
+  .column .content .text .header h4 {
+    margin: 0 0 0 25vw;
+  }
+  .column .content .text .header a h2 {
+    font-size: 30px;
+  }
+  .column .content .text .header a h2 span {
+    display: none;
+  }
+  .column .content .text .bullets {
+    width: 250px;
+  }
+  .column .content .text .bullets ul li {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -464,3 +464,10 @@ div.pswp__img--placeholder,
     bottom: 8%;
   }
 }
+
+@media (max-width: 480px) {
+  .pswp__custom-caption {
+    font-size: 20px;
+    width: 300px;
+  }
+}
