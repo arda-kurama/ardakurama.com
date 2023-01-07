@@ -415,28 +415,6 @@ div.pswp__img--placeholder,
   display: none;
 }
 
-.pswp__custom-caption {
-  background: linear-gradient(145deg, rgb(82, 82, 82) 15%, #2b2d2f 80%);
-  box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
-  font-size: 24px;
-  color: rgb(255, 255, 255);
-  width: 400px;
-  padding: 2rem 1rem;
-  border-radius: 2rem;
-  position: absolute;
-  left: 80%;
-  bottom: 15%;
-  text-align: center;
-  transform: translateX(-50%);
-}
-.pswp__custom-caption a {
-  color: #fff;
-  text-decoration: underline;
-}
-.hidden-caption-content {
-  display: none;
-}
-
 .pswp__bullets-indicator {
   display: flex;
   flex-direction: row;
@@ -456,18 +434,4 @@ div.pswp__img--placeholder,
 }
 .pswp__bullet--active {
   background: rgb(100, 255, 215);
-}
-
-@media (max-width: 1900px) {
-  .pswp__custom-caption {
-    left: 50%;
-    bottom: 8%;
-  }
-}
-
-@media (max-width: 480px) {
-  .pswp__custom-caption {
-    font-size: 20px;
-    width: 300px;
-  }
 }

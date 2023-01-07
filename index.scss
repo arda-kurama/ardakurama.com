@@ -206,98 +206,85 @@ body {
     color: $primary;
   }
 
-  h4 {
-    font-size: $subtitle;
-    font-weight: 300;
-    color: $primary;
-    margin-left: 10vw;
-    text-align: left;
-  }
-
-  .content {
-    display: flex;
-    justify-content: center;
-    gap: 4vw;
-    align-items: center;
-    text-align: left;
-
-    .images {
-      display: flex;
-      flex-direction: column;
-      margin: 0.5rem;
-
-      #img1 {
-        margin: -4vw 0 0 4vw;
-      }
-
-      #inv {
-        display: none;
-      }
-
-      img {
-        width: 450px;
-        height: auto;
-        border: 5px solid $decoration;
-        border-radius: 2rem;
-      }
+  .project {
+    h4 {
+      font-size: $subtitle;
+      font-weight: 300;
+      color: $primary;
+      margin: 0 0 -1vw 12vw;
+      text-align: left;
     }
 
-    .text {
-      width: clamp(400px, 50vw, 450px);
-      margin-bottom: 0.5px + $subtitle;
-      box-shadow: inset 2px 2px 4px #000, inset -2px -2px 4px #636363;
-      background: #2b2d2f;
-      border-radius: 2rem;
-      padding: 2vw;
+    .content {
+      display: flex;
+      justify-content: center;
+      gap: 4vw;
+      align-items: center;
+      text-align: left;
 
-      .header {
-        h4 {
-          font-size: $subtitle;
-          font-weight: 300;
-          color: $primary;
-          margin: -0.5rem 0 0.5rem 5vw;
+      .images {
+        img {
+          width: 600px;
+          height: auto;
         }
+      }
 
-        a {
-          text-decoration: none;
-          border: 0;
+      .text {
+        width: clamp(400px, 50vw, 450px);
+        box-shadow: inset 2px 2px 4px #000, inset -2px -2px 4px #636363;
+        background: #2b2d2f;
+        border-radius: 2rem;
+        padding: 2vw;
+        margin-bottom: 0.5px + $subtitle;
 
-          h2 {
-            font-size: $header;
-            color: $decoration;
-            line-height: 1.5rem;
-            transition: transform 100ms ease-in, color 100ms ease-in;
-
-            &:hover {
-              transform: translateY(-1px) scale(1.01);
-              color: rgb(150, 255, 250);
-            }
+        .header {
+          h4 {
+            font-size: $subtitle;
+            font-weight: 300;
+            color: $primary;
+            margin: -0.5rem 0 0.5rem 5vw;
           }
 
-          span {
+          a {
+            text-decoration: none;
+
+            h2 {
+              font-size: $header;
+              color: $decoration;
+              line-height: 1.5rem;
+              transition: transform 100ms ease-in, color 100ms ease-in;
+
+              &:hover {
+                transform: translateY(-1px) scale(1.05);
+                color: rgb(150, 255, 250);
+              }
+            }
+
+            span {
+              font-size: $subtitle;
+              color: $secondary;
+            }
+          }
+        }
+
+        .bullets {
+          display: flex;
+          flex-direction: column;
+
+          h3 {
+            margin: 2rem 0 -0.25rem;
             font-size: $subtitle;
             color: $secondary;
           }
-        }
-      }
 
-      .bullets {
-        display: flex;
-        flex-direction: column;
-
-        h3 {
-          margin: 2rem 0 -0.25rem;
-          font-size: $subtitle;
-          color: $secondary;
-        }
-
-        ul {
-          margin-top: 0.25rem;
-          li {
-            list-style: none;
-            font-size: $body;
-            font-weight: 300;
-            color: $primary;
+          ul {
+            margin-top: 0.25rem;
+            li {
+              list-style: none;
+              font-size: $body;
+              font-weight: 300;
+              color: $primary;
+            }
           }
         }
       }
@@ -366,50 +353,35 @@ body {
   .projects {
     width: 90vw;
 
-    .content {
-      flex-direction: column;
-      gap: 1vw;
-
-      .images {
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-
-        #img1 {
-          margin: calc(350px - 20vw) 0 0 calc(-400px + 25vw);
-        }
-
-        img {
-          width: clamp(400px, 40vw, 500px);
-        }
+    .project {
+      h4 {
+        margin: 0 0 0 25vw;
       }
+      .content {
+        flex-direction: column;
 
-      .text {
-        width: clamp(600px, 60vw, 700px);
+        .text {
+          width: clamp(600px, 60vw, 700px);
 
-        .header {
-          text-align: center;
+          .header {
+            text-align: center;
 
-          h4 {
-            margin-left: 30vw;
-          }
+            h4 {
+              margin-left: 30vw;
+            }
 
-          a {
-            h2 {
-              span {
-                display: block;
-                line-height: 2.5rem;
+            a {
+              h2 {
+                span {
+                  display: block;
+                  line-height: 2.5rem;
+                }
               }
             }
           }
-        }
 
-        .bullets {
-          flex-direction: row;
-          justify-content: space-between;
-
-          h3 {
-            display: none;
+          .bullets {
+            align-items: center;
           }
         }
       }
@@ -517,39 +489,36 @@ body {
   }
 
   .projects {
-    .content {
-      .images {
-        #img1 {
-          margin: calc(350px - 30vw) 0 0 calc(-400px + 35vw);
+    .project {
+      .content {
+        .images {
+          img {
+            width: 400px;
+          }
         }
+        .text {
+          width: 80vw;
 
-        img {
-          width: clamp(300px, 50vw, 400px);
-        }
-      }
-
-      .text {
-        width: 80vw;
-
-        .header {
-          a {
-            h2 {
-              span {
-                line-height: 2rem;
-                display: inline;
+          .header {
+            width: 60vw;
+            margin: 0 auto;
+            a {
+              h2 {
+                span {
+                  line-height: 2rem;
+                  display: inline;
+                }
               }
             }
           }
-        }
 
-        .bullets {
-          width: 51vw;
-          margin: 0 auto;
-          flex-direction: column;
+          .bullets {
+            width: 60vw;
+            margin: 0 auto;
 
-          h3 {
-            display: block;
-            margin-top: 2vw;
+            h3 {
+              margin-top: 2vw;
+            }
           }
         }
       }
@@ -602,39 +571,43 @@ body {
   }
 
   .projects {
-    .content {
-      .images {
-        #img1 {
-          margin: 175px 0 0 -250px;
-        }
-
-        img {
-          width: clamp(250px, 65vw, 300px);
-        }
+    .project {
+      h4 {
+        font-size: $mobile;
       }
-      .text {
-        .header {
-          h4 {
-            margin: 0 0 0 25vw;
+      .content {
+        .images {
+          img {
+            width: 300px;
           }
+        }
+        .text {
+          .header {
+            width: 250px;
 
-          a {
-            h2 {
-              font-size: 30px;
+            h4 {
+              margin: 0 0 0 25vw;
+              font-size: $mobile;
+            }
 
-              span {
-                display: none;
+            a {
+              h2 {
+                font-size: 30px;
+
+                span {
+                  display: none;
+                }
               }
             }
           }
-        }
 
-        .bullets {
-          width: 250px;
+          .bullets {
+            width: 250px;
 
-          ul {
-            li {
-              font-size: $mobile;
+            ul {
+              li {
+                font-size: $mobile;
+              }
             }
           }
         }
