@@ -32,8 +32,6 @@ body {
 
     i {
       font-size: $body * 2;
-      margin: 0;
-      padding: 0;
       color: $primary;
       transition: transform 100ms ease-in, color 100ms ease-in;
 
@@ -124,7 +122,7 @@ body {
   }
 }
 
-.row {
+.skills {
   background: linear-gradient(
     145deg,
     rgba(115, 115, 115, 0.15) 15%,
@@ -146,52 +144,50 @@ body {
   .subtitle {
     font-size: $subtitle;
     color: $secondary;
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
+
+    a {
+      color: $decoration;
+      text-decoration: underline;
+    }
   }
 
   .content {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    text-align: center;
+    padding: 0 4vw;
 
-    i {
-      font-size: 100px;
-      color: $decoration;
-      transition: transform 200ms ease-in, color 200ms ease-in;
-
-      &:hover {
-        transform: translateY(-7px) scale(1.1);
-        color: rgb(150, 255, 250);
-      }
+    span {
+      display: inline-block;
+      margin: 0 0.25vw;
     }
 
-    .section {
-      display: flex;
-      flex-direction: column;
-      gap: 1vh;
-      padding: 2.5vw;
-      justify-content: center;
-      box-shadow: inset 2px 2px 4px #000, inset -2px -2px 4px #636363;
-      background: #2b2d2f;
-      border-radius: 2rem;
+    .proficient {
+      font-size: 5rem;
+    }
 
-      h3 {
-        font-size: $header;
-        color: $primary;
-      }
+    .competant {
+      font-size: 4rem;
+    }
 
-      p {
-        list-style: none;
-        font-size: $body;
-        font-weight: 300;
-        color: $secondary;
-        line-height: 1rem;
-      }
+    .novice {
+      font-size: 3rem;
+    }
+
+    #language {
+      color: rgb(150, 255, 250);
+    }
+
+    #preprocessor {
+      color: $decoration;
+    }
+
+    #software {
+      color: rgb(125, 207, 180);
     }
   }
 }
 
-.column {
+.projects {
   background: linear-gradient(
     145deg,
     rgba(115, 115, 115, 0.15) 15%,
@@ -309,6 +305,49 @@ body {
   }
 }
 
+.contact {
+  background: linear-gradient(
+    145deg,
+    rgba(115, 115, 115, 0.15) 15%,
+    #2b2d2f 80%
+  );
+  border-radius: 2rem;
+  margin: 2vw auto;
+  width: clamp(1000px, 80vw, 1400px);
+  padding: 2vw;
+  text-align: center;
+  box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
+
+  .title {
+    font-size: $title;
+    font-weight: 700;
+    color: $primary;
+  }
+
+  .subtitle {
+    font-size: $subtitle;
+    color: $secondary;
+    margin-bottom: 2vw;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    gap: 8vw;
+
+    i {
+      font-size: 100px;
+      color: $decoration;
+      transition: transform 200ms ease-in, color 200ms ease-in;
+
+      &:hover {
+        transform: translateY(-7px) scale(1.1);
+        color: rgb(150, 255, 250);
+      }
+    }
+  }
+}
+
 @media (max-width: 1280px) {
   #particles-js {
     width: 97vw;
@@ -320,18 +359,11 @@ body {
     }
   }
 
-  .row {
+  .skills {
     width: 90vw;
-    padding: 0 0 2vw 0;
-
-    .content {
-      .section {
-        padding: 2.5vw 1.5vw;
-      }
-    }
   }
 
-  .column {
+  .projects {
     width: 90vw;
 
     .content {
@@ -382,6 +414,10 @@ body {
         }
       }
     }
+  }
+
+  .contact {
+    width: 90vw;
   }
 }
 
@@ -460,26 +496,27 @@ body {
       }
     }
   }
-  .row {
-    padding: 2vw 0 6vw;
 
-    .content {
-      flex-direction: column;
-      align-items: center;
-      gap: 2.5vh;
-
-      .section {
-        width: 80vw;
-        padding: 4vw;
-      }
+  .skills {
+    .subtitle {
+      font-size: $mobile;
     }
+    .content {
+      .proficient {
+        font-size: 4rem;
+      }
 
-    #immune {
-      flex-direction: row;
+      .competant {
+        font-size: 3rem;
+      }
+
+      .novice {
+        font-size: 2rem;
+      }
     }
   }
 
-  .column {
+  .projects {
     .content {
       .images {
         #img1 {
@@ -518,6 +555,13 @@ body {
       }
     }
   }
+
+  .contact {
+    .content {
+      justify-content: space-evenly;
+      gap: 0;
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -541,27 +585,23 @@ body {
     }
   }
 
-  .row {
+  .skills {
     .content {
-      gap: 1vh;
-
-      i {
-        font-size: 80px;
-
-        &:hover {
-          transform: scale(1.1);
-        }
+      .proficient {
+        font-size: 3rem;
       }
 
-      .section {
-        p {
-          font-size: $mobile;
-        }
+      .competant {
+        font-size: 2rem;
+      }
+
+      .novice {
+        font-size: 2rem;
       }
     }
   }
 
-  .column {
+  .projects {
     .content {
       .images {
         #img1 {
@@ -597,6 +637,21 @@ body {
               font-size: $mobile;
             }
           }
+        }
+      }
+    }
+  }
+
+  .contact {
+    .subtitle {
+      font-size: $mobile;
+    }
+    .content {
+      i {
+        font-size: 80px;
+
+        &:hover {
+          transform: scale(1.1);
         }
       }
     }

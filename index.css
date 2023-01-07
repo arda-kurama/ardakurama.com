@@ -29,8 +29,6 @@ body {
 }
 .navbar .icons i {
   font-size: 44px;
-  margin: 0;
-  padding: 0;
   color: rgb(230, 240, 255);
   transition: transform 100ms ease-in, color 100ms ease-in;
 }
@@ -107,7 +105,7 @@ body {
   font-size: 36px;
 }
 
-.row {
+.skills {
   background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, #2b2d2f 80%);
   border-radius: 2rem;
   margin: 2vw auto;
@@ -116,53 +114,48 @@ body {
   text-align: center;
   box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
 }
-.row .title {
+.skills .title {
   font-size: 4rem;
   font-weight: 700;
   color: rgb(230, 240, 255);
 }
-.row .subtitle {
+.skills .subtitle {
   font-size: 24px;
   color: rgb(135, 150, 175);
-  margin-bottom: 2vw;
+  margin-bottom: 1vw;
 }
-.row .content {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-}
-.row .content i {
-  font-size: 100px;
+.skills .subtitle a {
   color: rgb(100, 255, 215);
-  transition: transform 200ms ease-in, color 200ms ease-in;
+  text-decoration: underline;
 }
-.row .content i:hover {
-  transform: translateY(-7px) scale(1.1);
+.skills .content {
+  text-align: center;
+  padding: 0 4vw;
+}
+.skills .content span {
+  display: inline-block;
+  margin: 0 0.25vw;
+}
+.skills .content .proficient {
+  font-size: 5rem;
+}
+.skills .content .competant {
+  font-size: 4rem;
+}
+.skills .content .novice {
+  font-size: 3rem;
+}
+.skills .content #language {
   color: rgb(150, 255, 250);
 }
-.row .content .section {
-  display: flex;
-  flex-direction: column;
-  gap: 1vh;
-  padding: 2.5vw;
-  justify-content: center;
-  box-shadow: inset 2px 2px 4px #000, inset -2px -2px 4px #636363;
-  background: #2b2d2f;
-  border-radius: 2rem;
+.skills .content #preprocessor {
+  color: rgb(100, 255, 215);
 }
-.row .content .section h3 {
-  font-size: 36px;
-  color: rgb(230, 240, 255);
-}
-.row .content .section p {
-  list-style: none;
-  font-size: 22px;
-  font-weight: 300;
-  color: rgb(135, 150, 175);
-  line-height: 1rem;
+.skills .content #software {
+  color: rgb(125, 207, 180);
 }
 
-.column {
+.projects {
   background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, #2b2d2f 80%);
   border-radius: 2rem;
   margin: 2vw auto;
@@ -171,43 +164,43 @@ body {
   text-align: center;
   box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
 }
-.column .title {
+.projects .title {
   font-size: 4rem;
   font-weight: 700;
   color: rgb(230, 240, 255);
 }
-.column h4 {
+.projects h4 {
   font-size: 24px;
   font-weight: 300;
   color: rgb(230, 240, 255);
   margin-left: 10vw;
   text-align: left;
 }
-.column .content {
+.projects .content {
   display: flex;
   justify-content: center;
   gap: 4vw;
   align-items: center;
   text-align: left;
 }
-.column .content .images {
+.projects .content .images {
   display: flex;
   flex-direction: column;
   margin: 0.5rem;
 }
-.column .content .images #img1 {
+.projects .content .images #img1 {
   margin: -4vw 0 0 4vw;
 }
-.column .content .images #inv {
+.projects .content .images #inv {
   display: none;
 }
-.column .content .images img {
+.projects .content .images img {
   width: 450px;
   height: auto;
   border: 5px solid rgb(100, 255, 215);
   border-radius: 2rem;
 }
-.column .content .text {
+.projects .content .text {
   width: clamp(400px, 50vw, 450px);
   margin-bottom: 24.5px;
   box-shadow: inset 2px 2px 4px #000, inset -2px -2px 4px #636363;
@@ -215,47 +208,81 @@ body {
   border-radius: 2rem;
   padding: 2vw;
 }
-.column .content .text .header h4 {
+.projects .content .text .header h4 {
   font-size: 24px;
   font-weight: 300;
   color: rgb(230, 240, 255);
   margin: -0.5rem 0 0.5rem 5vw;
 }
-.column .content .text .header a {
+.projects .content .text .header a {
   text-decoration: none;
   border: 0;
 }
-.column .content .text .header a h2 {
+.projects .content .text .header a h2 {
   font-size: 36px;
   color: rgb(100, 255, 215);
   line-height: 1.5rem;
   transition: transform 100ms ease-in, color 100ms ease-in;
 }
-.column .content .text .header a h2:hover {
+.projects .content .text .header a h2:hover {
   transform: translateY(-1px) scale(1.01);
   color: rgb(150, 255, 250);
 }
-.column .content .text .header a span {
+.projects .content .text .header a span {
   font-size: 24px;
   color: rgb(135, 150, 175);
 }
-.column .content .text .bullets {
+.projects .content .text .bullets {
   display: flex;
   flex-direction: column;
 }
-.column .content .text .bullets h3 {
+.projects .content .text .bullets h3 {
   margin: 2rem 0 -0.25rem;
   font-size: 24px;
   color: rgb(135, 150, 175);
 }
-.column .content .text .bullets ul {
+.projects .content .text .bullets ul {
   margin-top: 0.25rem;
 }
-.column .content .text .bullets ul li {
+.projects .content .text .bullets ul li {
   list-style: none;
   font-size: 22px;
   font-weight: 300;
   color: rgb(230, 240, 255);
+}
+
+.contact {
+  background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, #2b2d2f 80%);
+  border-radius: 2rem;
+  margin: 2vw auto;
+  width: clamp(1000px, 80vw, 1400px);
+  padding: 2vw;
+  text-align: center;
+  box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
+}
+.contact .title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: rgb(230, 240, 255);
+}
+.contact .subtitle {
+  font-size: 24px;
+  color: rgb(135, 150, 175);
+  margin-bottom: 2vw;
+}
+.contact .content {
+  display: flex;
+  justify-content: center;
+  gap: 8vw;
+}
+.contact .content i {
+  font-size: 100px;
+  color: rgb(100, 255, 215);
+  transition: transform 200ms ease-in, color 200ms ease-in;
+}
+.contact .content i:hover {
+  transform: translateY(-7px) scale(1.1);
+  color: rgb(150, 255, 250);
 }
 
 @media (max-width: 1280px) {
@@ -265,50 +292,49 @@ body {
   .landing .hero {
     width: clamp(600px, 80vw, 710px);
   }
-  .row {
-    width: 90vw;
-    padding: 0 0 2vw 0;
-  }
-  .row .content .section {
-    padding: 2.5vw 1.5vw;
-  }
-  .column {
+  .skills {
     width: 90vw;
   }
-  .column .content {
+  .projects {
+    width: 90vw;
+  }
+  .projects .content {
     flex-direction: column;
     gap: 1vw;
   }
-  .column .content .images {
+  .projects .content .images {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
   }
-  .column .content .images #img1 {
+  .projects .content .images #img1 {
     margin: calc(350px - 20vw) 0 0 calc(-400px + 25vw);
   }
-  .column .content .images img {
+  .projects .content .images img {
     width: clamp(400px, 40vw, 500px);
   }
-  .column .content .text {
+  .projects .content .text {
     width: clamp(600px, 60vw, 700px);
   }
-  .column .content .text .header {
+  .projects .content .text .header {
     text-align: center;
   }
-  .column .content .text .header h4 {
+  .projects .content .text .header h4 {
     margin-left: 30vw;
   }
-  .column .content .text .header a h2 span {
+  .projects .content .text .header a h2 span {
     display: block;
     line-height: 2.5rem;
   }
-  .column .content .text .bullets {
+  .projects .content .text .bullets {
     flex-direction: row;
     justify-content: space-between;
   }
-  .column .content .text .bullets h3 {
+  .projects .content .text .bullets h3 {
     display: none;
+  }
+  .contact {
+    width: 90vw;
   }
 }
 @media (max-width: 768px) {
@@ -368,42 +394,43 @@ body {
   .landing .hero .typed-title {
     font-size: 32px;
   }
-  .row {
-    padding: 2vw 0 6vw;
+  .skills .subtitle {
+    font-size: 20px;
   }
-  .row .content {
-    flex-direction: column;
-    align-items: center;
-    gap: 2.5vh;
+  .skills .content .proficient {
+    font-size: 4rem;
   }
-  .row .content .section {
-    width: 80vw;
-    padding: 4vw;
+  .skills .content .competant {
+    font-size: 3rem;
   }
-  .row #immune {
-    flex-direction: row;
+  .skills .content .novice {
+    font-size: 2rem;
   }
-  .column .content .images #img1 {
+  .projects .content .images #img1 {
     margin: calc(350px - 30vw) 0 0 calc(-400px + 35vw);
   }
-  .column .content .images img {
+  .projects .content .images img {
     width: clamp(300px, 50vw, 400px);
   }
-  .column .content .text {
+  .projects .content .text {
     width: 80vw;
   }
-  .column .content .text .header a h2 span {
+  .projects .content .text .header a h2 span {
     line-height: 2rem;
     display: inline;
   }
-  .column .content .text .bullets {
+  .projects .content .text .bullets {
     width: 51vw;
     margin: 0 auto;
     flex-direction: column;
   }
-  .column .content .text .bullets h3 {
+  .projects .content .text .bullets h3 {
     display: block;
     margin-top: 2vw;
+  }
+  .contact .content {
+    justify-content: space-evenly;
+    gap: 0;
   }
 }
 @media (max-width: 480px) {
@@ -419,37 +446,43 @@ body {
   .landing .hero .typed-title {
     font-size: 24px;
   }
-  .row .content {
-    gap: 1vh;
+  .skills .content .proficient {
+    font-size: 3rem;
   }
-  .row .content i {
-    font-size: 80px;
+  .skills .content .competant {
+    font-size: 2rem;
   }
-  .row .content i:hover {
-    transform: scale(1.1);
+  .skills .content .novice {
+    font-size: 2rem;
   }
-  .row .content .section p {
-    font-size: 20px;
-  }
-  .column .content .images #img1 {
+  .projects .content .images #img1 {
     margin: 175px 0 0 -250px;
   }
-  .column .content .images img {
+  .projects .content .images img {
     width: clamp(250px, 65vw, 300px);
   }
-  .column .content .text .header h4 {
+  .projects .content .text .header h4 {
     margin: 0 0 0 25vw;
   }
-  .column .content .text .header a h2 {
+  .projects .content .text .header a h2 {
     font-size: 30px;
   }
-  .column .content .text .header a h2 span {
+  .projects .content .text .header a h2 span {
     display: none;
   }
-  .column .content .text .bullets {
+  .projects .content .text .bullets {
     width: 250px;
   }
-  .column .content .text .bullets ul li {
+  .projects .content .text .bullets ul li {
     font-size: 20px;
+  }
+  .contact .subtitle {
+    font-size: 20px;
+  }
+  .contact .content i {
+    font-size: 80px;
+  }
+  .contact .content i:hover {
+    transform: scale(1.1);
   }
 }/*# sourceMappingURL=index.css.map */
