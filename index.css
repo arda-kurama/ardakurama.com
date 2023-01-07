@@ -419,13 +419,13 @@ body {
     font-size: 24px;
   }
   .skills .content .proficient {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .skills .content .competant {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .skills .content .novice {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .projects .project h4 {
     font-size: 20px;
