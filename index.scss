@@ -155,6 +155,8 @@ body {
   .content {
     text-align: center;
     padding: 0 4vw;
+    color: $primary;
+    font-size: 4rem;
 
     span {
       display: inline-block;
@@ -223,9 +225,11 @@ body {
       text-align: left;
 
       .images {
+        display: flex;
+
         img {
-          width: 600px;
-          height: auto;
+          width: auto;
+          height: 20vw;
         }
       }
 
@@ -360,6 +364,12 @@ body {
       .content {
         flex-direction: column;
 
+        .images {
+          img {
+            height: clamp(250px, 30vw, 350px);
+          }
+        }
+
         .text {
           width: clamp(600px, 60vw, 700px);
 
@@ -394,10 +404,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  #particles-js {
-    width: 96vw;
-  }
-
   .navbar {
     .icons {
       gap: 1rem;
@@ -449,7 +455,14 @@ body {
     }
   }
 
+  #particles-js {
+    width: 96vw;
+    display: none;
+  }
+
   .landing {
+    margin: 0;
+
     .hero {
       text-align: center;
       width: 76vw;
@@ -474,6 +487,8 @@ body {
       font-size: $mobile;
     }
     .content {
+      font-size: 3rem;
+
       .proficient {
         font-size: 4rem;
       }
@@ -493,9 +508,10 @@ body {
       .content {
         .images {
           img {
-            width: 400px;
+            height: clamp(100px, 35vw, 250px);
           }
         }
+
         .text {
           width: 80vw;
 
@@ -576,11 +592,6 @@ body {
         font-size: $mobile;
       }
       .content {
-        .images {
-          img {
-            width: 300px;
-          }
-        }
         .text {
           .header {
             width: 250px;

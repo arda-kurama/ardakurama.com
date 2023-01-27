@@ -1,2 +1,3 @@
 # ardakurama.com
- personal website
+
+personal portfolio website

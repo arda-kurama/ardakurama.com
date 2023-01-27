@@ -131,6 +131,8 @@ body {
 .skills .content {
   text-align: center;
   padding: 0 4vw;
+  color: rgb(230, 240, 255);
+  font-size: 4rem;
 }
 .skills .content span {
   display: inline-block;
@@ -183,9 +185,12 @@ body {
   align-items: center;
   text-align: left;
 }
+.projects .project .content .images {
+  display: flex;
+}
 .projects .project .content .images img {
-  width: 600px;
-  height: auto;
+  width: auto;
+  height: 20vw;
 }
 .projects .project .content .text {
   width: clamp(400px, 50vw, 450px);
@@ -290,6 +295,9 @@ body {
   .projects .project .content {
     flex-direction: column;
   }
+  .projects .project .content .images img {
+    height: clamp(250px, 30vw, 350px);
+  }
   .projects .project .content .text {
     width: clamp(600px, 60vw, 700px);
   }
@@ -311,9 +319,6 @@ body {
   }
 }
 @media (max-width: 768px) {
-  #particles-js {
-    width: 96vw;
-  }
   .navbar .icons {
     gap: 1rem;
   }
@@ -353,6 +358,13 @@ body {
   .navbar .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+  #particles-js {
+    width: 96vw;
+    display: none;
+  }
+  .landing {
+    margin: 0;
+  }
   .landing .hero {
     text-align: center;
     width: 76vw;
@@ -370,6 +382,9 @@ body {
   .skills .subtitle {
     font-size: 20px;
   }
+  .skills .content {
+    font-size: 3rem;
+  }
   .skills .content .proficient {
     font-size: 4rem;
   }
@@ -380,7 +395,7 @@ body {
     font-size: 2rem;
   }
   .projects .project .content .images img {
-    width: 400px;
+    height: clamp(100px, 35vw, 250px);
   }
   .projects .project .content .text {
     width: 80vw;
@@ -429,9 +444,6 @@ body {
   }
   .projects .project h4 {
     font-size: 20px;
-  }
-  .projects .project .content .images img {
-    width: 300px;
   }
   .projects .project .content .text .header {
     width: 250px;
