@@ -127,33 +127,29 @@ body {
 .skills .subtitle a {
   color: rgb(100, 255, 215);
   text-decoration: underline;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+.skills .subtitle a:hover {
+  background-color: rgb(125, 207, 180);
+  color: rgb(230, 240, 255);
 }
 .skills .content {
   text-align: center;
   padding: 0 4vw;
   color: rgb(230, 240, 255);
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 .skills .content span {
   display: inline-block;
   margin: 0 0.25vw;
 }
-.skills .content .proficient {
-  font-size: 5rem;
-}
-.skills .content .competant {
-  font-size: 4rem;
-}
-.skills .content .novice {
-  font-size: 3rem;
-}
-.skills .content #language {
+.skills .content .language {
   color: rgb(150, 255, 250);
 }
-.skills .content #preprocessor {
+.skills .content .application {
   color: rgb(100, 255, 215);
 }
-.skills .content #software {
+.skills .content .software {
   color: rgb(125, 207, 180);
 }
 
@@ -175,13 +171,13 @@ body {
   font-size: 24px;
   font-weight: 300;
   color: rgb(230, 240, 255);
-  margin: 0 0 -1vw 12vw;
+  margin: 0 0 0.25vw 8vw;
   text-align: left;
 }
 .projects .project .content {
   display: flex;
   justify-content: center;
-  gap: 4vw;
+  gap: 2vw;
   align-items: center;
   text-align: left;
 }
@@ -223,19 +219,10 @@ body {
   font-size: 24px;
   color: rgb(135, 150, 175);
 }
-.projects .project .content .text .bullets {
-  display: flex;
-  flex-direction: column;
-}
-.projects .project .content .text .bullets h3 {
-  margin: 2rem 0 -0.25rem;
-  font-size: 24px;
-  color: rgb(135, 150, 175);
-}
-.projects .project .content .text .bullets ul {
+.projects .project .content .text ul {
   margin-top: 0.25rem;
 }
-.projects .project .content .text .bullets ul li {
+.projects .project .content .text ul li {
   list-style: none;
   font-size: 22px;
   font-weight: 300;
@@ -276,6 +263,12 @@ body {
   color: rgb(150, 255, 250);
 }
 
+.footer {
+  text-align: center;
+  color: rgb(135, 150, 175);
+  margin: 0 0 1rem;
+}
+
 @media (max-width: 1280px) {
   #particles-js {
     width: 97vw;
@@ -311,8 +304,9 @@ body {
     display: block;
     line-height: 2.5rem;
   }
-  .projects .project .content .text .bullets {
-    align-items: center;
+  .projects .project .content .text ul {
+    margin: 0 auto;
+    width: 300px;
   }
   .contact {
     width: 90vw;
@@ -385,15 +379,6 @@ body {
   .skills .content {
     font-size: 3rem;
   }
-  .skills .content .proficient {
-    font-size: 4rem;
-  }
-  .skills .content .competant {
-    font-size: 3rem;
-  }
-  .skills .content .novice {
-    font-size: 2rem;
-  }
   .projects .project .content .images img {
     height: clamp(100px, 35vw, 250px);
   }
@@ -408,12 +393,8 @@ body {
     line-height: 2rem;
     display: inline;
   }
-  .projects .project .content .text .bullets {
-    width: 60vw;
-    margin: 0 auto;
-  }
-  .projects .project .content .text .bullets h3 {
-    margin-top: 2vw;
+  .projects .project .content .text ul {
+    margin: 1vw auto;
   }
   .contact .content {
     justify-content: space-evenly;
@@ -458,10 +439,11 @@ body {
   .projects .project .content .text .header a h2 span {
     display: none;
   }
-  .projects .project .content .text .bullets {
+  .projects .project .content .text ul {
     width: 250px;
+    margin: 2vw auto;
   }
-  .projects .project .content .text .bullets ul li {
+  .projects .project .content .text ul li {
     font-size: 20px;
   }
   .contact .subtitle {

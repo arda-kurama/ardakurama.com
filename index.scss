@@ -149,6 +149,12 @@ body {
     a {
       color: $decoration;
       text-decoration: underline;
+      transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+      &:hover {
+        background-color: rgb(125, 207, 180);
+        color: $primary;
+      }
     }
   }
 
@@ -156,34 +162,22 @@ body {
     text-align: center;
     padding: 0 4vw;
     color: $primary;
-    font-size: 4rem;
+    font-size: 4.5rem;
 
     span {
       display: inline-block;
       margin: 0 0.25vw;
     }
 
-    .proficient {
-      font-size: 5rem;
-    }
-
-    .competant {
-      font-size: 4rem;
-    }
-
-    .novice {
-      font-size: 3rem;
-    }
-
-    #language {
+    .language {
       color: rgb(150, 255, 250);
     }
 
-    #preprocessor {
+    .application {
       color: $decoration;
     }
 
-    #software {
+    .software {
       color: rgb(125, 207, 180);
     }
   }
@@ -213,14 +207,14 @@ body {
       font-size: $subtitle;
       font-weight: 300;
       color: $primary;
-      margin: 0 0 -1vw 12vw;
+      margin: 0 0 0.25vw 8vw;
       text-align: left;
     }
 
     .content {
       display: flex;
       justify-content: center;
-      gap: 4vw;
+      gap: 2vw;
       align-items: center;
       text-align: left;
 
@@ -271,24 +265,13 @@ body {
           }
         }
 
-        .bullets {
-          display: flex;
-          flex-direction: column;
-
-          h3 {
-            margin: 2rem 0 -0.25rem;
-            font-size: $subtitle;
-            color: $secondary;
-          }
-
-          ul {
-            margin-top: 0.25rem;
-            li {
-              list-style: none;
-              font-size: $body;
-              font-weight: 300;
-              color: $primary;
-            }
+        ul {
+          margin-top: 0.25rem;
+          li {
+            list-style: none;
+            font-size: $body;
+            font-weight: 300;
+            color: $primary;
           }
         }
       }
@@ -337,6 +320,12 @@ body {
       }
     }
   }
+}
+
+.footer {
+  text-align: center;
+  color: $secondary;
+  margin: 0 0 1rem;
 }
 
 @media (max-width: 1280px) {
@@ -390,8 +379,9 @@ body {
             }
           }
 
-          .bullets {
-            align-items: center;
+          ul {
+            margin: 0 auto;
+            width: 300px;
           }
         }
       }
@@ -486,20 +476,9 @@ body {
     .subtitle {
       font-size: $mobile;
     }
+
     .content {
       font-size: 3rem;
-
-      .proficient {
-        font-size: 4rem;
-      }
-
-      .competant {
-        font-size: 3rem;
-      }
-
-      .novice {
-        font-size: 2rem;
-      }
     }
   }
 
@@ -528,13 +507,8 @@ body {
             }
           }
 
-          .bullets {
-            width: 60vw;
-            margin: 0 auto;
-
-            h3 {
-              margin-top: 2vw;
-            }
+          ul {
+            margin: 1vw auto;
           }
         }
       }
@@ -612,13 +586,11 @@ body {
             }
           }
 
-          .bullets {
+          ul {
             width: 250px;
-
-            ul {
-              li {
-                font-size: $mobile;
-              }
+            margin: 2vw auto;
+            li {
+              font-size: $mobile;
             }
           }
         }
