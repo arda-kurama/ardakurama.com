@@ -93,7 +93,7 @@ body {
 
 .landing {
   height: 80vh;
-  margin-top: -84vh;
+  margin-top: -83vh;
 
   .hero {
     font-weight: 700;
@@ -325,7 +325,7 @@ body {
 .footer {
   text-align: center;
   color: $secondary;
-  margin: 0 0 1rem;
+  margin: 0 0 1vw;
 }
 
 @media (max-width: 1280px) {
@@ -334,6 +334,8 @@ body {
   }
 
   .landing {
+    margin-top: -81vh;
+
     .hero {
       width: clamp(600px, 80vw, 710px);
     }
@@ -447,11 +449,10 @@ body {
 
   #particles-js {
     width: 96vw;
-    display: none;
   }
 
   .landing {
-    margin: 0;
+    margin-top: -80vh;
 
     .hero {
       text-align: center;
@@ -473,6 +474,8 @@ body {
   }
 
   .skills {
+    margin-bottom: 4vw;
+
     .subtitle {
       font-size: $mobile;
     }
@@ -483,6 +486,8 @@ body {
   }
 
   .projects {
+    margin-bottom: 4vw;
+
     .project {
       .content {
         .images {
@@ -516,6 +521,8 @@ body {
   }
 
   .contact {
+    margin-bottom: 4vw;
+
     .content {
       justify-content: space-evenly;
       gap: 0;

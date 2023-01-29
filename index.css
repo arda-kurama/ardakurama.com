@@ -80,7 +80,7 @@ body {
 
 .landing {
   height: 80vh;
-  margin-top: -84vh;
+  margin-top: -83vh;
 }
 .landing .hero {
   font-weight: 700;
@@ -266,12 +266,15 @@ body {
 .footer {
   text-align: center;
   color: rgb(135, 150, 175);
-  margin: 0 0 1rem;
+  margin: 0 0 1vw;
 }
 
 @media (max-width: 1280px) {
   #particles-js {
     width: 97vw;
+  }
+  .landing {
+    margin-top: -81vh;
   }
   .landing .hero {
     width: clamp(600px, 80vw, 710px);
@@ -354,10 +357,9 @@ body {
   }
   #particles-js {
     width: 96vw;
-    display: none;
   }
   .landing {
-    margin: 0;
+    margin-top: -80vh;
   }
   .landing .hero {
     text-align: center;
@@ -373,11 +375,17 @@ body {
   .landing .hero .typed-title {
     font-size: 32px;
   }
+  .skills {
+    margin-bottom: 4vw;
+  }
   .skills .subtitle {
     font-size: 20px;
   }
   .skills .content {
     font-size: 3rem;
+  }
+  .projects {
+    margin-bottom: 4vw;
   }
   .projects .project .content .images img {
     height: clamp(100px, 35vw, 250px);
@@ -395,6 +403,9 @@ body {
   }
   .projects .project .content .text ul {
     margin: 1vw auto;
+  }
+  .contact {
+    margin-bottom: 4vw;
   }
   .contact .content {
     justify-content: space-evenly;
