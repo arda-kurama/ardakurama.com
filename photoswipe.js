@@ -1,8 +1,8 @@
-import PhotoSwipeLightbox from "/dist/photoswipe-lightbox.esm.js";
+import PhotoSwipeLightbox from "/photoswipe/photoswipe-lightbox.esm.js";
 const options = {
   gallery: "#my-gallery",
   children: "a",
-  pswpModule: () => import("/dist/photoswipe.esm.js"),
+  pswpModule: () => import("/photoswipe/photoswipe.esm.js"),
 
   initialZoomLevel: "fit",
   secondaryZoomLevel: 1.5,
