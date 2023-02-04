@@ -1,4 +1,14 @@
-@import "variables";
+$aliceblue: rgb(240, 248, 255);
+$lightslategray: rgb(119, 136, 153);
+$bastille: rgb(45, 45, 50);
+$aquamarine: rgb(128, 255, 212);
+$cadetblue: rgb(95, 158, 160);
+
+$title: 72px;
+$header: 36px;
+$subtitle: 24px;
+$body: 22px;
+$mobile: 20px;
 
 * {
   margin: 0;
@@ -13,7 +23,7 @@ html {
 }
 
 body {
-  background-color: $background;
+  background-color: $bastille;
 }
 
 .navbar {
@@ -32,12 +42,12 @@ body {
 
     i {
       font-size: $body * 2;
-      color: $primary;
+      color: $aliceblue;
       transition: transform 100ms ease-in, color 100ms ease-in;
 
       &:hover {
         transform: translateY(-2px) scale(1.05);
-        color: $decoration;
+        color: $aquamarine;
       }
     }
   }
@@ -49,7 +59,7 @@ body {
     .nav-item {
       text-decoration: none;
       position: relative;
-      color: $primary;
+      color: $aliceblue;
       font-weight: 300;
       font-size: $body;
 
@@ -58,7 +68,7 @@ body {
         width: 0%;
         height: 2px;
         transition: width 200ms ease-in;
-        background-color: $primary;
+        background-color: $aliceblue;
         position: absolute;
         top: 27px;
         left: 1px;
@@ -80,7 +90,7 @@ body {
       margin: 5px auto;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
-      background-color: $primary;
+      background-color: $aliceblue;
     }
   }
 }
@@ -97,15 +107,15 @@ body {
 
   .hero {
     font-weight: 700;
-    color: $primary;
+    color: $aliceblue;
     width: 1000px;
     text-align: left;
     margin: 0 auto;
 
     .name {
-      color: $decoration;
+      color: $aquamarine;
       font-size: clamp(6rem, 12vw, 7rem);
-      text-shadow: 0.25rem 0.25rem 0.25rem rgba(75, 150, 150, 0.8);
+      text-shadow: 0.35rem 0.35rem 0.35rem $cadetblue;
       display: inline-block;
     }
 
@@ -126,34 +136,34 @@ body {
   background: linear-gradient(
     145deg,
     rgba(115, 115, 115, 0.15) 15%,
-    #2b2d2f 80%
+    rgb(43, 45, 47) 80%
   );
   border-radius: 2rem;
   margin: 2vw auto;
   width: clamp(1000px, 80vw, 1400px);
   padding: 2vw;
   text-align: center;
-  box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
+  box-shadow: 5px 5px 4px rgb(22, 23, 24), -5px -5px 4px rgb(64, 67, 70);
 
   .title {
     font-size: $title;
     font-weight: 700;
-    color: $primary;
+    color: $aliceblue;
   }
 
   .subtitle {
     font-size: $subtitle;
-    color: $secondary;
+    color: $lightslategray;
     margin-bottom: 1vw;
 
     a {
-      color: $decoration;
+      color: $aquamarine;
       text-decoration: underline;
       transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
       &:hover {
         background-color: rgb(125, 207, 180);
-        color: $primary;
+        color: $aliceblue;
       }
     }
   }
@@ -161,7 +171,7 @@ body {
   .content {
     text-align: center;
     padding: 0 4vw;
-    color: $primary;
+    color: $aliceblue;
     font-size: 4.5rem;
 
     span {
@@ -174,7 +184,7 @@ body {
     }
 
     .application {
-      color: $decoration;
+      color: $aquamarine;
     }
 
     .software {
@@ -199,14 +209,14 @@ body {
   .title {
     font-size: $title;
     font-weight: 700;
-    color: $primary;
+    color: $aliceblue;
   }
 
   .project {
     h4 {
       font-size: $subtitle;
       font-weight: 300;
-      color: $primary;
+      color: $aliceblue;
       margin: 0 0 0.25vw 8vw;
       text-align: left;
     }
@@ -239,7 +249,7 @@ body {
           h4 {
             font-size: $subtitle;
             font-weight: 300;
-            color: $primary;
+            color: $aliceblue;
             margin: -0.5rem 0 0.5rem 5vw;
           }
 
@@ -248,7 +258,7 @@ body {
 
             h2 {
               font-size: $header;
-              color: $decoration;
+              color: $aquamarine;
               line-height: 1.5rem;
               transition: transform 100ms ease-in, color 100ms ease-in;
 
@@ -260,7 +270,7 @@ body {
 
             span {
               font-size: $subtitle;
-              color: $secondary;
+              color: $lightslategray;
             }
           }
         }
@@ -271,7 +281,7 @@ body {
             list-style: none;
             font-size: $body;
             font-weight: 300;
-            color: $primary;
+            color: $aliceblue;
           }
         }
       }
@@ -295,12 +305,12 @@ body {
   .title {
     font-size: $title;
     font-weight: 700;
-    color: $primary;
+    color: $aliceblue;
   }
 
   .subtitle {
     font-size: $subtitle;
-    color: $secondary;
+    color: $lightslategray;
     margin-bottom: 2vw;
   }
 
@@ -311,7 +321,7 @@ body {
 
     i {
       font-size: 100px;
-      color: $decoration;
+      color: $aquamarine;
       transition: transform 200ms ease-in, color 200ms ease-in;
 
       &:hover {
@@ -324,7 +334,7 @@ body {
 
 .footer {
   text-align: center;
-  color: $secondary;
+  color: $lightslategray;
   margin: 0 0 1vw;
 }
 

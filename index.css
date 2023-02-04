@@ -29,12 +29,12 @@ body {
 }
 .navbar .icons i {
   font-size: 44px;
-  color: rgb(230, 240, 255);
+  color: rgb(240, 248, 255);
   transition: transform 100ms ease-in, color 100ms ease-in;
 }
 .navbar .icons i:hover {
   transform: translateY(-2px) scale(1.05);
-  color: rgb(100, 255, 215);
+  color: rgb(128, 255, 212);
 }
 .navbar .nav-menu {
   display: flex;
@@ -43,7 +43,7 @@ body {
 .navbar .nav-menu .nav-item {
   text-decoration: none;
   position: relative;
-  color: rgb(230, 240, 255);
+  color: rgb(240, 248, 255);
   font-weight: 300;
   font-size: 22px;
 }
@@ -52,7 +52,7 @@ body {
   width: 0%;
   height: 2px;
   transition: width 200ms ease-in;
-  background-color: rgb(230, 240, 255);
+  background-color: rgb(240, 248, 255);
   position: absolute;
   top: 27px;
   left: 1px;
@@ -69,7 +69,7 @@ body {
   height: 3px;
   margin: 5px auto;
   transition: all 0.3s ease-in-out;
-  background-color: rgb(230, 240, 255);
+  background-color: rgb(240, 248, 255);
 }
 
 #particles-js {
@@ -84,15 +84,15 @@ body {
 }
 .landing .hero {
   font-weight: 700;
-  color: rgb(230, 240, 255);
+  color: rgb(240, 248, 255);
   width: 1000px;
   text-align: left;
   margin: 0 auto;
 }
 .landing .hero .name {
-  color: rgb(100, 255, 215);
+  color: rgb(128, 255, 212);
   font-size: clamp(6rem, 12vw, 7rem);
-  text-shadow: 0.25rem 0.25rem 0.25rem rgba(75, 150, 150, 0.8);
+  text-shadow: 0.35rem 0.35rem 0.35rem rgb(95, 158, 160);
   display: inline-block;
 }
 .landing .hero .title {
@@ -106,37 +106,37 @@ body {
 }
 
 .skills {
-  background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, #2b2d2f 80%);
+  background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, rgb(43, 45, 47) 80%);
   border-radius: 2rem;
   margin: 2vw auto;
   width: clamp(1000px, 80vw, 1400px);
   padding: 2vw;
   text-align: center;
-  box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
+  box-shadow: 5px 5px 4px rgb(22, 23, 24), -5px -5px 4px rgb(64, 67, 70);
 }
 .skills .title {
-  font-size: 4rem;
+  font-size: 72px;
   font-weight: 700;
-  color: rgb(230, 240, 255);
+  color: rgb(240, 248, 255);
 }
 .skills .subtitle {
   font-size: 24px;
-  color: rgb(135, 150, 175);
+  color: rgb(119, 136, 153);
   margin-bottom: 1vw;
 }
 .skills .subtitle a {
-  color: rgb(100, 255, 215);
+  color: rgb(128, 255, 212);
   text-decoration: underline;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 .skills .subtitle a:hover {
   background-color: rgb(125, 207, 180);
-  color: rgb(230, 240, 255);
+  color: rgb(240, 248, 255);
 }
 .skills .content {
   text-align: center;
   padding: 0 4vw;
-  color: rgb(230, 240, 255);
+  color: rgb(240, 248, 255);
   font-size: 4.5rem;
 }
 .skills .content span {
@@ -147,7 +147,7 @@ body {
   color: rgb(150, 255, 250);
 }
 .skills .content .application {
-  color: rgb(100, 255, 215);
+  color: rgb(128, 255, 212);
 }
 .skills .content .software {
   color: rgb(125, 207, 180);
@@ -163,14 +163,14 @@ body {
   box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
 }
 .projects .title {
-  font-size: 4rem;
+  font-size: 72px;
   font-weight: 700;
-  color: rgb(230, 240, 255);
+  color: rgb(240, 248, 255);
 }
 .projects .project h4 {
   font-size: 24px;
   font-weight: 300;
-  color: rgb(230, 240, 255);
+  color: rgb(240, 248, 255);
   margin: 0 0 0.25vw 8vw;
   text-align: left;
 }
@@ -199,7 +199,7 @@ body {
 .projects .project .content .text .header h4 {
   font-size: 24px;
   font-weight: 300;
-  color: rgb(230, 240, 255);
+  color: rgb(240, 248, 255);
   margin: -0.5rem 0 0.5rem 5vw;
 }
 .projects .project .content .text .header a {
@@ -207,7 +207,7 @@ body {
 }
 .projects .project .content .text .header a h2 {
   font-size: 36px;
-  color: rgb(100, 255, 215);
+  color: rgb(128, 255, 212);
   line-height: 1.5rem;
   transition: transform 100ms ease-in, color 100ms ease-in;
 }
@@ -217,7 +217,7 @@ body {
 }
 .projects .project .content .text .header a span {
   font-size: 24px;
-  color: rgb(135, 150, 175);
+  color: rgb(119, 136, 153);
 }
 .projects .project .content .text ul {
   margin-top: 0.25rem;
@@ -226,7 +226,7 @@ body {
   list-style: none;
   font-size: 22px;
   font-weight: 300;
-  color: rgb(230, 240, 255);
+  color: rgb(240, 248, 255);
 }
 
 .contact {
@@ -239,13 +239,13 @@ body {
   box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
 }
 .contact .title {
-  font-size: 4rem;
+  font-size: 72px;
   font-weight: 700;
-  color: rgb(230, 240, 255);
+  color: rgb(240, 248, 255);
 }
 .contact .subtitle {
   font-size: 24px;
-  color: rgb(135, 150, 175);
+  color: rgb(119, 136, 153);
   margin-bottom: 2vw;
 }
 .contact .content {
@@ -255,7 +255,7 @@ body {
 }
 .contact .content i {
   font-size: 100px;
-  color: rgb(100, 255, 215);
+  color: rgb(128, 255, 212);
   transition: transform 200ms ease-in, color 200ms ease-in;
 }
 .contact .content i:hover {
@@ -265,7 +265,7 @@ body {
 
 .footer {
   text-align: center;
-  color: rgb(135, 150, 175);
+  color: rgb(119, 136, 153);
   margin: 0 0 1vw;
 }
 
