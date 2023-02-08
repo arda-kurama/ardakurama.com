@@ -20,7 +20,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: hsla(0deg, 0%, 0%, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 1rem 8vw;
 }
 .navbar .icons {
@@ -154,13 +154,13 @@ body {
 }
 
 .projects {
-  background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, #2b2d2f 80%);
+  background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, rgb(43, 45, 47) 80%);
   border-radius: 2rem;
   margin: 2vw auto;
   width: clamp(1000px, 80vw, 1400px);
   padding: 2vw;
   text-align: center;
-  box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
+  box-shadow: 5px 5px 4px rgb(22, 23, 24), -5px -5px 4px rgb(64, 67, 70);
 }
 .projects .title {
   font-size: 72px;
@@ -190,8 +190,7 @@ body {
 }
 .projects .project .content .text {
   width: clamp(400px, 50vw, 450px);
-  box-shadow: inset 2px 2px 4px #000, inset -2px -2px 4px #636363;
-  background: #2b2d2f;
+  box-shadow: inset 3px 3px 4px rgb(22, 23, 24), inset -3px -3px 4px rgb(64, 67, 70);
   border-radius: 2rem;
   padding: 2vw;
   margin-bottom: 24.5px;
@@ -230,13 +229,13 @@ body {
 }
 
 .contact {
-  background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, #2b2d2f 80%);
+  background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, rgb(43, 45, 47) 80%);
   border-radius: 2rem;
   margin: 2vw auto;
   width: clamp(1000px, 80vw, 1400px);
   padding: 2vw;
   text-align: center;
-  box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
+  box-shadow: 5px 5px 4px rgb(22, 23, 24), -5px -5px 4px rgb(64, 67, 70);
 }
 .contact .title {
   font-size: 72px;
@@ -324,7 +323,7 @@ body {
     right: -100%;
     top: 76px;
     flex-direction: column;
-    background-color: hsla(0deg, 0%, 0%, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     text-align: center;
     transition: 0.3s;

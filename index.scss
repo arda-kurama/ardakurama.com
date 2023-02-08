@@ -1,14 +1,24 @@
-$aliceblue: rgb(240, 248, 255);
-$lightslategray: rgb(119, 136, 153);
-$bastille: rgb(45, 45, 50);
-$aquamarine: rgb(128, 255, 212);
-$cadetblue: rgb(95, 158, 160);
+$Cream: rgb(240, 248, 255);
+$LightSlate: rgb(119, 136, 153);
+$SlateGradient: linear-gradient(
+  145deg,
+  rgba(115, 115, 115, 0.15) 15%,
+  rgb(43, 45, 47) 80%
+);
+$Slate: rgb(64, 67, 70);
+$DarkSlate: rgb(45, 45, 50);
+$DarkestSlate: rgb(22, 23, 24);
+$LightestAqua: rgb(150, 255, 250);
+$LightAqua: rgb(128, 255, 212);
+$Aqua: rgb(125, 207, 180);
+$DarkAqua: rgb(95, 158, 160);
+$BlackFilm: rgba(0, 0, 0, 0.5);
 
-$title: 72px;
-$header: 36px;
-$subtitle: 24px;
-$body: 22px;
-$mobile: 20px;
+$Title: 72px;
+$Header: 36px;
+$Subtitle: 24px;
+$Body: 22px;
+$Mobile: 20px;
 
 * {
   margin: 0;
@@ -23,7 +33,7 @@ html {
 }
 
 body {
-  background-color: $bastille;
+  background-color: $DarkSlate;
 }
 
 .navbar {
@@ -33,7 +43,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: hsla(0, 0%, 0%, 0.5);
+  background-color: $BlackFilm;
   padding: 1rem 8vw;
 
   .icons {
@@ -41,13 +51,13 @@ body {
     gap: 2vw;
 
     i {
-      font-size: $body * 2;
-      color: $aliceblue;
+      font-size: 44px;
+      color: $Cream;
       transition: transform 100ms ease-in, color 100ms ease-in;
 
       &:hover {
         transform: translateY(-2px) scale(1.05);
-        color: $aquamarine;
+        color: $LightAqua;
       }
     }
   }
@@ -59,16 +69,16 @@ body {
     .nav-item {
       text-decoration: none;
       position: relative;
-      color: $aliceblue;
+      color: $Cream;
       font-weight: 300;
-      font-size: $body;
+      font-size: $Body;
 
       &::after {
         content: "";
         width: 0%;
         height: 2px;
         transition: width 200ms ease-in;
-        background-color: $aliceblue;
+        background-color: $Cream;
         position: absolute;
         top: 27px;
         left: 1px;
@@ -90,7 +100,7 @@ body {
       margin: 5px auto;
       -webkit-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
-      background-color: $aliceblue;
+      background-color: $Cream;
     }
   }
 }
@@ -107,15 +117,15 @@ body {
 
   .hero {
     font-weight: 700;
-    color: $aliceblue;
+    color: $Cream;
     width: 1000px;
     text-align: left;
     margin: 0 auto;
 
     .name {
-      color: $aquamarine;
+      color: $LightAqua;
       font-size: clamp(6rem, 12vw, 7rem);
-      text-shadow: 0.35rem 0.35rem 0.35rem $cadetblue;
+      text-shadow: 0.35rem 0.35rem 0.35rem $DarkAqua;
       display: inline-block;
     }
 
@@ -127,43 +137,39 @@ body {
     .typed-title {
       margin-top: 1vh;
       font-weight: 400;
-      font-size: $header;
+      font-size: $Header;
     }
   }
 }
 
 .skills {
-  background: linear-gradient(
-    145deg,
-    rgba(115, 115, 115, 0.15) 15%,
-    rgb(43, 45, 47) 80%
-  );
+  background: $SlateGradient;
   border-radius: 2rem;
   margin: 2vw auto;
   width: clamp(1000px, 80vw, 1400px);
   padding: 2vw;
   text-align: center;
-  box-shadow: 5px 5px 4px rgb(22, 23, 24), -5px -5px 4px rgb(64, 67, 70);
+  box-shadow: 5px 5px 4px $DarkestSlate, -5px -5px 4px $Slate;
 
   .title {
-    font-size: $title;
+    font-size: $Title;
     font-weight: 700;
-    color: $aliceblue;
+    color: $Cream;
   }
 
   .subtitle {
-    font-size: $subtitle;
-    color: $lightslategray;
+    font-size: $Subtitle;
+    color: $LightSlate;
     margin-bottom: 1vw;
 
     a {
-      color: $aquamarine;
+      color: $LightAqua;
       text-decoration: underline;
       transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 
       &:hover {
-        background-color: rgb(125, 207, 180);
-        color: $aliceblue;
+        background-color: $Aqua;
+        color: $Cream;
       }
     }
   }
@@ -171,7 +177,7 @@ body {
   .content {
     text-align: center;
     padding: 0 4vw;
-    color: $aliceblue;
+    color: $Cream;
     font-size: 4.5rem;
 
     span {
@@ -180,43 +186,39 @@ body {
     }
 
     .language {
-      color: rgb(150, 255, 250);
+      color: $LightestAqua;
     }
 
     .application {
-      color: $aquamarine;
+      color: $LightAqua;
     }
 
     .software {
-      color: rgb(125, 207, 180);
+      color: $Aqua;
     }
   }
 }
 
 .projects {
-  background: linear-gradient(
-    145deg,
-    rgba(115, 115, 115, 0.15) 15%,
-    #2b2d2f 80%
-  );
+  background: $SlateGradient;
   border-radius: 2rem;
   margin: 2vw auto;
   width: clamp(1000px, 80vw, 1400px);
   padding: 2vw;
   text-align: center;
-  box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
+  box-shadow: 5px 5px 4px $DarkestSlate, -5px -5px 4px $Slate;
 
   .title {
-    font-size: $title;
+    font-size: $Title;
     font-weight: 700;
-    color: $aliceblue;
+    color: $Cream;
   }
 
   .project {
     h4 {
-      font-size: $subtitle;
+      font-size: $Subtitle;
       font-weight: 300;
-      color: $aliceblue;
+      color: $Cream;
       margin: 0 0 0.25vw 8vw;
       text-align: left;
     }
@@ -239,17 +241,16 @@ body {
 
       .text {
         width: clamp(400px, 50vw, 450px);
-        box-shadow: inset 2px 2px 4px #000, inset -2px -2px 4px #636363;
-        background: #2b2d2f;
+        box-shadow: inset 3px 3px 4px $DarkestSlate, inset -3px -3px 4px $Slate;
         border-radius: 2rem;
         padding: 2vw;
-        margin-bottom: 0.5px + $subtitle;
+        margin-bottom: 0.5px + $Subtitle;
 
         .header {
           h4 {
-            font-size: $subtitle;
+            font-size: $Subtitle;
             font-weight: 300;
-            color: $aliceblue;
+            color: $Cream;
             margin: -0.5rem 0 0.5rem 5vw;
           }
 
@@ -257,20 +258,20 @@ body {
             text-decoration: none;
 
             h2 {
-              font-size: $header;
-              color: $aquamarine;
+              font-size: $Header;
+              color: $LightAqua;
               line-height: 1.5rem;
               transition: transform 100ms ease-in, color 100ms ease-in;
 
               &:hover {
                 transform: translateY(-1px) scale(1.05);
-                color: rgb(150, 255, 250);
+                color: $LightestAqua;
               }
             }
 
             span {
-              font-size: $subtitle;
-              color: $lightslategray;
+              font-size: $Subtitle;
+              color: $LightSlate;
             }
           }
         }
@@ -279,9 +280,9 @@ body {
           margin-top: 0.25rem;
           li {
             list-style: none;
-            font-size: $body;
+            font-size: $Body;
             font-weight: 300;
-            color: $aliceblue;
+            color: $Cream;
           }
         }
       }
@@ -290,27 +291,23 @@ body {
 }
 
 .contact {
-  background: linear-gradient(
-    145deg,
-    rgba(115, 115, 115, 0.15) 15%,
-    #2b2d2f 80%
-  );
+  background: $SlateGradient;
   border-radius: 2rem;
   margin: 2vw auto;
   width: clamp(1000px, 80vw, 1400px);
   padding: 2vw;
   text-align: center;
-  box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346;
+  box-shadow: 5px 5px 4px $DarkestSlate, -5px -5px 4px $Slate;
 
   .title {
-    font-size: $title;
+    font-size: $Title;
     font-weight: 700;
-    color: $aliceblue;
+    color: $Cream;
   }
 
   .subtitle {
-    font-size: $subtitle;
-    color: $lightslategray;
+    font-size: $Subtitle;
+    color: $LightSlate;
     margin-bottom: 2vw;
   }
 
@@ -321,12 +318,12 @@ body {
 
     i {
       font-size: 100px;
-      color: $aquamarine;
+      color: $LightAqua;
       transition: transform 200ms ease-in, color 200ms ease-in;
 
       &:hover {
         transform: translateY(-7px) scale(1.1);
-        color: rgb(150, 255, 250);
+        color: $LightestAqua;
       }
     }
   }
@@ -334,7 +331,7 @@ body {
 
 .footer {
   text-align: center;
-  color: $lightslategray;
+  color: $LightSlate;
   margin: 0 0 1vw;
 }
 
@@ -416,14 +413,14 @@ body {
       right: -100%;
       top: 76px;
       flex-direction: column;
-      background-color: hsla(0, 0%, 0%, 0.5);
+      background-color: $BlackFilm;
       width: 100%;
       text-align: center;
       transition: 0.3s;
 
       .nav-item {
         padding: 1rem 8vw;
-        font-size: $subtitle;
+        font-size: $Subtitle;
 
         &::after {
           display: none;
@@ -487,7 +484,7 @@ body {
     margin-bottom: 4vw;
 
     .subtitle {
-      font-size: $mobile;
+      font-size: $Mobile;
     }
 
     .content {
@@ -556,7 +553,7 @@ body {
       }
 
       .typed-title {
-        font-size: $subtitle;
+        font-size: $Subtitle;
       }
     }
   }
@@ -580,8 +577,9 @@ body {
   .projects {
     .project {
       h4 {
-        font-size: $mobile;
+        font-size: $Mobile;
       }
+
       .content {
         .text {
           .header {
@@ -589,7 +587,7 @@ body {
 
             h4 {
               margin: 0 0 0 25vw;
-              font-size: $mobile;
+              font-size: $Mobile;
             }
 
             a {
@@ -607,7 +605,7 @@ body {
             width: 250px;
             margin: 2vw auto;
             li {
-              font-size: $mobile;
+              font-size: $Mobile;
             }
           }
         }
@@ -617,7 +615,7 @@ body {
 
   .contact {
     .subtitle {
-      font-size: $mobile;
+      font-size: $Mobile;
     }
     .content {
       i {
