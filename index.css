@@ -187,6 +187,10 @@ body {
 .projects .project .content .images img {
   width: auto;
   height: 20vw;
+  transition: transform 100ms ease-in, color 100ms ease-in;
+}
+.projects .project .content .images img:hover {
+  transform: translateY(-1px) scale(1.02);
 }
 .projects .project .content .text {
   width: clamp(400px, 50vw, 450px);
