@@ -166,6 +166,13 @@ body {
   font-size: 72px;
   font-weight: 700;
   color: rgb(240, 248, 255);
+  margin-bottom: 1vw;
+}
+.projects .project {
+  box-shadow: inset 3px 3px 4px rgb(22, 23, 24), inset -3px -3px 4px rgb(64, 67, 70);
+  border-radius: 2rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
 }
 .projects .project h4 {
   font-size: 24px;
@@ -193,11 +200,11 @@ body {
   transform: translateY(-1px) scale(1.02);
 }
 .projects .project .content .text {
-  width: clamp(400px, 50vw, 450px);
-  box-shadow: inset 3px 3px 4px rgb(22, 23, 24), inset -3px -3px 4px rgb(64, 67, 70);
+  min-width: clamp(300px, 40vw, 365px);
+  box-shadow: 5px 5px 4px rgb(22, 23, 24), -5px -5px 4px rgb(64, 67, 70);
   border-radius: 2rem;
   padding: 2vw;
-  margin-bottom: 24.5px;
+  margin-bottom: 24px;
 }
 .projects .project .content .text .header h4 {
   font-size: 24px;
@@ -205,13 +212,16 @@ body {
   color: rgb(240, 248, 255);
   margin: -0.5rem 0 0.5rem 5vw;
 }
+.projects .project .content .text .header #longer {
+  margin-left: 4vw;
+}
 .projects .project .content .text .header a {
   text-decoration: none;
 }
 .projects .project .content .text .header a h2 {
   font-size: 36px;
   color: rgb(128, 255, 212);
-  line-height: 1.5rem;
+  line-height: 2rem;
   transition: transform 100ms ease-in, color 100ms ease-in;
 }
 .projects .project .content .text .header a h2:hover {
@@ -221,6 +231,7 @@ body {
 .projects .project .content .text .header a span {
   font-size: 24px;
   color: rgb(119, 136, 153);
+  display: block;
 }
 .projects .project .content .text ul {
   margin-top: 0.25rem;
@@ -288,6 +299,9 @@ body {
   .projects {
     width: 90vw;
   }
+  .projects .project {
+    padding-bottom: 1vw;
+  }
   .projects .project h4 {
     margin: 0 0 0 25vw;
   }
@@ -305,6 +319,9 @@ body {
   }
   .projects .project .content .text .header h4 {
     margin-left: 30vw;
+  }
+  .projects .project .content .text .header #longer {
+    margin: 0 0 0 25vw;
   }
   .projects .project .content .text .header a h2 span {
     display: block;
@@ -390,6 +407,9 @@ body {
   .projects {
     margin-bottom: 4vw;
   }
+  .projects .project h4 {
+    display: none;
+  }
   .projects .project .content .images img {
     height: clamp(100px, 35vw, 250px);
   }
@@ -400,9 +420,11 @@ body {
     width: 60vw;
     margin: 0 auto;
   }
+  .projects .project .content .text .header h4 {
+    display: none;
+  }
   .projects .project .content .text .header a h2 span {
     line-height: 2rem;
-    display: inline;
   }
   .projects .project .content .text ul {
     margin: 1vw auto;

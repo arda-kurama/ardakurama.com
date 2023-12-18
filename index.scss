@@ -212,9 +212,15 @@ body {
     font-size: $Title;
     font-weight: 700;
     color: $Cream;
+    margin-bottom: 1vw;
   }
 
   .project {
+    box-shadow: inset 3px 3px 4px $DarkestSlate, inset -3px -3px 4px $Slate;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+
     h4 {
       font-size: $Subtitle;
       font-weight: 300;
@@ -245,11 +251,11 @@ body {
       }
 
       .text {
-        width: clamp(400px, 50vw, 450px);
-        box-shadow: inset 3px 3px 4px $DarkestSlate, inset -3px -3px 4px $Slate;
+        min-width: clamp(300px, 40vw, 365px);
+        box-shadow: 5px 5px 4px $DarkestSlate, -5px -5px 4px $Slate;
         border-radius: 2rem;
         padding: 2vw;
-        margin-bottom: 0.5px + $Subtitle;
+        margin-bottom: $Subtitle;
 
         .header {
           h4 {
@@ -259,13 +265,18 @@ body {
             margin: -0.5rem 0 0.5rem 5vw;
           }
 
+          #longer {
+            margin-left: 4vw;
+          }
+
           a {
             text-decoration: none;
 
             h2 {
               font-size: $Header;
               color: $LightAqua;
-              line-height: 1.5rem;
+              line-height: 2rem;
+              // margin-right: 0.5vw;
               transition: transform 100ms ease-in, color 100ms ease-in;
 
               &:hover {
@@ -277,6 +288,7 @@ body {
             span {
               font-size: $Subtitle;
               color: $LightSlate;
+              display: block;
             }
           }
         }
@@ -361,9 +373,12 @@ body {
     width: 90vw;
 
     .project {
+      padding-bottom: 1vw;
+
       h4 {
         margin: 0 0 0 25vw;
       }
+
       .content {
         flex-direction: column;
 
@@ -381,6 +396,10 @@ body {
 
             h4 {
               margin-left: 30vw;
+            }
+
+            #longer {
+              margin: 0 0 0 25vw;
             }
 
             a {
@@ -501,6 +520,9 @@ body {
     margin-bottom: 4vw;
 
     .project {
+      h4 {
+        display: none;
+      }
       .content {
         .images {
           img {
@@ -514,11 +536,13 @@ body {
           .header {
             width: 60vw;
             margin: 0 auto;
+            h4 {
+              display: none;
+            }
             a {
               h2 {
                 span {
                   line-height: 2rem;
-                  display: inline;
                 }
               }
             }
