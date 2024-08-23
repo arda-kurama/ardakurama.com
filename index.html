@@ -19,6 +19,13 @@
     <link rel="stylesheet" href="/photoswipe/photoswipe.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="scrollreveal.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper-setup.js" defer></script>
   </head>
   <body>
     <div class="navbar">
@@ -77,159 +84,240 @@
         <span class="application">GCP</span>
         <span class="application">SEO</span>
         <span class="software">Photoshop</span>
-        <span class="software">Sony Vegas</span>
-        <span class="language">C++</span>
+        <span class="language">C/C++</span>
+        <span class="language">Linux</span>
+        <span class="application">PowerPoint</span>
+        <span class="software">Wordpress</span>
+        <span class="software">Airtable</span>
       </div>
     </div>
     <div class="projects" id="projects">
       <div class="title">Projects</div>
-      <div class="project">
-        <h4>click me! ↴</h4>
-        <div class="content">
-          <div class="images" id="my-gallery">
-            <a
-              href="MicrosoftProductivity-1.webp"
-              data-pswp-width="1206"
-              data-pswp-height="678"
-            >
-              <img
-                src="MicrosoftProductivity-1.webp"
-                alt="MicrosoftProductivity-1"
-              />
-            </a>
-            <a
-              href="MicrosoftProductivity-2.webp"
-              data-pswp-width="386"
-              data-pswp-height="737"
-            >
-              <img
-                src="MicrosoftProductivity-2.webp"
-                alt="MicrosoftProductivity-2"
-              />
-            </a>
-          </div>
-          <div class="text">
-            <div class="header">
-              <h4>⬐ and me!</h4>
-              <a
-                href="https://arda-kurama.github.io/SIBC-Microsoft"
-                target="_blank"
-                ><h2>
-                  Microsoft Productivity<span> Oct 2023 - Dec 2023</span>
-                </h2>
-              </a>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="project swiper-slide">
+            <div class="content">
+              <div class="images" id="my-gallery">
+                <a
+                  href="media/SUSBE-1.png"
+                  data-pswp-width="1206"
+                  data-pswp-height="678"
+                >
+                  <img src="media/SUSBE-1.png" alt="SUSBE-1" />
+                </a>
+                <a
+                  href="media/SUSBE-2.png"
+                  data-pswp-width="386"
+                  data-pswp-height="737"
+                >
+                  <img src="media/SUSBE-2.png" alt="SUSBE-2" />
+                </a>
+              </div>
+              <div class="text">
+                <div class="header">
+                  <a href="https://startupsouthbendelkhart.com" target="_blank"
+                    ><h2>
+                      startupsouthbend elkhart.com<span>
+                        Jun 2024 - Jul 2024</span
+                      >
+                    </h2>
+                  </a>
+                </div>
+                <ul>
+                  <li>→ 16-page Nonprofit Website</li>
+                  <li>→ Wordpress, Airtable</li>
+                  <li>→ Fully Responsive</li>
+                </ul>
+              </div>
             </div>
-            <ul>
-              <li>→ Product Website</li>
-              <li>→ HTML, SCSS, CSS, JS</li>
-              <li>→ Fully Responsive Design</li>
-            </ul>
           </div>
-        </div>
-      </div>
-      <div class="project">
-        <h4>and me! ↴</h4>
-        <div class="content">
-          <div class="images" id="my-gallery">
-            <a
-              href="BinomialDist-1.webp"
-              data-pswp-width="1206"
-              data-pswp-height="678"
-            >
-              <img src="BinomialDist-1.webp" alt="BinomialDist-1" />
-            </a>
-            <a
-              href="BinomialDist-2.webp"
-              data-pswp-width="386"
-              data-pswp-height="737"
-            >
-              <img src="BinomialDist-2.webp" alt="BinomialDist-2" />
-            </a>
-          </div>
-          <div class="text">
-            <div class="header">
-              <h4 id="longer">⬐ don't forget me!</h4>
+          <div class="project swiper-slide">
+            <div class="content">
+              <div class="images" id="my-gallery">
+                <a
+                  href="media/EchoDorm-1.png"
+                  data-pswp-width="605"
+                  data-pswp-height="605"
+                >
+                  <img src="media/EchoDorm-1.png" alt="EchoDorm-1" />
+                </a>
+              </div>
+              <div class="text">
+                <div class="header">
+                  <h4>⬐ click me!</h4>
 
-              <a
-                href="https://arda-kurama.github.io/Binomial-Dist"
-                target="_blank"
-                ><h2>Binomial Dist.<span> Mar 2023</span></h2>
-              </a>
+                  <a
+                    href="https://arda-kurama.github.io/SIBC-Amazon"
+                    target="_blank"
+                    ><h2>Echo Dorm<span> Feb 2024 - Apr 2024</span></h2>
+                  </a>
+                </div>
+                <ul>
+                  <li>→ Product Mockup</li>
+                  <li>→ Fully Functional</li>
+                  <li>→ HTML, SCSS/CSS, JS</li>
+                </ul>
+              </div>
             </div>
-            <ul>
-              <li>→ JavaScript Visualizer</li>
-              <li>→ HTML, SCSS, CSS, JS</li>
-            </ul>
+          </div>
+
+          <div class="project swiper-slide">
+            <!-- <h4>click me! ↴</h4> -->
+            <div class="content">
+              <div class="images" id="my-gallery">
+                <a
+                  href="media/MicrosoftProductivity-1.webp"
+                  data-pswp-width="1206"
+                  data-pswp-height="678"
+                >
+                  <img
+                    src="media/MicrosoftProductivity-1.webp"
+                    alt="MicrosoftProductivity-1"
+                  />
+                </a>
+                <a
+                  href="media/MicrosoftProductivity-2.webp"
+                  data-pswp-width="386"
+                  data-pswp-height="737"
+                >
+                  <img
+                    src="media/MicrosoftProductivity-2.webp"
+                    alt="MicrosoftProductivity-2"
+                  />
+                </a>
+              </div>
+              <div class="text">
+                <div class="header">
+                  <h4>⬐ click me!</h4>
+                  <a
+                    href="https://arda-kurama.github.io/SIBC-Microsoft"
+                    target="_blank"
+                    ><h2>
+                      Microsoft Productivity<span> Oct 2023 - Dec 2023</span>
+                    </h2>
+                  </a>
+                </div>
+                <ul>
+                  <li>→ Product Showcase</li>
+                  <li>→ HTML, SCSS/CSS, JS</li>
+                  <li>→ Fully Responsive Design</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="project swiper-slide">
+            <!-- <h4>and me! ↴</h4> -->
+            <div class="content">
+              <div class="images" id="my-gallery">
+                <a
+                  href="media/BinomialDist-1.webp"
+                  data-pswp-width="1206"
+                  data-pswp-height="678"
+                >
+                  <img src="media/BinomialDist-1.webp" alt="BinomialDist-1" />
+                </a>
+                <a
+                  href="media/BinomialDist-2.webp"
+                  data-pswp-width="386"
+                  data-pswp-height="737"
+                >
+                  <img src="media/BinomialDist-2.webp" alt="BinomialDist-2" />
+                </a>
+              </div>
+              <div class="text">
+                <div class="header">
+                  <!-- <h4 id="longer">⬐ don't forget me!</h4> -->
+
+                  <a
+                    href="media/https://arda-kurama.github.io/Binomial-Dist"
+                    target="_blank"
+                    ><h2>Binomial Dist.<span> Mar 2023</span></h2>
+                  </a>
+                </div>
+                <ul>
+                  <li>→ JavaScript Visualizer</li>
+                  <li>→ HTML, SCSS/CSS, JS</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="project swiper-slide">
+            <div class="content">
+              <div class="images" id="my-gallery">
+                <a
+                  href="media/ardakurama-1.webp"
+                  data-pswp-width="1206"
+                  data-pswp-height="678"
+                >
+                  <img src="media/ardakurama-1.webp" alt="ardakurama-1" />
+                </a>
+                <a
+                  href="media/ardakurama-2.webp"
+                  data-pswp-width="386"
+                  data-pswp-height="737"
+                >
+                  <img src="media/ardakurama-2.webp" alt="ardakurama-2" />
+                </a>
+              </div>
+              <div class="text">
+                <div class="header">
+                  <a
+                    href="https://arda-kurama.github.io/ardakurama.com"
+                    target="_blank"
+                    ><h2>ardakurama.com<span> Dec 2022 - Feb 2023</span></h2>
+                  </a>
+                </div>
+                <ul>
+                  <li>→ Portfolio Website</li>
+                  <li>→ HTML, SCSS/CSS, JS</li>
+                  <li>→ Fully Responsive Design</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="project swiper-slide">
+            <div class="content">
+              <div class="images" id="my-gallery">
+                <a
+                  href="media/pennrobotics-1.webp"
+                  data-pswp-width="1206"
+                  data-pswp-height="678"
+                >
+                  <img src="media/pennrobotics-1.webp" alt="pennrobotics-1" />
+                </a>
+                <a
+                  href="media/pennrobotics-2.webp"
+                  data-pswp-width="386"
+                  data-pswp-height="737"
+                >
+                  <img src="media/pennrobotics-2.webp" alt="pennrobotics-2" />
+                </a>
+              </div>
+              <div class="text">
+                <div class="header">
+                  <a
+                    href="https://arda-kurama.github.io/pennrobotics.org"
+                    target="_blank"
+                    ><h2>pennrobotics.org<span> May 2022 - Feb 2023</span></h2>
+                  </a>
+                </div>
+                <ul>
+                  <li>→ 9-page Club Website</li>
+                  <li>→ HTML, SCSS/CSS, JS</li>
+                  <li>→ Fully Responsive Design</li>
+                  <li>→ Documentation + Continuation Plan</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="project">
-        <div class="content">
-          <div class="images" id="my-gallery">
-            <a
-              href="ardakurama-1.webp"
-              data-pswp-width="1206"
-              data-pswp-height="678"
-            >
-              <img src="ardakurama-1.webp" alt="ardakurama-1" />
-            </a>
-            <a
-              href="ardakurama-2.webp"
-              data-pswp-width="386"
-              data-pswp-height="737"
-            >
-              <img src="ardakurama-2.webp" alt="ardakurama-2" />
-            </a>
-          </div>
-          <div class="text">
-            <div class="header">
-              <a
-                href="https://arda-kurama.github.io/ardakurama.com"
-                target="_blank"
-                ><h2>ardakurama.com<span> Dec 2022 - Feb 2023</span></h2>
-              </a>
-            </div>
-            <ul>
-              <li>→ 1 Page Portfolio Website</li>
-              <li>→ HTML, SCSS, CSS, JS</li>
-              <li>→ Fully Responsive Design</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="project">
-        <div class="content">
-          <div class="images" id="my-gallery">
-            <a
-              href="pennrobotics-1.webp"
-              data-pswp-width="1206"
-              data-pswp-height="678"
-            >
-              <img src="pennrobotics-1.webp" alt="pennrobotics-1" />
-            </a>
-            <a
-              href="pennrobotics-2.webp"
-              data-pswp-width="386"
-              data-pswp-height="737"
-            >
-              <img src="pennrobotics-2.webp" alt="pennrobotics-2" />
-            </a>
-          </div>
-          <div class="text">
-            <div class="header">
-              <a
-                href="https://arda-kurama.github.io/pennrobotics.org"
-                target="_blank"
-                ><h2>pennrobotics.org<span> May 2022 - Feb 2023</span></h2>
-              </a>
-            </div>
-            <ul>
-              <li>→ 9 Page Company Website</li>
-              <li>→ HTML, SCSS, CSS, JS</li>
-              <li>→ Fully Responsive Design</li>
-              <li>→ Project Continued by Team</li>
-            </ul>
-          </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+        <div class="autoplay-progress">
+          <svg viewBox="0 0 48 48">
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg>
         </div>
       </div>
     </div>

@@ -168,79 +168,102 @@ body {
   color: rgb(240, 248, 255);
   margin-bottom: 1vw;
 }
-.projects .project {
-  box-shadow: inset 3px 3px 4px rgb(22, 23, 24), inset -3px -3px 4px rgb(64, 67, 70);
+.projects .swiper .swiper-wrapper .project {
   border-radius: 2rem;
   padding: 2rem;
   margin-bottom: 2rem;
 }
-.projects .project h4 {
+.projects .swiper .swiper-wrapper .project h4 {
   font-size: 24px;
   font-weight: 300;
   color: rgb(240, 248, 255);
   margin: 0 0 0.25vw 8vw;
   text-align: left;
 }
-.projects .project .content {
+.projects .swiper .swiper-wrapper .project .content {
   display: flex;
   justify-content: center;
   gap: 2vw;
   align-items: center;
   text-align: left;
 }
-.projects .project .content .images {
+.projects .swiper .swiper-wrapper .project .content .images {
   display: flex;
 }
-.projects .project .content .images img {
+.projects .swiper .swiper-wrapper .project .content .images img {
   width: auto;
   height: 20vw;
   transition: transform 100ms ease-in, color 100ms ease-in;
 }
-.projects .project .content .images img:hover {
+.projects .swiper .swiper-wrapper .project .content .images img:hover {
   transform: translateY(-1px) scale(1.02);
 }
-.projects .project .content .text {
+.projects .swiper .swiper-wrapper .project .content .text {
   min-width: clamp(300px, 40vw, 365px);
   box-shadow: 5px 5px 4px rgb(22, 23, 24), -5px -5px 4px rgb(64, 67, 70);
   border-radius: 2rem;
   padding: 2vw;
   margin-bottom: 24px;
 }
-.projects .project .content .text .header h4 {
+.projects .swiper .swiper-wrapper .project .content .text .header h4 {
   font-size: 24px;
   font-weight: 300;
   color: rgb(240, 248, 255);
   margin: -0.5rem 0 0.5rem 5vw;
 }
-.projects .project .content .text .header #longer {
+.projects .swiper .swiper-wrapper .project .content .text .header #longer {
   margin-left: 4vw;
 }
-.projects .project .content .text .header a {
+.projects .swiper .swiper-wrapper .project .content .text .header a {
   text-decoration: none;
 }
-.projects .project .content .text .header a h2 {
+.projects .swiper .swiper-wrapper .project .content .text .header a h2 {
   font-size: 36px;
   color: rgb(128, 255, 212);
   line-height: 2rem;
   transition: transform 100ms ease-in, color 100ms ease-in;
 }
-.projects .project .content .text .header a h2:hover {
+.projects .swiper .swiper-wrapper .project .content .text .header a h2:hover {
   transform: translateY(-1px) scale(1.05);
   color: rgb(150, 255, 250);
 }
-.projects .project .content .text .header a span {
+.projects .swiper .swiper-wrapper .project .content .text .header a span {
   font-size: 24px;
   color: rgb(119, 136, 153);
   display: block;
 }
-.projects .project .content .text ul {
+.projects .swiper .swiper-wrapper .project .content .text ul {
   margin-top: 0.25rem;
 }
-.projects .project .content .text ul li {
+.projects .swiper .swiper-wrapper .project .content .text ul li {
   list-style: none;
   font-size: 22px;
   font-weight: 300;
   color: rgb(240, 248, 255);
+}
+.projects .swiper .swiper-button-prev,
+.projects .swiper .swiper-button-next {
+  color: rgb(125, 207, 180);
+  --swiper-navigation-size: 64px;
+}
+.projects .swiper .swiper-pagination {
+  --swiper-pagination-color: rgb(125, 207, 180);
+  --swiper-pagination-bullet-size: 16px;
+}
+.projects .swiper .autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 85%;
+  top: 72%;
+  z-index: 10;
+  width: 20%;
+  height: 20%;
+  stroke-width: 4px;
+  stroke: rgb(125, 207, 180);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
 }
 
 .contact {
@@ -299,37 +322,43 @@ body {
   .projects {
     width: 90vw;
   }
-  .projects .project {
+  .projects .swiper .swiper-wrapper .project {
     padding-bottom: 1vw;
   }
-  .projects .project h4 {
+  .projects .swiper .swiper-wrapper .project h4 {
     margin: 0 0 0 25vw;
   }
-  .projects .project .content {
+  .projects .swiper .swiper-wrapper .project .content {
     flex-direction: column;
   }
-  .projects .project .content .images img {
+  .projects .swiper .swiper-wrapper .project .content .images img {
     height: clamp(250px, 30vw, 350px);
   }
-  .projects .project .content .text {
+  .projects .swiper .swiper-wrapper .project .content .text {
     width: clamp(600px, 60vw, 700px);
   }
-  .projects .project .content .text .header {
+  .projects .swiper .swiper-wrapper .project .content .text .header {
     text-align: center;
   }
-  .projects .project .content .text .header h4 {
+  .projects .swiper .swiper-wrapper .project .content .text .header h4 {
     margin-left: 30vw;
   }
-  .projects .project .content .text .header #longer {
+  .projects .swiper .swiper-wrapper .project .content .text .header #longer {
     margin: 0 0 0 25vw;
   }
-  .projects .project .content .text .header a h2 span {
+  .projects .swiper .swiper-wrapper .project .content .text .header a h2 span {
     display: block;
     line-height: 2.5rem;
   }
-  .projects .project .content .text ul {
+  .projects .swiper .swiper-wrapper .project .content .text ul {
     margin: 0 auto;
     width: 300px;
+  }
+  .projects .swiper .autoplay-progress svg {
+    width: 10%;
+    height: 10%;
+    left: 45%;
+    top: 85%;
   }
   .contact {
     width: 90vw;
@@ -407,27 +436,33 @@ body {
   .projects {
     margin-bottom: 4vw;
   }
-  .projects .project h4 {
+  .projects .swiper .swiper-wrapper .project h4 {
     display: none;
   }
-  .projects .project .content .images img {
+  .projects .swiper .swiper-wrapper .project .content .images img {
     height: clamp(100px, 35vw, 250px);
   }
-  .projects .project .content .text {
+  .projects .swiper .swiper-wrapper .project .content .text {
     width: 80vw;
   }
-  .projects .project .content .text .header {
+  .projects .swiper .swiper-wrapper .project .content .text .header {
     width: 60vw;
     margin: 0 auto;
   }
-  .projects .project .content .text .header h4 {
+  .projects .swiper .swiper-wrapper .project .content .text .header h4 {
     display: none;
   }
-  .projects .project .content .text .header a h2 span {
+  .projects .swiper .swiper-wrapper .project .content .text .header a h2 span {
     line-height: 2rem;
   }
-  .projects .project .content .text ul {
+  .projects .swiper .swiper-wrapper .project .content .text ul {
     margin: 1vw auto;
+  }
+  .projects .swiper .swiper-pagination {
+    --swiper-pagination-bullet-size: 12px;
+  }
+  .projects .swiper .autoplay-progress svg {
+    stroke-width: 6px;
   }
   .contact {
     margin-bottom: 4vw;
@@ -459,28 +494,32 @@ body {
   .skills .content .novice {
     font-size: 1.5rem;
   }
-  .projects .project h4 {
+  .projects .swiper .swiper-wrapper .project h4 {
     font-size: 20px;
   }
-  .projects .project .content .text .header {
+  .projects .swiper .swiper-wrapper .project .content .text .header {
     width: 250px;
   }
-  .projects .project .content .text .header h4 {
+  .projects .swiper .swiper-wrapper .project .content .text .header h4 {
     margin: 0 0 0 25vw;
     font-size: 20px;
   }
-  .projects .project .content .text .header a h2 {
+  .projects .swiper .swiper-wrapper .project .content .text .header a h2 {
     font-size: 30px;
   }
-  .projects .project .content .text .header a h2 span {
+  .projects .swiper .swiper-wrapper .project .content .text .header a h2 span {
     display: none;
   }
-  .projects .project .content .text ul {
+  .projects .swiper .swiper-wrapper .project .content .text ul {
     width: 250px;
     margin: 2vw auto;
   }
-  .projects .project .content .text ul li {
+  .projects .swiper .swiper-wrapper .project .content .text ul li {
     font-size: 20px;
+  }
+  .projects .swiper .swiper-button-prev,
+  .projects .swiper .swiper-button-next {
+    display: none;
   }
   .contact .subtitle {
     font-size: 20px;
