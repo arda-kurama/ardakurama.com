@@ -1,0 +1,223 @@
+@import "utilities/variables";
+@import "utilities/navbar";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  // border: 1px solid red;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $DarkSlate;
+}
+
+.title {
+  font-size: $Title;
+  font-weight: 700;
+  color: $Cream;
+  margin: 6rem 0 0 0;
+  text-align: center;
+}
+
+.projects {
+  background: $SlateGradient;
+  box-shadow: 5px 5px 4px $DarkestSlate, -5px -5px 4px $Slate;
+  border-radius: 2rem;
+  margin: 1vw auto 2vw;
+  width: 1200px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-auto-rows: auto;
+  justify-content: stretch;
+  grid-auto-flow: dense;
+  align-items: start;
+  grid-gap: 1vw;
+  padding: 1vw;
+
+  #offset {
+    position: relative;
+    top: -120px;
+  }
+
+  #large {
+    grid-column: span 2;
+    grid-row: span 1.5;
+
+    .images {
+      img {
+        height: 240px;
+      }
+    }
+  }
+
+  .project {
+    box-shadow: inset 3px 3px 4px $DarkestSlate, inset -3px -3px 4px $Slate;
+    border-radius: 2rem;
+    padding: 2rem;
+
+    .images {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: auto;
+        height: 120px;
+        transition: transform 100ms ease-in, color 100ms ease-in;
+
+        &:hover {
+          transform: translateY(-1px) scale(1.02);
+        }
+      }
+
+      #large {
+        height: 240px;
+      }
+    }
+
+    .text {
+      box-shadow: 5px 5px 4px $DarkestSlate, -5px -5px 4px $Slate;
+      border-radius: 2rem;
+      padding: 1vw;
+
+      .header {
+        a {
+          text-decoration: none;
+
+          h2 {
+            font-size: $Header;
+            color: $LightAqua;
+            line-height: 2rem;
+            transition: transform 100ms ease-in, color 100ms ease-in;
+
+            &:hover {
+              transform: translateY(-1px) scale(1.05);
+              color: $LightestAqua;
+            }
+          }
+
+          span {
+            font-size: $Body;
+            color: $LightSlate;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  color: $LightSlate;
+  margin: 0 0 1vw;
+}
+
+@media (max-width: 1280px) {
+  .projects {
+    width: 90vw;
+
+    #offset {
+      top: -9vw;
+    }
+
+    #large {
+      .images {
+        img {
+          height: 18vw;
+        }
+      }
+    }
+
+    .project {
+      padding: 1vw;
+      .images {
+        img {
+          height: 9vw;
+        }
+
+        #large {
+          height: 18vw;
+        }
+      }
+
+      .text {
+        .header {
+          a {
+            h2 {
+              font-size: $Subtitle;
+            }
+            span {
+              font-size: $Mobile;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    margin-bottom: 4vw;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+
+    #offset {
+      top: 0;
+    }
+
+    #large {
+      grid-column: span 1;
+      grid-row: span 1;
+
+      .images {
+        img {
+          height: 36vw;
+        }
+      }
+    }
+
+    .project {
+      .images {
+        img {
+          height: 36vw;
+        }
+
+        #large {
+          height: 36vw;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    h4 {
+      font-size: $Mobile;
+    }
+
+    .project {
+      .text {
+        .header {
+          // width: 250px;
+
+          a {
+            h2 {
+              font-size: $Mobile;
+            }
+          }
+        }
+      }
+    }
+  }
+}
