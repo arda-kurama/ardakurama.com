@@ -18,7 +18,7 @@
 </head>
 <?php include 'utilities/navbar.php'; ?>
 <div class="title">Contact Me</div>
-<div class="subtitle">Feel free to contact me wherever is best</div>
+<div class="subtitle">Feel free to contact me wherever is best!</div>
 <div class="content" id="immune">
   <a class="card" href="mailto:ardakurama@gmail.com" target="_blank">
     <img id="translate" src="media/gmail_logo.webp" alt="gmail_logo" />

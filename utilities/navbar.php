@@ -18,6 +18,7 @@ echo '
   <div class="nav-menu">
     <a class="nav-item" href="index.html">Home</a>
     <a class="nav-item" href="projects.html">Projects</a>
+    <a class="nav-item" href="coursework.html">Coursework</a>
     <a class="nav-item" href="contact.html">Contact</a>
   </div>
   <div class="hamburger">

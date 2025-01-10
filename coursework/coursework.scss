@@ -1,0 +1,118 @@
+@import "../utilities/variables";
+@import "../utilities/navbar";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  // border: 1px solid red;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $DarkSlate;
+}
+
+h1 {
+  font-size: $Title;
+  font-weight: 700;
+  color: $Cream;
+  margin: 6rem 0 0 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: $Subtitle;
+  color: $LightSlate;
+  font-weight: 400;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-gap: 2rem;
+  width: 1260px;
+  margin: 2rem auto;
+
+  h3 {
+    font-size: $Header;
+    color: $Cream;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .card {
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 4px $DarkestSlate, -5px -5px 4px $Slate;
+    width: 590px;
+
+    ul {
+      font-size: $Body;
+      color: $LightestSlate;
+      line-height: 2rem;
+
+      a,
+      span {
+        font-weight: 700;
+        color: $LightAqua;
+      }
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  color: $LightSlate;
+  margin: 0 0 1vw;
+}
+
+@media (max-width: 1280px) {
+  .content {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: $MobileTitle;
+  }
+
+  h2 {
+    font-size: $Body;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .content {
+    width: 90vw;
+
+    .card {
+      ul {
+        font-size: $Mobile;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: $Mobile;
+    width: 90vw;
+  }
+
+  .content {
+    grid-gap: 2rem;
+    width: 90vw;
+
+    .card {
+      padding: 2rem;
+    }
+  }
+}
