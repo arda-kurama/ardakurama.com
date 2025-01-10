@@ -18,21 +18,26 @@ body {
 }
 
 #particles-js {
-  z-index: -1;
-  height: 84vh;
-  width: 98vw;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  -webkit-user-drag: none;
 }
 
 .landing {
-  height: 80vh;
-  margin-top: -83vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 38vh auto;
+  width: 1000px;
 
   .hero {
     font-weight: 700;
     color: $Cream;
-    width: 1000px;
-    text-align: left;
-    margin: 0 auto;
 
     .name {
       color: $LightAqua;
@@ -42,7 +47,6 @@ body {
     }
 
     .title {
-      padding-top: 32vh;
       font-size: clamp(4.5rem, 10vw, 5.5rem);
     }
 
@@ -57,7 +61,7 @@ body {
 .skills {
   background: $SlateGradient;
   border-radius: 2rem;
-  margin: 2vw auto;
+  margin: 100vh auto 0;
   width: clamp(1000px, 80vw, 1400px);
   padding: 2vw;
   text-align: center;
@@ -295,16 +299,9 @@ body {
 }
 
 @media (max-width: 1280px) {
-  #particles-js {
-    width: 97vw;
-  }
-
   .landing {
-    margin-top: -81vh;
-
-    .hero {
-      width: clamp(600px, 80vw, 710px);
-    }
+    width: clamp(600px, 80vw, 720px);
+    margin: 32vh auto;
   }
 
   .skills {
@@ -379,23 +376,18 @@ body {
 }
 
 @media (max-width: 768px) {
-  #particles-js {
-    width: 96vw;
-  }
-
   .landing {
-    margin-top: -80vh;
+    margin: 30vh auto;
+    width: 90vw;
 
     .hero {
       text-align: center;
-      width: 76vw;
 
       .name {
         font-size: 6rem;
       }
 
       .title {
-        padding-top: 24vh;
         font-size: 4.5rem;
       }
 
@@ -480,10 +472,6 @@ body {
 }
 
 @media (max-width: 480px) {
-  #particles-js {
-    width: 95vw;
-  }
-
   .landing {
     .hero {
       .name {

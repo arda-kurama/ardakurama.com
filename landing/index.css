@@ -1,7 +1,7 @@
 .navbar {
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -115,21 +115,26 @@ body {
 }
 
 #particles-js {
-  z-index: -1;
-  height: 84vh;
-  width: 98vw;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  -webkit-user-drag: none;
 }
 
 .landing {
-  height: 80vh;
-  margin-top: -83vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 38vh auto;
+  width: 1000px;
 }
 .landing .hero {
   font-weight: 700;
   color: rgb(240, 248, 255);
-  width: 1000px;
-  text-align: left;
-  margin: 0 auto;
 }
 .landing .hero .name {
   color: rgb(128, 255, 212);
@@ -138,7 +143,6 @@ body {
   display: inline-block;
 }
 .landing .hero .title {
-  padding-top: 32vh;
   font-size: clamp(4.5rem, 10vw, 5.5rem);
 }
 .landing .hero .typed-title {
@@ -150,7 +154,7 @@ body {
 .skills {
   background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, rgb(43, 45, 47) 80%);
   border-radius: 2rem;
-  margin: 2vw auto;
+  margin: 100vh auto 0;
   width: clamp(1000px, 80vw, 1400px);
   padding: 2vw;
   text-align: center;
@@ -349,14 +353,9 @@ body {
 }
 
 @media (max-width: 1280px) {
-  #particles-js {
-    width: 97vw;
-  }
   .landing {
-    margin-top: -81vh;
-  }
-  .landing .hero {
-    width: clamp(600px, 80vw, 710px);
+    width: clamp(600px, 80vw, 720px);
+    margin: 32vh auto;
   }
   .skills {
     width: 90vw;
@@ -407,21 +406,17 @@ body {
   }
 }
 @media (max-width: 768px) {
-  #particles-js {
-    width: 96vw;
-  }
   .landing {
-    margin-top: -80vh;
+    margin: 30vh auto;
+    width: 90vw;
   }
   .landing .hero {
     text-align: center;
-    width: 76vw;
   }
   .landing .hero .name {
     font-size: 6rem;
   }
   .landing .hero .title {
-    padding-top: 24vh;
     font-size: 4.5rem;
   }
   .landing .hero .typed-title {
@@ -476,9 +471,6 @@ body {
   }
 }
 @media (max-width: 480px) {
-  #particles-js {
-    width: 95vw;
-  }
   .landing .hero .name {
     font-size: 4.5rem;
   }
