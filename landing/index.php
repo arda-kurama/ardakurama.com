@@ -29,17 +29,16 @@
 
 <body>
   <?php include 'utilities/navbar.php'; ?>
-  <div id="particles-js"></div>
+  <a id="particles-js" href="#skills"></a>
   <div class="landing">
     <div class="hero">
       <div class="title">Hi, I'm <span class="name">Arda Kurama</span></div>
       <div class="typed-title">
         <div id="typed-strings">
           <p>
-            I am a computer science student at the University of Notre Dame.
+            I am a computer science and mathematics student at the University of Notre Dame.
           </p>
-          <p>I also do some front-end web development.</p>
-          <p>Scroll down to see more!</p>
+          <p>Welcome to my portfolio!</p>
         </div>
         <span id="typed"></span>
       </div>

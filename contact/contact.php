@@ -21,7 +21,7 @@
 <div class="subtitle">Feel free to contact me wherever is best</div>
 <div class="content" id="immune">
   <a class="card" href="mailto:ardakurama@gmail.com" target="_blank">
-    <img src="media/linkedin_logo.webp" alt="linkedin_logo" />
+    <img id="translate" src="media/gmail_logo.webp" alt="gmail_logo" />
   </a>
   <a class="card" href="https://github.com/arda-kurama" target="_blank">
     <img id="invert" src="media/github_logo.webp" alt="github_logo" />
