@@ -21,6 +21,7 @@
 <body>
   <?php include 'utilities/navbar.php'; ?>
   <div class="title">Personal Projects</div>
+  <h2 class="subtitle">Check out my GitHub for more info!</h2>
   <div class="projects">
     <div class="project" id="large">
       <div class="images" id="my-gallery">

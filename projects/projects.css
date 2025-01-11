@@ -124,6 +124,13 @@ body {
   text-align: center;
 }
 
+.subtitle {
+  font-size: 24px;
+  color: rgb(119, 136, 153);
+  font-weight: 400;
+  text-align: center;
+}
+
 .projects {
   background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, rgb(43, 45, 47) 80%);
   box-shadow: 5px 5px 4px rgb(22, 23, 24), -5px -5px 4px rgb(64, 67, 70);
@@ -187,14 +194,17 @@ body {
   line-height: 2rem;
   transition: transform 100ms ease-in, color 100ms ease-in;
 }
-.projects .project .text .header a h2:hover {
-  transform: translateY(-1px) scale(1.05);
-  color: rgb(150, 255, 250);
-}
 .projects .project .text .header a span {
   font-size: 22px;
   color: rgb(119, 136, 153);
   display: block;
+}
+.projects .project .text:hover {
+  box-shadow: inset 3px 3px 4px rgb(22, 23, 24), inset -3px -3px 4px rgb(64, 67, 70);
+}
+.projects .project .text:hover a h2 {
+  transform: translateY(-1px) scale(1.05);
+  color: rgb(150, 255, 250);
 }
 
 .footer {

@@ -25,6 +25,13 @@ body {
   text-align: center;
 }
 
+.subtitle {
+  font-size: $Subtitle;
+  color: $LightSlate;
+  font-weight: 400;
+  text-align: center;
+}
+
 .projects {
   background: $SlateGradient;
   box-shadow: 5px 5px 4px $DarkestSlate, -5px -5px 4px $Slate;
@@ -97,17 +104,23 @@ body {
             color: $LightAqua;
             line-height: 2rem;
             transition: transform 100ms ease-in, color 100ms ease-in;
-
-            &:hover {
-              transform: translateY(-1px) scale(1.05);
-              color: $LightestAqua;
-            }
           }
 
           span {
             font-size: $Body;
             color: $LightSlate;
             display: block;
+          }
+        }
+      }
+
+      &:hover {
+        box-shadow: inset 3px 3px 4px $DarkestSlate, inset -3px -3px 4px $Slate;
+
+        a {
+          h2 {
+            transform: translateY(-1px) scale(1.05);
+            color: $LightestAqua;
           }
         }
       }
