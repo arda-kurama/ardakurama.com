@@ -58,14 +58,14 @@ body {
   }
 }
 
-.skills {
+.about {
   background: $SlateGradient;
   border-radius: 2rem;
-  margin: 100vh auto 0;
+  margin: 100vh auto 2vw;
   width: clamp(1000px, 80vw, 1400px);
   padding: 2vw;
   text-align: center;
-  box-shadow: 5px 5px 4px $DarkestSlate, -5px -5px 4px $Slate;
+  box-shadow: inset 3px 3px 4px $DarkestSlate, inset -3px -3px 4px $Slate;
 
   .title {
     font-size: $Title;
@@ -73,220 +73,74 @@ body {
     color: $Cream;
   }
 
-  .subtitle {
-    font-size: $Subtitle;
-    color: $LightSlate;
-    margin-bottom: 1vw;
-
-    a {
-      color: $LightAqua;
-      text-decoration: underline;
-      transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-
-      &:hover {
-        background-color: $Aqua;
-        color: $Cream;
-      }
-    }
-  }
-
-  .content {
-    text-align: center;
-    padding: 0 4vw;
-    color: $Cream;
-    font-size: 4.5rem;
-
-    span {
-      display: inline-block;
-      margin: 0 0.25vw;
-    }
-
-    .language {
-      color: $LightestAqua;
-    }
-
-    .application {
-      color: $LightAqua;
-    }
-
-    .software {
-      color: $Aqua;
-    }
-  }
-}
-
-.projects {
-  background: $SlateGradient;
-  border-radius: 2rem;
-  margin: 2vw auto;
-  width: clamp(1000px, 80vw, 1400px);
-  padding: 2vw;
-  text-align: center;
-  box-shadow: 5px 5px 4px $DarkestSlate, -5px -5px 4px $Slate;
-
-  .title {
-    font-size: $Title;
-    font-weight: 700;
-    color: $Cream;
-    margin-bottom: 1vw;
-  }
-
-  .swiper {
-    .swiper-wrapper {
-      .project {
-        // box-shadow: inset 3px 3px 4px $DarkestSlate, inset -3px -3px 4px $Slate;
-        border-radius: 2rem;
-        padding: 2rem;
-        margin-bottom: 2rem;
-
-        h4 {
-          font-size: $Subtitle;
-          font-weight: 300;
-          color: $Cream;
-          margin: 0 0 0.25vw 8vw;
-          text-align: left;
-        }
-
-        .content {
-          display: flex;
-          justify-content: center;
-          gap: 2vw;
-          align-items: center;
-          text-align: left;
-
-          .images {
-            display: flex;
-
-            img {
-              width: auto;
-              height: 20vw;
-              transition: transform 100ms ease-in, color 100ms ease-in;
-
-              &:hover {
-                transform: translateY(-1px) scale(1.02);
-              }
-            }
-          }
-
-          .text {
-            min-width: clamp(300px, 40vw, 365px);
-            box-shadow: 5px 5px 4px $DarkestSlate, -5px -5px 4px $Slate;
-            border-radius: 2rem;
-            padding: 2vw;
-            margin-bottom: $Subtitle;
-
-            .header {
-              h4 {
-                font-size: $Subtitle;
-                font-weight: 300;
-                color: $Cream;
-                margin: -0.5rem 0 0.5rem 5vw;
-              }
-
-              #longer {
-                margin-left: 4vw;
-              }
-
-              a {
-                text-decoration: none;
-
-                h2 {
-                  font-size: $Header;
-                  color: $LightAqua;
-                  line-height: 2rem;
-                  // margin-right: 0.5vw;
-                  transition: transform 100ms ease-in, color 100ms ease-in;
-
-                  &:hover {
-                    transform: translateY(-1px) scale(1.05);
-                    color: $LightestAqua;
-                  }
-                }
-
-                span {
-                  font-size: $Subtitle;
-                  color: $LightSlate;
-                  display: block;
-                }
-              }
-            }
-
-            ul {
-              margin-top: 0.25rem;
-              li {
-                list-style: none;
-                font-size: $Body;
-                font-weight: 300;
-                color: $Cream;
-              }
-            }
-          }
-        }
-      }
-    }
-    .swiper-button-prev,
-    .swiper-button-next {
-      color: $Aqua;
-      --swiper-navigation-size: 64px;
-    }
-
-    .swiper-pagination {
-      --swiper-pagination-color: rgb(125, 207, 180);
-      --swiper-pagination-bullet-size: 16px;
-    }
-
-    .autoplay-progress svg {
-      --progress: 0;
-      position: absolute;
-      left: 85%;
-      top: 72%;
-      z-index: 10;
-      width: 20%;
-      height: 20%;
-      stroke-width: 4px;
-      stroke: $Aqua;
-      fill: none;
-      stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
-      stroke-dasharray: 125.6;
-      transform: rotate(-90deg);
-    }
-  }
-}
-
-.contact {
-  background: $SlateGradient;
-  border-radius: 2rem;
-  margin: 2vw auto;
-  width: clamp(1000px, 80vw, 1400px);
-  padding: 2vw;
-  text-align: center;
-  box-shadow: 5px 5px 4px $DarkestSlate, -5px -5px 4px $Slate;
-
-  .title {
-    font-size: $Title;
-    font-weight: 700;
-    color: $Cream;
-  }
-
-  .subtitle {
-    font-size: $Subtitle;
-    color: $LightSlate;
-    margin-bottom: 2vw;
-  }
-
-  .content {
+  .body {
     display: flex;
-    justify-content: center;
-    gap: 8vw;
+    padding: 1vw 0 0 0;
 
-    i {
-      font-size: 100px;
-      color: $LightAqua;
-      transition: transform 200ms ease-in, color 200ms ease-in;
+    .text {
+      box-shadow: 5px 5px 4px $DarkestSlate, -5px -5px 4px $Slate;
+      border-radius: 1rem;
+      padding: 2vw;
+      min-width: 400px;
+      max-width: 600px;
+      margin: 1rem;
 
-      &:hover {
-        transform: translateY(-7px) scale(1.1);
-        color: $LightestAqua;
+      img {
+        border-radius: 1rem;
+        width: 250px;
+        height: 300px;
+        object-fit: cover;
+        object-position: top;
+        box-shadow: inset 0 0 10px #fff,
+          /* inner white */ inset 20px 0 40px #f0f,
+          /* inner left magenta short */ inset -20px 0 40px #0ff,
+          /* inner right cyan short */ inset 20px 0 100px #f0f,
+          /* inner left magenta broad */ inset -20px 0 100px #0ff,
+          /* inner right cyan broad */ 0 0 20px #fff,
+          /* outer white */ -10px 0 40px #f0f,
+          /* outer left magenta */ 10px 0 40px #0ff; /* outer right cyan */
+      }
+
+      .subtitle {
+        font-size: $Body;
+        font-weight: 700;
+        color: $LightestSlate;
+        margin: 2vw 0 0;
+        text-align: left;
+      }
+    }
+
+    .skills {
+      display: flex;
+      margin: 0 auto;
+
+      .skill-row {
+        margin: auto;
+
+        .skill {
+          width: 150px;
+          height: 100px;
+          border-radius: 1rem;
+          margin: 1rem;
+          border: double 3px transparent;
+          background-image: linear-gradient($DarkestSlate, $DarkestSlate),
+            radial-gradient(circle at top left, #51a2e9, #ff4d5a);
+          background-origin: border-box;
+          background-clip: padding-box, border-box;
+
+          img {
+            width: auto;
+            height: 50px;
+            margin: 0.5rem;
+          }
+
+          p {
+            font-size: $Mobile;
+            color: $Cream;
+            font-weight: 600;
+            text-transform: capitalize;
+          }
+        }
       }
     }
   }
@@ -304,74 +158,16 @@ body {
     margin: 32vh auto;
   }
 
-  .skills {
-    width: 90vw;
-  }
-
-  .projects {
+  .about {
     width: 90vw;
 
-    .swiper {
-      .swiper-wrapper {
-        .project {
-          padding-bottom: 1vw;
+    .body {
+      flex-direction: column;
 
-          h4 {
-            margin: 0 0 0 25vw;
-          }
-
-          .content {
-            flex-direction: column;
-
-            .images {
-              img {
-                height: clamp(250px, 30vw, 350px);
-              }
-            }
-
-            .text {
-              width: clamp(600px, 60vw, 700px);
-
-              .header {
-                text-align: center;
-
-                h4 {
-                  margin-left: 30vw;
-                }
-
-                #longer {
-                  margin: 0 0 0 25vw;
-                }
-
-                a {
-                  h2 {
-                    span {
-                      display: block;
-                      line-height: 2.5rem;
-                    }
-                  }
-                }
-              }
-
-              ul {
-                margin: 0 auto;
-                width: 300px;
-              }
-            }
-          }
-        }
-      }
-      .autoplay-progress svg {
-        width: 10%;
-        height: 10%;
-        left: 45%;
-        top: 85%;
+      .text {
+        margin: 0 auto 2vw;
       }
     }
-  }
-
-  .contact {
-    width: 90vw;
   }
 }
 
@@ -397,76 +193,37 @@ body {
     }
   }
 
-  .skills {
-    margin-bottom: 4vw;
+  .about {
+    .body {
+      .text {
+        img {
+          width: 200px;
+          height: 250px;
+        }
 
-    .subtitle {
-      font-size: $Mobile;
-    }
+        .subtitle {
+          font-size: $Mobile;
+          padding: 2vw 4vw;
+          text-align: center;
+        }
+      }
+      .skills {
+        .skill-row {
+          .skill {
+            width: 125px;
+            height: 75px;
+            margin: 6px;
 
-    .content {
-      font-size: 3rem;
-    }
-  }
-
-  .projects {
-    margin-bottom: 4vw;
-
-    .swiper {
-      .swiper-wrapper {
-        .project {
-          h4 {
-            display: none;
-          }
-          .content {
-            .images {
-              img {
-                height: clamp(100px, 35vw, 250px);
-              }
+            img {
+              height: 30px;
             }
 
-            .text {
-              width: 80vw;
-
-              .header {
-                width: 60vw;
-                margin: 0 auto;
-                h4 {
-                  display: none;
-                }
-                a {
-                  h2 {
-                    span {
-                      line-height: 2rem;
-                    }
-                  }
-                }
-              }
-
-              ul {
-                margin: 1vw auto;
-              }
+            p {
+              font-size: 16px;
             }
           }
         }
       }
-
-      .swiper-pagination {
-        --swiper-pagination-bullet-size: 12px;
-      }
-
-      .autoplay-progress svg {
-        stroke-width: 6px;
-      }
-    }
-  }
-
-  .contact {
-    margin-bottom: 4vw;
-
-    .content {
-      justify-content: space-evenly;
-      gap: 0;
     }
   }
 }
@@ -488,80 +245,31 @@ body {
     }
   }
 
-  .skills {
-    .content {
-      .proficient {
-        font-size: 3.5rem;
-      }
+  .about {
+    .body {
+      .text {
+        min-width: 300px;
+        width: 300px;
 
-      .competant {
-        font-size: 2.5rem;
-      }
+        img {
+          width: 200px;
+        }
 
-      .novice {
-        font-size: 1.5rem;
-      }
-    }
-  }
-
-  .projects {
-    .swiper {
-      .swiper-wrapper {
-        .project {
-          h4 {
-            font-size: $Mobile;
-          }
-
-          .content {
-            .text {
-              .header {
-                width: 250px;
-
-                h4 {
-                  margin: 0 0 0 25vw;
-                  font-size: $Mobile;
-                }
-
-                a {
-                  h2 {
-                    font-size: 30px;
-
-                    span {
-                      display: none;
-                    }
-                  }
-                }
-              }
-
-              ul {
-                width: 250px;
-                margin: 2vw auto;
-                li {
-                  font-size: $Mobile;
-                }
-              }
-            }
-          }
+        .subtitle {
+          width: 250px;
+          margin: 0 auto;
         }
       }
+      .skills {
+        .skill-row {
+          .skill {
+            width: 95px;
+            height: 75px;
+            margin: 4px;
 
-      .swiper-button-prev,
-      .swiper-button-next {
-        display: none;
-      }
-    }
-  }
-
-  .contact {
-    .subtitle {
-      font-size: $Mobile;
-    }
-    .content {
-      i {
-        font-size: 80px;
-
-        &:hover {
-          transform: scale(1.1);
+            img {
+            }
+          }
         }
       }
     }

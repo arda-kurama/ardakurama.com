@@ -38,7 +38,7 @@
       <li><a href="coursework/notes/Systems_FA24.pdf" target="_blank">CSE 20289:</a> Systems Programming</li>
       <li><a href="coursework/notes/Discrete_FA24.pdf" target="_blank">CSE 20110:</a> Discrete Mathematics</li>
       <li><a href="coursework/notes/Physics-II_FA24.pdf" target="_blank">PHYS 10320:</a> Engineering Physics II: E&M</li>
-      <li><a href="coursework/notes/Theo-I_Fa24.pdf" target="_blank">THEO 10002:</a> Foundations of Theology</li>
+      <li><a href="coursework/notes/Theo-I_FA24.pdf" target="_blank">THEO 10002:</a> Foundations of Theology</li>
     </ul>
   </div>
   <div class="card">

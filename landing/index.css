@@ -13,13 +13,15 @@
   display: flex;
   gap: 2vw;
 }
-.navbar .icons i {
-  font-size: 44px;
+.navbar .icons img {
+  margin: -10px -10px -14px;
+  width: 50px;
+  filter: invert(1);
   color: rgb(240, 248, 255);
   transition: transform 100ms ease-in, color 100ms ease-in;
 }
-.navbar .icons i:hover {
-  transform: translateY(-2px) scale(1.05);
+.navbar .icons img:hover {
+  transform: translateY(-2px) scale(1.1);
   color: rgb(128, 255, 212);
 }
 .navbar .nav-menu {
@@ -151,199 +153,76 @@ body {
   font-size: 36px;
 }
 
-.skills {
+.about {
   background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, rgb(43, 45, 47) 80%);
   border-radius: 2rem;
-  margin: 100vh auto 0;
+  margin: 100vh auto 2vw;
   width: clamp(1000px, 80vw, 1400px);
   padding: 2vw;
   text-align: center;
-  box-shadow: 5px 5px 4px rgb(22, 23, 24), -5px -5px 4px rgb(64, 67, 70);
+  box-shadow: inset 3px 3px 4px rgb(22, 23, 24), inset -3px -3px 4px rgb(64, 67, 70);
 }
-.skills .title {
+.about .title {
   font-size: 72px;
   font-weight: 700;
   color: rgb(240, 248, 255);
 }
-.skills .subtitle {
-  font-size: 24px;
-  color: rgb(119, 136, 153);
-  margin-bottom: 1vw;
-}
-.skills .subtitle a {
-  color: rgb(128, 255, 212);
-  text-decoration: underline;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-}
-.skills .subtitle a:hover {
-  background-color: rgb(125, 207, 180);
-  color: rgb(240, 248, 255);
-}
-.skills .content {
-  text-align: center;
-  padding: 0 4vw;
-  color: rgb(240, 248, 255);
-  font-size: 4.5rem;
-}
-.skills .content span {
-  display: inline-block;
-  margin: 0 0.25vw;
-}
-.skills .content .language {
-  color: rgb(150, 255, 250);
-}
-.skills .content .application {
-  color: rgb(128, 255, 212);
-}
-.skills .content .software {
-  color: rgb(125, 207, 180);
-}
-
-.projects {
-  background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, rgb(43, 45, 47) 80%);
-  border-radius: 2rem;
-  margin: 2vw auto;
-  width: clamp(1000px, 80vw, 1400px);
-  padding: 2vw;
-  text-align: center;
-  box-shadow: 5px 5px 4px rgb(22, 23, 24), -5px -5px 4px rgb(64, 67, 70);
-}
-.projects .title {
-  font-size: 72px;
-  font-weight: 700;
-  color: rgb(240, 248, 255);
-  margin-bottom: 1vw;
-}
-.projects .swiper .swiper-wrapper .project {
-  border-radius: 2rem;
-  padding: 2rem;
-  margin-bottom: 2rem;
-}
-.projects .swiper .swiper-wrapper .project h4 {
-  font-size: 24px;
-  font-weight: 300;
-  color: rgb(240, 248, 255);
-  margin: 0 0 0.25vw 8vw;
-  text-align: left;
-}
-.projects .swiper .swiper-wrapper .project .content {
+.about .body {
   display: flex;
-  justify-content: center;
-  gap: 2vw;
-  align-items: center;
-  text-align: left;
+  padding: 1vw 0 0 0;
 }
-.projects .swiper .swiper-wrapper .project .content .images {
-  display: flex;
-}
-.projects .swiper .swiper-wrapper .project .content .images img {
-  width: auto;
-  height: 20vw;
-  transition: transform 100ms ease-in, color 100ms ease-in;
-}
-.projects .swiper .swiper-wrapper .project .content .images img:hover {
-  transform: translateY(-1px) scale(1.02);
-}
-.projects .swiper .swiper-wrapper .project .content .text {
-  min-width: clamp(300px, 40vw, 365px);
+.about .body .text {
   box-shadow: 5px 5px 4px rgb(22, 23, 24), -5px -5px 4px rgb(64, 67, 70);
-  border-radius: 2rem;
+  border-radius: 1rem;
   padding: 2vw;
-  margin-bottom: 24px;
+  min-width: 400px;
+  max-width: 600px;
+  margin: 1rem;
 }
-.projects .swiper .swiper-wrapper .project .content .text .header h4 {
-  font-size: 24px;
-  font-weight: 300;
-  color: rgb(240, 248, 255);
-  margin: -0.5rem 0 0.5rem 5vw;
+.about .body .text img {
+  border-radius: 1rem;
+  width: 250px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  box-shadow: inset 0 0 10px #fff, inset 20px 0 40px #f0f, inset -20px 0 40px #0ff, inset 20px 0 100px #f0f, inset -20px 0 100px #0ff, 0 0 20px #fff, -10px 0 40px #f0f, 10px 0 40px #0ff; /* outer right cyan */
 }
-.projects .swiper .swiper-wrapper .project .content .text .header #longer {
-  margin-left: 4vw;
-}
-.projects .swiper .swiper-wrapper .project .content .text .header a {
-  text-decoration: none;
-}
-.projects .swiper .swiper-wrapper .project .content .text .header a h2 {
-  font-size: 36px;
-  color: rgb(128, 255, 212);
-  line-height: 2rem;
-  transition: transform 100ms ease-in, color 100ms ease-in;
-}
-.projects .swiper .swiper-wrapper .project .content .text .header a h2:hover {
-  transform: translateY(-1px) scale(1.05);
-  color: rgb(150, 255, 250);
-}
-.projects .swiper .swiper-wrapper .project .content .text .header a span {
-  font-size: 24px;
-  color: rgb(119, 136, 153);
-  display: block;
-}
-.projects .swiper .swiper-wrapper .project .content .text ul {
-  margin-top: 0.25rem;
-}
-.projects .swiper .swiper-wrapper .project .content .text ul li {
-  list-style: none;
+.about .body .text .subtitle {
   font-size: 22px;
-  font-weight: 300;
-  color: rgb(240, 248, 255);
-}
-.projects .swiper .swiper-button-prev,
-.projects .swiper .swiper-button-next {
-  color: rgb(125, 207, 180);
-  --swiper-navigation-size: 64px;
-}
-.projects .swiper .swiper-pagination {
-  --swiper-pagination-color: rgb(125, 207, 180);
-  --swiper-pagination-bullet-size: 16px;
-}
-.projects .swiper .autoplay-progress svg {
-  --progress: 0;
-  position: absolute;
-  left: 85%;
-  top: 72%;
-  z-index: 10;
-  width: 20%;
-  height: 20%;
-  stroke-width: 4px;
-  stroke: rgb(125, 207, 180);
-  fill: none;
-  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
-  stroke-dasharray: 125.6;
-  transform: rotate(-90deg);
-}
-
-.contact {
-  background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, rgb(43, 45, 47) 80%);
-  border-radius: 2rem;
-  margin: 2vw auto;
-  width: clamp(1000px, 80vw, 1400px);
-  padding: 2vw;
-  text-align: center;
-  box-shadow: 5px 5px 4px rgb(22, 23, 24), -5px -5px 4px rgb(64, 67, 70);
-}
-.contact .title {
-  font-size: 72px;
   font-weight: 700;
-  color: rgb(240, 248, 255);
+  color: rgb(172, 188, 205);
+  margin: 2vw 0 0;
+  text-align: left;
 }
-.contact .subtitle {
-  font-size: 24px;
-  color: rgb(119, 136, 153);
-  margin-bottom: 2vw;
-}
-.contact .content {
+.about .body .skills {
   display: flex;
-  justify-content: center;
-  gap: 8vw;
+  margin: 0 auto;
 }
-.contact .content i {
-  font-size: 100px;
-  color: rgb(128, 255, 212);
-  transition: transform 200ms ease-in, color 200ms ease-in;
+.about .body .skills .skill-row {
+  margin: auto;
 }
-.contact .content i:hover {
-  transform: translateY(-7px) scale(1.1);
-  color: rgb(150, 255, 250);
+.about .body .skills .skill-row .skill {
+  width: 150px;
+  height: 100px;
+  border-radius: 1rem;
+  margin: 1rem;
+  border: double 3px transparent;
+  background-image: linear-gradient(rgb(22, 23, 24), rgb(22, 23, 24)), radial-gradient(circle at top left, #51a2e9, #ff4d5a);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+.about .body .skills .skill-row .skill img {
+  width: auto;
+  height: 50px;
+  margin: 0.5rem;
+}
+.about .body .skills .skill-row .skill p {
+  font-size: 20px;
+  color: rgb(240, 248, 255);
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
 .footer {
@@ -357,52 +236,14 @@ body {
     width: clamp(600px, 80vw, 720px);
     margin: 32vh auto;
   }
-  .skills {
+  .about {
     width: 90vw;
   }
-  .projects {
-    width: 90vw;
-  }
-  .projects .swiper .swiper-wrapper .project {
-    padding-bottom: 1vw;
-  }
-  .projects .swiper .swiper-wrapper .project h4 {
-    margin: 0 0 0 25vw;
-  }
-  .projects .swiper .swiper-wrapper .project .content {
+  .about .body {
     flex-direction: column;
   }
-  .projects .swiper .swiper-wrapper .project .content .images img {
-    height: clamp(250px, 30vw, 350px);
-  }
-  .projects .swiper .swiper-wrapper .project .content .text {
-    width: clamp(600px, 60vw, 700px);
-  }
-  .projects .swiper .swiper-wrapper .project .content .text .header {
-    text-align: center;
-  }
-  .projects .swiper .swiper-wrapper .project .content .text .header h4 {
-    margin-left: 30vw;
-  }
-  .projects .swiper .swiper-wrapper .project .content .text .header #longer {
-    margin: 0 0 0 25vw;
-  }
-  .projects .swiper .swiper-wrapper .project .content .text .header a h2 span {
-    display: block;
-    line-height: 2.5rem;
-  }
-  .projects .swiper .swiper-wrapper .project .content .text ul {
-    margin: 0 auto;
-    width: 300px;
-  }
-  .projects .swiper .autoplay-progress svg {
-    width: 10%;
-    height: 10%;
-    left: 45%;
-    top: 85%;
-  }
-  .contact {
-    width: 90vw;
+  .about .body .text {
+    margin: 0 auto 2vw;
   }
 }
 @media (max-width: 768px) {
@@ -422,52 +263,25 @@ body {
   .landing .hero .typed-title {
     font-size: 32px;
   }
-  .skills {
-    margin-bottom: 4vw;
+  .about .body .text img {
+    width: 200px;
+    height: 250px;
   }
-  .skills .subtitle {
+  .about .body .text .subtitle {
     font-size: 20px;
+    padding: 2vw 4vw;
+    text-align: center;
   }
-  .skills .content {
-    font-size: 3rem;
+  .about .body .skills .skill-row .skill {
+    width: 125px;
+    height: 75px;
+    margin: 6px;
   }
-  .projects {
-    margin-bottom: 4vw;
+  .about .body .skills .skill-row .skill img {
+    height: 30px;
   }
-  .projects .swiper .swiper-wrapper .project h4 {
-    display: none;
-  }
-  .projects .swiper .swiper-wrapper .project .content .images img {
-    height: clamp(100px, 35vw, 250px);
-  }
-  .projects .swiper .swiper-wrapper .project .content .text {
-    width: 80vw;
-  }
-  .projects .swiper .swiper-wrapper .project .content .text .header {
-    width: 60vw;
-    margin: 0 auto;
-  }
-  .projects .swiper .swiper-wrapper .project .content .text .header h4 {
-    display: none;
-  }
-  .projects .swiper .swiper-wrapper .project .content .text .header a h2 span {
-    line-height: 2rem;
-  }
-  .projects .swiper .swiper-wrapper .project .content .text ul {
-    margin: 1vw auto;
-  }
-  .projects .swiper .swiper-pagination {
-    --swiper-pagination-bullet-size: 12px;
-  }
-  .projects .swiper .autoplay-progress svg {
-    stroke-width: 6px;
-  }
-  .contact {
-    margin-bottom: 4vw;
-  }
-  .contact .content {
-    justify-content: space-evenly;
-    gap: 0;
+  .about .body .skills .skill-row .skill p {
+    font-size: 16px;
   }
 }
 @media (max-width: 480px) {
@@ -480,49 +294,20 @@ body {
   .landing .hero .typed-title {
     font-size: 24px;
   }
-  .skills .content .proficient {
-    font-size: 3.5rem;
+  .about .body .text {
+    min-width: 300px;
+    width: 300px;
   }
-  .skills .content .competant {
-    font-size: 2.5rem;
+  .about .body .text img {
+    width: 200px;
   }
-  .skills .content .novice {
-    font-size: 1.5rem;
-  }
-  .projects .swiper .swiper-wrapper .project h4 {
-    font-size: 20px;
-  }
-  .projects .swiper .swiper-wrapper .project .content .text .header {
+  .about .body .text .subtitle {
     width: 250px;
+    margin: 0 auto;
   }
-  .projects .swiper .swiper-wrapper .project .content .text .header h4 {
-    margin: 0 0 0 25vw;
-    font-size: 20px;
-  }
-  .projects .swiper .swiper-wrapper .project .content .text .header a h2 {
-    font-size: 30px;
-  }
-  .projects .swiper .swiper-wrapper .project .content .text .header a h2 span {
-    display: none;
-  }
-  .projects .swiper .swiper-wrapper .project .content .text ul {
-    width: 250px;
-    margin: 2vw auto;
-  }
-  .projects .swiper .swiper-wrapper .project .content .text ul li {
-    font-size: 20px;
-  }
-  .projects .swiper .swiper-button-prev,
-  .projects .swiper .swiper-button-next {
-    display: none;
-  }
-  .contact .subtitle {
-    font-size: 20px;
-  }
-  .contact .content i {
-    font-size: 80px;
-  }
-  .contact .content i:hover {
-    transform: scale(1.1);
+  .about .body .skills .skill-row .skill {
+    width: 95px;
+    height: 75px;
+    margin: 4px;
   }
 }/*# sourceMappingURL=index.css.map */

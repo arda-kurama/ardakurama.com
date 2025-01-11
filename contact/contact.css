@@ -13,13 +13,15 @@
   display: flex;
   gap: 2vw;
 }
-.navbar .icons i {
-  font-size: 44px;
+.navbar .icons img {
+  margin: -10px -10px -14px;
+  width: 50px;
+  filter: invert(1);
   color: rgb(240, 248, 255);
   transition: transform 100ms ease-in, color 100ms ease-in;
 }
-.navbar .icons i:hover {
-  transform: translateY(-2px) scale(1.05);
+.navbar .icons img:hover {
+  transform: translateY(-2px) scale(1.1);
   color: rgb(128, 255, 212);
 }
 .navbar .nav-menu {
