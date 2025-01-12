@@ -30,6 +30,10 @@ body {
   color: $LightSlate;
   font-weight: 400;
   text-align: center;
+
+  a {
+    color: $LightAqua;
+  }
 }
 
 .projects {
@@ -85,17 +89,32 @@ body {
         }
       }
 
+      #cube {
+        width: 240px;
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      #life {
+        width: 190px;
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+        animation-play-state: paused;
+      }
+
       #large {
         height: 240px;
       }
     }
 
     .text {
-      box-shadow: 5px 5px 4px $DarkestSlate, -5px -5px 4px $Slate;
-      border-radius: 2rem;
-      padding: 1vw;
-
       .header {
+        box-shadow: 5px 5px 4px $DarkestSlate, -5px -5px 4px $Slate;
+        padding: 1vw;
+        border-radius: 2rem;
+
         a {
           text-decoration: none;
 
@@ -103,7 +122,7 @@ body {
             font-size: $Header;
             color: $LightAqua;
             line-height: 2rem;
-            transition: transform 100ms ease-in, color 100ms ease-in;
+            // transition: transform 100ms ease-in, color 100ms ease-in;
           }
 
           span {
@@ -112,14 +131,48 @@ body {
             display: block;
           }
         }
+        &:hover {
+          box-shadow: inset 3px 3px 4px $DarkestSlate,
+            inset -3px -3px 4px $Slate;
+
+          a {
+            h2 {
+              transform: translateY(-1px) scale(1.05);
+              color: $LightestAqua;
+            }
+          }
+        }
       }
 
-      &:hover {
-        box-shadow: inset 3px 3px 4px $DarkestSlate, inset -3px -3px 4px $Slate;
+      .button {
+        display: flex;
+        box-shadow: 5px 5px 4px $DarkestSlate, -5px -5px 4px $Slate;
+        padding: 0.5vw;
+        border-radius: 2rem;
+        margin: 1vw auto 0;
+        width: 150px;
+        text-decoration: none;
 
-        a {
-          h2 {
-            transform: translateY(-1px) scale(1.05);
+        img {
+          width: 25px;
+          height: auto;
+          filter: invert(1);
+          margin: 0 0 2px 4px;
+        }
+
+        p {
+          color: $LightSlate;
+          font-weight: 700;
+          font-size: $Body;
+          margin: 1px 0 0 12px;
+        }
+
+        &:hover {
+          box-shadow: inset 3px 3px 4px $DarkestSlate,
+            inset -3px -3px 4px $Slate;
+
+          p {
+            transform: translateY(-1px) scale(1.02);
             color: $LightestAqua;
           }
         }

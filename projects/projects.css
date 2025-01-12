@@ -130,6 +130,9 @@ body {
   font-weight: 400;
   text-align: center;
 }
+.subtitle a {
+  color: rgb(128, 255, 212);
+}
 
 .projects {
   background: linear-gradient(145deg, rgba(115, 115, 115, 0.15) 15%, rgb(43, 45, 47) 80%);
@@ -177,13 +180,30 @@ body {
 .projects .project .images img:hover {
   transform: translateY(-1px) scale(1.02);
 }
+.projects .project .images #cube {
+  width: 240px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.projects .project .images #life {
+  width: 190px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  animation-play-state: paused;
+}
 .projects .project .images #large {
   height: 240px;
 }
-.projects .project .text {
+.projects .project .text .header {
   box-shadow: 5px 5px 4px rgb(22, 23, 24), -5px -5px 4px rgb(64, 67, 70);
-  border-radius: 2rem;
   padding: 1vw;
+  border-radius: 2rem;
 }
 .projects .project .text .header a {
   text-decoration: none;
@@ -192,18 +212,45 @@ body {
   font-size: 36px;
   color: rgb(128, 255, 212);
   line-height: 2rem;
-  transition: transform 100ms ease-in, color 100ms ease-in;
 }
 .projects .project .text .header a span {
   font-size: 22px;
   color: rgb(119, 136, 153);
   display: block;
 }
-.projects .project .text:hover {
+.projects .project .text .header:hover {
   box-shadow: inset 3px 3px 4px rgb(22, 23, 24), inset -3px -3px 4px rgb(64, 67, 70);
 }
-.projects .project .text:hover a h2 {
+.projects .project .text .header:hover a h2 {
   transform: translateY(-1px) scale(1.05);
+  color: rgb(150, 255, 250);
+}
+.projects .project .text .button {
+  display: flex;
+  box-shadow: 5px 5px 4px rgb(22, 23, 24), -5px -5px 4px rgb(64, 67, 70);
+  padding: 0.5vw;
+  border-radius: 2rem;
+  margin: 1vw auto 0;
+  width: 150px;
+  text-decoration: none;
+}
+.projects .project .text .button img {
+  width: 25px;
+  height: auto;
+  filter: invert(1);
+  margin: 0 0 2px 4px;
+}
+.projects .project .text .button p {
+  color: rgb(119, 136, 153);
+  font-weight: 700;
+  font-size: 22px;
+  margin: 1px 0 0 12px;
+}
+.projects .project .text .button:hover {
+  box-shadow: inset 3px 3px 4px rgb(22, 23, 24), inset -3px -3px 4px rgb(64, 67, 70);
+}
+.projects .project .text .button:hover p {
+  transform: translateY(-1px) scale(1.02);
   color: rgb(150, 255, 250);
 }
 
